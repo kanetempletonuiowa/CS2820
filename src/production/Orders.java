@@ -2,17 +2,16 @@ package production;
 
 import java.util.ArrayList;
 import java.util.Random;
-import production.Master;
-import production.Item;
 
 
-public class Orders extends Master {
+public class Orders {
 	ArrayList<CustomerOrder> currentOrders;
-	Random rand = new Random();
+	Random rand;
 	
 	// constructor just initiates the currentOrders ArrayList
 	public Orders() {
-		this.currentOrders = new ArrayList<CustomerOrder>();
+		this.currentOrders = new ArrayList<>();
+                rand = new Random();
 	}
 	
 	public void generateOrder(int num, int q, String addy) {
@@ -26,7 +25,7 @@ public class Orders extends Master {
 	
 	public void initialOrders(int x) {
 		for (int i=0; i<x; i++) {
-			generateOrder(rand.nextInt(6), rand.nextInt(4), "address");
+                    generateOrder(rand.nextInt(6), rand.nextInt(4), "address");
 		}
 	}
 }

@@ -1,6 +1,5 @@
 package production;
 
-import production.Item;
 
 
 public class CustomerOrderTest {

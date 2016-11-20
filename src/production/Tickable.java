@@ -17,14 +17,14 @@ public interface Tickable {
         use for adding initial events to the 
         event queue when object is created
     */
-    public void initialEvents();
+  //  public void initialEvents();
     
     /*
         addEvent(Event e)
         @author: Kane Templeton
         add a specified event to Master's event queue
     */
-    public void addEvent(Event e); //add desired events as the simulation goes on
+  //  public void addEvent(Event e); //add desired events as the simulation goes on
     
     /*
         tick()
