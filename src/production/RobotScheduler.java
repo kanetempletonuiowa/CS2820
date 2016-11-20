@@ -27,7 +27,7 @@ public class RobotScheduler {
 		int[] destination = new int[2];
 		destination[0]=x;
 		destination[0]=y;
-		this.requestRoute(robots.get(i), destination);
+		//this.requestRoute(robots.get(i), destination);
 	}
 	
 	//@author: Alex Wang

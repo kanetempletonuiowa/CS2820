@@ -17,9 +17,20 @@ public class Master {
 	protected PriorityQueue<Event> eventQueue;
         protected ArrayList<Tickable> activeEntities;
         
+        protected ArrayList<CustomerOrder> activeOrders;
+        
+        public Orders masterOrders;
+        public NewFloor masterFloor;
+        
+        
         public Master() {
             eventQueue = new PriorityQueue<>();
+            activeEntities = new ArrayList<>();
+            masterOrders = new Orders();
+            masterOrders.initialOrders(2);
+            masterFloor = new NewFloor(20,20);
             clockTime=0;
+            System.out.println(masterOrders.currentOrders.get(0).itemsInOrder.get(0).getDescription());
         }
         
         
@@ -61,6 +72,10 @@ public class Master {
                 if (!eventQueue.isEmpty())
                     if (eventQueue.peek().getFireTime()<=clockTime) 
                         eventQueue.poll().getTask().fire();
+                
+                for (Tickable t:activeEntities)
+                    t.tick();
+                Production.getVisualizer().render();
                 
             }
 	}
@@ -111,6 +126,9 @@ public class Master {
         public void output(String msg) {
             System.out.println("[time="+getMasterClockTime()+"]"+msg);
         }
+        
+        public NewFloor getMasterFloor() {return masterFloor;}
+        public ArrayList getActiveEntities(){return activeEntities;}
         
 	
 }

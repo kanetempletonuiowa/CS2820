@@ -4,15 +4,16 @@ import java.util.ArrayList;
 import production.Item;
 import production.Master;
 
-public class CustomerOrder extends Master implements Comparable<CustomerOrder> {
-	ArrayList itemsInOrder = new ArrayList<Item>();
+public class CustomerOrder implements Comparable<CustomerOrder> {
+	ArrayList<Item> itemsInOrder;
 	String address;
 	String status;
 	
-	CustomerOrder(Item i, String address) {
-		this.address = address;
-		this.status = "pending";
-		itemsInOrder.add(i);
+	public CustomerOrder(Item i, String address) {
+            this.itemsInOrder = new ArrayList<>();
+            this.address = address;
+            this.status = "pending";
+            this.itemsInOrder.add(i);
 	}
 	
 	public void addItemsToOrder(Item i) {

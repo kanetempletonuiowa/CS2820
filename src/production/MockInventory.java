@@ -14,5 +14,5 @@ public class MockInventory {
 		inventory.put(5, "item5");
 	}
         
-        public HashMap getInventory(){return inventory;}
+        public static HashMap getInventory(){return inventory;}
 }
