@@ -1,39 +1,35 @@
 package production;
 
+import java.io.IOException;
+
 
 public class Production {
     
-    private static Master master;
+    private static ControlPanel panel;
     private static Visualizer visualizer;
-    
-    public static final int LENGTH=20;
-    public static final int WIDTH=20;
+
     public static final int SQUARE_SIZE=32;
+    public static final int FLOOR_SIZE=20;
     
     
-    public static void main(String[] args) {
-        master = new Master();
-        master.initializeEvents();
-        initVisualizer();
-        master.start();   
+    public static void main(String[] args) throws IOException {
+        Master M = new Master();
+        M.initializeEvents();
+        panel = new ControlPanel(M);
+        init();
+        panel.getMaster().start();
     }
     
-    public static void initVisualizer() {
-        visualizer = new Visualizer(LENGTH*SQUARE_SIZE,WIDTH*SQUARE_SIZE);
+    public static void init() throws IOException {
+        Constants.initImages();
+        visualizer = new Visualizer(FLOOR_SIZE*SQUARE_SIZE,FLOOR_SIZE*SQUARE_SIZE);
     }
     
     public static Master getMaster() {
-        return master;
+        return panel.getMaster();
     }
     
-    public static void output(String msg) {
-        master.output(msg);
-    }
-    
-    public static void addEvent(Event e) {
-        master.addEvent(e);
-    }
-    
+    public static ControlPanel controls(){return panel;}
     public static Visualizer getVisualizer() {return visualizer;}
 
 }

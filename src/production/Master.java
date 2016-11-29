@@ -14,28 +14,43 @@ public class Master {
         private int clockTime;
         
 	
-	protected PriorityQueue<Event> eventQueue;
-        protected ArrayList<Tickable> activeEntities;
-        
-        protected ArrayList<CustomerOrder> activeOrders;
+	private PriorityQueue<Event> eventQueue;        
+        private ArrayList<CustomerOrder> activeOrders;
         
         public Orders masterOrders;
-        public NewFloor masterFloor;
+        public Floor masterFloor;
+        public MockEntity mock;
+        
+        public Belt masterBelt;
         
         
         public Master() {
             eventQueue = new PriorityQueue<>();
-            activeEntities = new ArrayList<>();
             masterOrders = new Orders();
-            masterOrders.initialOrders(2);
-            masterFloor = new NewFloor(20,20);
+            //initialize orders here
+            
+            addInitialEntities();
             clockTime=0;
-            System.out.println(masterOrders.currentOrders.get(0).itemsInOrder.get(0).getDescription());
+        }
+        
+        /*  addInitialEntities()
+            @author: Kane Templeton
+            adds initial floor entities to the floor
+        */
+        private void addInitialEntities() {
+            masterFloor = new Floor(20,20);
+            
+            mock = new MockEntity(3,3);
+            masterFloor.addNewEntity(mock);
+            
+            masterBelt = new Belt();
+            masterFloor.addNewEntity(masterBelt);
+            
         }
         
         
-	/*
-            start()
+	
+        /*  start()
             @author: Kane Templeton
             start the simulation
         */
@@ -45,8 +60,8 @@ public class Master {
             run();
 	}
 	
-        /*
-            stop()
+        
+        /*  stop()
             @author: Kane Templeton
             end the simulation
         */
@@ -55,8 +70,8 @@ public class Master {
             running=false;
 	}
 	
-        /*
-            run()
+        
+        /*  run()
             @author: Kane Templeton
             contains the running loop for the simulation
         */
@@ -67,23 +82,26 @@ public class Master {
                 if (System.currentTimeMillis()-clock >= 1000) {
                     clockTime++;
                     clock=System.currentTimeMillis();
+                    for (FloorEntity e:masterFloor.getEntities()) //tick active tickable entities
+                        e.getTickable().tick();
+                                        
                 }
                 //check if it is time to fire the next event
                 if (!eventQueue.isEmpty())
                     if (eventQueue.peek().getFireTime()<=clockTime) 
                         eventQueue.poll().getTask().fire();
                 
-                for (Tickable t:activeEntities)
-                    t.tick();
+                //render everything
                 Production.getVisualizer().render();
+                
                 
             }
 	}
         
 	
         
-        /*
-            initializeEvents()
+        
+        /*  initializeEvents()
             @author: Kane Templeton
             add events to the event queue before the simulation begins
         */
@@ -92,8 +110,7 @@ public class Master {
 
         }
         
-        /*
-            addEvent(Event e)
+        /*  addEvent(Event e)
             @author: Kane Templeton
             add an event to the event queue
         */
@@ -101,8 +118,8 @@ public class Master {
             eventQueue.add(e);
         }
         
-        /*
-            getEventQueue()
+        
+        /*  getEventQueue()
             @author: Kane Templeton
             return the Master event queue
         */
@@ -110,15 +127,15 @@ public class Master {
             return eventQueue;
         }
         
-        /*
-            getMasterClockTime()
+        
+        /*  getMasterClockTime()
             @author: Kane Templeton
             return the current Master clock time
         */
         public int getMasterClockTime() {return clockTime;}
         
-        /*
-            output(String msg)
+        
+        /*  output(String msg)
             @author: Kane Templeton
             output a message to the console 
             and include the current clock time
@@ -127,8 +144,7 @@ public class Master {
             System.out.println("[time="+getMasterClockTime()+"]"+msg);
         }
         
-        public NewFloor getMasterFloor() {return masterFloor;}
-        public ArrayList getActiveEntities(){return activeEntities;}
+        public Floor getMasterFloor() {return masterFloor;}
         
 	
 }

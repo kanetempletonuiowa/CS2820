@@ -7,6 +7,8 @@ package production;
     events for Master event queue
 */
 
+//MIGHT DELETE THIS!
+
 public class Event implements Comparable<Event> {
 	
 	private int fireTime; //events will fire when Master clock reaches this time

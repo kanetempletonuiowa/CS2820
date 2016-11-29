@@ -1,42 +1,35 @@
-// Kane Templeton
-// FloorEntity.java
-
 package production;
 
-import java.awt.Color;
 import java.awt.Graphics;
 
 
 public class FloorEntity {
     
     private Tickable entity;
-    private int xCoordinate,yCoordinate;
     
-    public FloorEntity(Tickable t, int x, int y) {
+    public FloorEntity(Tickable t) {
         entity=t;
-        xCoordinate=x;
-        yCoordinate=y;
     }
     
     public Tickable getTickable() {
         return entity;
     }
     public int getX() {
-        return xCoordinate;
+        return entity.getX();
     }
     public int getY() {
-        return yCoordinate;
+        return entity.getY();
     }
     public void setCoordinates(int x, int y) {
-        xCoordinate=x;
-        yCoordinate=y;
+        entity.setCoordinates(x, y);
     }
     
     public void render(Graphics g) {
-        g.setColor(Color.red);
-            int size = Production.SQUARE_SIZE;
-            g.drawRect(xCoordinate*size, yCoordinate*size, size, size);
-            g.setColor(Color.black);
-            g.fillRect(xCoordinate*size+1, yCoordinate*size+1, size-1, size-1);
+        int size = Production.SQUARE_SIZE;
+        g.drawImage(Constants.getImage(getEntityType()), getX()*size, getY()*size, null);
+    }
+    
+    public int getEntityType() {
+        return entity.getID();
     }
 }

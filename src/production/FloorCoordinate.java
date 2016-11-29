@@ -6,21 +6,19 @@ import java.awt.Graphics;
 public class FloorCoordinate {
     
     private FloorEntity entity;
-    private boolean gfxUpdateRequired;
     private int x,y;
     
     public FloorCoordinate(int x, int y) {
         entity=null;
         this.x=x;
         this.y=y;
-        gfxUpdateRequired=true;
     }
     
     public void setEntity(FloorEntity t){
         entity=t;
     }
     public FloorEntity getEntity(){return entity;}
-    public void setUpdateRequired(boolean b){gfxUpdateRequired=b;}
+    
     public void render(Graphics g) {
         if (entity==null) {
             g.setColor(Color.red);

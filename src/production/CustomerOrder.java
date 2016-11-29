@@ -1,8 +1,6 @@
 package production;
 
 import java.util.ArrayList;
-import production.Item;
-import production.Master;
 
 public class CustomerOrder implements Comparable<CustomerOrder> {
 	ArrayList<Item> itemsInOrder;
