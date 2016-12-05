@@ -3,31 +3,32 @@ package production;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-public class Robot extends Master {
+public class Robot implements Tickable  {
 	//@author: Alex Wang
 	/**
 	 * author: Scott Hoefer (11/2316 )
 	 */
 	int number;
-	Point currentLocation;
+	Cell currentLocation;
 	int size=2;
 	double charge=100.0;
 	String task= "idle";
-	List<Point> route = new LinkedList();
-	Point home;
+	List<Cell> route = new LinkedList();
+	Cell home;
 	Cell robotsCurrentCell;
 	Shelf theGoods= null;
 	Floor f;
-
-	
-	//@author: Alex Wang
+        
+        //@author: Alex Wang
 	//Assigns the robot a unique reference number, as well as it's starting point
-	public Robot(int number, Point p, Floor f){
-		this.number=number;
-		this.currentLocation = p;
-		this.home = p;
-		this.f = f;
-	}
+        public Robot(int n, int x, int y) {
+            this.number=n;
+            this.currentLocation=Production.controls().cell(x, y);
+            this.home=Production.controls().cell(x, y);
+            this.f = Production.getMaster().getMasterFloor();
+            Production.controls().addEntity(this);
+        }
+	
 	
 	//@author: Alex Wang
 	//When sent a route from the floor, set this robot to "active".
@@ -117,7 +118,7 @@ public class Robot extends Master {
 		// send our lil robot friend home to rest, but he can be interrupted on the way with another task (hence the idle setting)
 		this.route = f.getPath(this.currentLocation, this.home);
 		this.task = "idle";
-		super.orders.pickItems(super.orders.currentOrders.get(0), this.theGoods);
+		Production.getMaster().getMasterOrders().pickItems(Production.getMaster().getMasterOrders().currentOrders.get(0), this.theGoods);
 		this.theGoods = null;
 	}
 	
@@ -133,12 +134,19 @@ public class Robot extends Master {
 	
 	//@author: Alex Wang
 	public int getX(){
-		return this.currentLocation.x;
+		return this.currentLocation.getX();
 	}
 	
 	//@author: Alex Wang
 	public int getY(){
-		return this.currentLocation.y;	}
+		return this.currentLocation.getY();	
+        }
+        public void setCoordinates(int x, int y) {
+            Production.controls().moveEntity(this, x, y);
+        }
+        public int getID() {
+            return Constants.ROBOT_ID;
+        }
 
 }
 

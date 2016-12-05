@@ -10,20 +10,20 @@ import java.util.Random;
  */
 public class ShelfArea {
   int width; // height will always be 2 -- just two shelves
-  Point corner;  // lower left corner of shelf area
+  Cell corner;  // lower left corner of shelf area
   List<Cell> areacontents;
   SimRandom randomsource; // for deterministic randomness
   /**
    * @param corner - lower left corner of shelf area
    * @param width - how many squares wide shelf area is
    */
-  ShelfArea(Point corner, int width, SimRandom rand) {
+  ShelfArea(Cell corner, int width, SimRandom rand) {
 	areacontents = new ArrayList<Cell>();
 	randomsource = rand; 
-	this.corner = new Point(corner.x,corner.y);
+	this.corner = new Cell(corner.getX(),corner.getY());
 	this.width = width;
-	for (int i=corner.y-1; i<corner.y+1; i++)
-	 for (int j=corner.x; j<corner.x+width; j++) {
+	for (int i=corner.getY()-1; i<corner.getY()+1; i++)
+	 for (int j=corner.getX(); j<corner.getX()+width; j++) {
 	   areacontents.add(new Cell(j,i));
        }
 	populate();  // fill with shelves
@@ -32,7 +32,7 @@ public class ShelfArea {
    * @return Point in lower left corner of
    * this ShelfArea.
    */
-  Point getCorner() { return corner; }
+  Cell getCorner() { return corner; }
   /**
    * @return width of this ShelfArea
    */
@@ -45,7 +45,7 @@ public class ShelfArea {
    * @return a cell in this ShelfArea
    * at a specified Point (x,y)
    */
-  Cell getCell(Point P) {
+  Cell getCell(Cell P) {
 	for (Cell e: areacontents) {
 	  if (e.equals(P)) return e;
 	  }
@@ -57,43 +57,43 @@ public class ShelfArea {
    */
   void populate() {
 	for (Cell e: areacontents) {
-	  e.setContents(new Shelf(e));
+	  e.setEntity(new Shelf(e.getX(),e.getY()));
 	  }
     }
   /**
    * @return true if point P is within this ShelfArea
    * @param P point to test
    */
-  boolean hasWithin(Point P) {
-	if (P.x < corner.x) return false;
-	if (P.x >= corner.x + width) return false;
-	if (P.y > corner.y) return false;
-	if (P.y < corner.y-1) return false;
+  boolean hasWithin(Cell P) {
+	if (P.getX() < corner.getX()) return false;
+	if (P.getX() >= corner.getX() + width) return false;
+	if (P.getY() > corner.getY()) return false;
+	if (P.getY() < corner.getY()-1) return false;
 	return true;
     }
   /**
    * @return true if cell P has non-null content (robot or shelf)
    */
   boolean occupied(Cell P) {
-	if (this.hasWithin(P) && P.getContents() != null) return true;
+	if (this.hasWithin(P) && P.getEntity()!= null) return true;
 	return false;
     }
   /**
    * @param Object to place in a Point
    * @note if Object is null, then makes Point P empty
    */
-  void setContent(Cell P, Object O) {
+  void setContent(Cell P, Tickable O) {
 	if (!occupied(P) && hasWithin(P)) {
-	  P.setContents(O);	
+	  P.setEntity(O);	
 	  }
     }
   /**
    * @return random Point within this shelfarea
    */
-  Point randomPoint() {
+  Cell randomPoint() {
 	int column = randomsource.nextInt(width);
 	int row = randomsource.nextInt(2);
-	Point P = new Point(corner.x+column,corner.y-row);
+	Cell P = new Cell(corner.getX()+column,corner.getY()-row);
 	assert hasWithin(P);
 	return P;
     }

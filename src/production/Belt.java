@@ -1,115 +1,146 @@
 package production;
 
-import java.util.*;
+import java.awt.Graphics;
+
+class BeltSpace implements Tickable {
+    
+    /*  class BeltSpace
+        @author: Kane Templeton
+        Represents an individual space of the belt.
+        Belt is made of a strip of these spaces on the floor
+    */
+    
+    private int spaceX,spaceY;
+    private Bin bin; //bin of items stored at the belt space
+    
+    public BeltSpace(int x, int y) {
+        spaceX=x;
+        spaceY=y;
+        bin=null;
+    }
+    
+    public void setBin(Bin b){bin=b;}
+    public Bin getBin(){return bin;}
+
+    /*  tick()
+        @author: Kane Templeton
+        transfer bin to the next belt space
+    */
+    public void tick() {
+        Production.getMaster().masterBelt.advanceBin(spaceY);
+    }
+
+    /*  getX(),getY(),setCoordinates(x,y)
+        @author: Kane Templeton
+        not necessary for the belt to function, but they
+        were necessary to implement the Tickable interface
+    */
+    public int getX() {return spaceX;}
+    public int getY() {return spaceY;}
+    public void setCoordinates(int x, int y) {
+        spaceX=x;
+        spaceY=y;
+    }
+    
+    /*  getID()
+        @author: Kane Templeton
+        tells the visualizer which image to use
+        uses the belt image if there is no bin on the space
+        otherwise uses the bin image
+    */
+    public int getID() {
+        if (bin==null)
+            return Constants.BELT_ID;
+        return Constants.BIN_ID;
+    }
+    
+    /*  hasBin()
+        @author: Kane Templeton
+        returns true if the belt space contains a bin of items
+    */
+    public boolean hasBin() {
+        return bin!=null;
+    }
+    
+}
+
 public class Belt implements Tickable {
-	
-  Floor F;
-  List<Point> beltarea;
-  Bin pickerBin;
-
-  /**
-   * @author Ted Herman
-   * @param Floor object.
-   * Floor is needed to find location of belt area, cells etc.
-   */
-  public Belt(Floor F) {
-	this.F = F;
-	beltarea = F.getBeltArea();
-	pickerBin = null;
+    
+    /*  class Belt
+        @author: Kane Templeton
+        Moves bins of items
+    */
+    
+    private FloorEntity[] spaces;
+    
+    public Belt() {
+        spaces = new FloorEntity[Production.FLOOR_SIZE];
+        System.out.println(spaces.length);
+        int x=0;
+        int y=Production.FLOOR_SIZE-1;
+        for (int i=0; i<spaces.length; i++) {
+            BeltSpace s = new BeltSpace(x,y--);
+            spaces[i]=new FloorEntity(s);
+        }
     }
-  
-  /**
-   * the tick() method is where belt moving gets done;
-   * it will have to move any Bin or Parcel within the Cell
-   * of a Belt area to the next Cell, and this has to be done
-   * on all Points of the beltarea in parallel (not coded yet here)
-   * 
-   * after moving the belt, tick() should check to see whether
-   * or not a Bin has arrived at the Packer - then doPacker() 
-   * should be called, which removes the Bin, creates a Parcel 
-   * and puts that Parcel on the belt (in more advanced versions,
-   * one Bin might make more than one Parcel, if Items are too 
-   * big to fit entirely into one Parcel). After the Parcel is
-   * in a Cell at the Packer, the belt will be stopped until some
-   * later tick when the Packer finishes the Parcel.
-   * 
-   * even fancier ideas are to give the Packer a queue of Bins
-   * and remove each Bin that arrives, taking some non-trivial
-   * number of ticks to make Parcels, returning them to the 
-   * beltarea when they are completed
-   * 
-   * and a really thorough Belt would simulate the shipping dock,
-   * collecting a lot of parcels and grouping them into a truck
-   *
-   */
-  public void tick() {
-	// first take care of a finished bin
-	if (pickerBin != null) {
-      if (!pickerBin.isFinished()) return; // belt cannot move
-      Cell c = F.getCell(F.getPicker());   // look into Picker cell
-      if (c.getContents()!=null) return;   // wait for cell to empty
-      c.setContents(pickerBin);
-      pickerBin = null;
-	  }
-	// if belt is movable, loop to copy cells forward
-	if (!isMovable()) return;
-	Object prev = null;  // temporary variable used in copy forward
-	for (Point p: beltarea) {
-	  Cell c = F.getCell(p);
-	  Object t = c.getContents(); // save what it has for next time
-	  c.setContents(prev);        // write over what it was 
-	  prev = t;
-	  }
-	if (prev != null) System.out.println("something dropped off belt");
+    
+    /*  advanceBin(id)
+        @author: Kane Templeton
+        advance bin to the next space on belt
+    */
+    public void advanceBin(int id) {
+        if (id<0) 
+            return;
+        if (id>=spaces.length-1) {
+            BeltSpace finalSpace = belt(spaces.length-1);
+            Bin b = finalSpace.getBin(); //<- use this
+            //TAKE ITEMS OUT OF THE BIN TO SHIP
+            finalSpace.setBin(null);
+            return;
+        }
+        
+        BeltSpace spaceFrom = belt(id);
+        BeltSpace spaceTo = belt(id+1);
+        if (spaceFrom.hasBin()) {
+            spaceTo.setBin(spaceFrom.getBin());
+            spaceFrom.setBin(null);
+        }
     }
-  
-  /**
-   * Local method to see whether belt can be moved
-   */
-  private boolean isMovable() {
-	if (pickerBin != null) return false;  // wait for picker to finish bin
-	for (Point p: beltarea) {
-	  Cell c = F.getCell(p);
-	  Object o = c.getContents();
-	  if (o == null) continue;  // skip empty cell
-	  if ((o instanceof Bin) && !((Bin)o).isFinished()) return false;
-	  if ((o instanceof Parcel) && !((Parcel)o).isFinished()) return false;
-	  }
-	return true;  // nothing stops belt from moving
+    
+    /*  render(g)
+        @author: Kane Templeton
+        render each space in the belt
+    */
+    public void render(Graphics g) {
+        for (FloorEntity e:spaces)
+            e.render(g);
     }
-  
-  /**
-   * Local method doPacker() simulates a Bin arriving to the 
-   * Packer via the belt moving. 
-   */
-  private void doPacker() {
-	Cell c = F.getCell(F.getPacker());
-	Object o = c.getContents();  // get what the Cell has in it
-	assert o instanceof Bin;     // it had better be a Bin
-	Bin b = (Bin)o;              // use the Bin to
-	CustomerOrder v = b.getOrder();      // get the finished Order
-	Parcel n = new Parcel(v);
-	c.setContents(n);  // replace Bin with Parcel on the belt
+    
+    
+    public int getX(){return 0;}
+    public int getY(){return Production.FLOOR_SIZE-1;}
+    public void setCoordinates(int x, int y){} //not necessary
+    public int getID(){return spaces[0].getEntityType();} //not necessary
+    
+    /*  space(y)
+        @author: Kane Templeton
+        returns the Belt Space at spacecs[y]
+        y=0 is the beginning of the belt
+    */
+    private BeltSpace belt(int y) {
+        return (BeltSpace)spaces[y].getTickable();
     }
-  
-  /**
-   * @author Ted Herman
-   * Called by Orders to check whether a new Bin can be safely started
-   */
-  public boolean binAvailable() {
-	if (pickerBin != null) return false;
-	Cell c = F.getCell(F.getPicker());
-	if (c.getContents() != null) return false;
-    return true;
-    }
-  /**
-   * Called by Orders to simulate a Picker starting a new Bin
-   */
-  public Bin getBin() {
-	assert pickerBin == null;
-	pickerBin = new Bin();
-	return pickerBin;
+    
+    
+    
+    /*
+        tick()
+        @author: Kane Templeton
+        belt ticks all of its spaces
+    */
+    public void tick() {
+        for (FloorEntity e:spaces)
+            e.getTickable().tick();
     }
 
-
-  }
+}

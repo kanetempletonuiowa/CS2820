@@ -9,13 +9,10 @@ public class RobotScheduler {
 	
 	//@author: Alex Wang
 	//Add robots, to be changed later w/Floor
-	public RobotScheduler(Floor F){
-		robots.add(new Robot(1, new Point(140, 22), this.F));
-		robots.add(new Robot(2, new Point(140, 24), this.F));
-		//robots.add(new Robot(3, new Point(140, 26)));
-		Cell c = F.getCell(140, 22);
-		c.setContents(robots.get(0));
-		this.F = F;
+	public RobotScheduler(){
+		robots.add(new Robot(1,Constants.ROBOT_X[0],Constants.ROBOT_Y[0]));
+		robots.add(new Robot(2,Constants.ROBOT_X[1],Constants.ROBOT_Y[1]));
+		this.F = Production.getMaster().getMasterFloor();
 	}
 	
 	/**
@@ -25,7 +22,7 @@ public class RobotScheduler {
 	
     public void requestShelf(Shelf s) { 
     	System.out.println("****Robot Scheduler Requesting Shelf");
-		Point target = s.home; // where Shelf sits
+		Cell target = s.getHome(); // where Shelf sits
 		Robot robot = findRobot(); // get some idle robot
 		robot.route = F.getPath(robot.currentLocation,target);
 		robot.task = "toShelf";

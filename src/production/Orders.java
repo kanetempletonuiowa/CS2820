@@ -9,7 +9,7 @@ import production.Item;
  * 
  * @author scott hoefer
  */
-public class Orders extends Master implements Picker {
+public class Orders implements Picker {
 	ArrayList<CustomerOrder> currentOrders;
 	Random rand = new Random();
 	int orderNum;
@@ -55,7 +55,7 @@ public class Orders extends Master implements Picker {
 	 */
 	public void initialOrders(int x) {
 		for (int i=0; i<x; i++) {
-			generateOrder(super.inventory.stock.get(rand.nextInt(super.inventory.stock.size()-1)), "Address");
+			generateOrder(Production.getMaster().getInventory().getRandomItem(), "Address");
 			
 		}
 	}
@@ -67,10 +67,10 @@ public class Orders extends Master implements Picker {
 	}
 
 	public void pickItems(CustomerOrder order, Shelf s) {
-		Bin b = super.belt.getBin();
+		/*Bin b = super.belt.getBin();
 		b.order = this.currentOrders.get(0);
 		b.setFinished();
-		super.output("The picker has placed the items in the bin and moved it onto the best");
-		this.belt.tick();
+		Production.output("The picker has placed the items in the bin and moved it onto the best");
+		this.belt.tick();*/
 	}
 }

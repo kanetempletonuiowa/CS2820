@@ -1,36 +1,40 @@
+// Kane Templeton
+// Shelf.java
+
 package production;
 
 
-/**
- * 
- * @author Ted Herman
- */
-public class Shelf {
-  private boolean resting; // true if not being carried by a robot
-  Point home;              // home location of shelf
-  /**
-   * Constructor needs home Point where shelf is born and 
-   * returns after moving around
-   */ 
-  public Shelf(Point home) {
-	this.home = new Point(home.x,home.y);
-	resting = true;        // initially sits on Floor
+public class Shelf implements Tickable {
+    
+    private int homeX,homeY;
+    private int curX,curY;
+    private boolean onFloor;
+    
+    public Shelf(int x, int y) {
+        homeX=x;
+        homeY=y;
+        curX=x;
+        curY=y;
+        onFloor=true;
+        Production.controls().addEntity(this);
     }
-  /**
-   * @return true if this Shelf is resting on the floor
-   */
-  public boolean onFloor() { return resting; }
-  /**
-   * pickup() is called by RobotScheduler, when a Robot comes
-   * to the shelf and "picks it up" for moving; putdown() is 
-   * similarly called when a Robot delivers the shelf back to
-   * its home location.
-   */
-  public void pickup() {
-	resting = false;
+    
+    public boolean onFloor(){return onFloor;}
+    public void pickup(){onFloor=false;}
+    public void putdown(){onFloor=true;}
+    public Cell getHome() {
+        return Production.controls().cell(homeX, homeY);
     }
-  public void putdown() {
-	resting = true;
+    
+    public int getX(){return curX;}
+    public int getY(){return curY;}
+    public void setCoordinates(int x, int y) {
+        curX=x;
+        curY=y;
     }
-  public String toString() { return "Shelf"; }
-  }
+    public int getID() {
+        return Constants.SHELF_ID;
+    }
+    public void tick(){}
+
+}

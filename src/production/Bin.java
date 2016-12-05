@@ -1,19 +1,31 @@
 package production;
 
-/**
- * 
- * @author Ted Herman
- * 
- * A Bin contains an Order that has all its items ready to go
- *
- */
-public class Bin {
-  CustomerOrder order;  // ready to go on the Belt
-  boolean finished;  // initially false, becomes true when ready to go
-  public Bin() { order = null; finished = false; }
-  public boolean isFinished() { return finished; }
-  public void setFinished() { finished = true; }
-  public CustomerOrder getOrder() { return order; }
-  public void setOrder(CustomerOrder o) { order = o; }
-  public String toString() { return "Bin"; }
-  }
+import java.util.LinkedList;
+
+
+public class Bin{
+     /* class Bin
+        @author: Kane Templeton
+        bin of items to be transferred on belt
+     */
+    
+    private LinkedList<Item> itemsContained;
+    
+    public Bin() {
+        itemsContained = new LinkedList<>();
+    }
+    
+    public void addItem(Item I) {
+        itemsContained.addLast(I);
+    }
+    
+    public Item removeItem() {
+        return itemsContained.removeFirst();
+    }
+    
+    public int numberOfItems() {return itemsContained.size();}
+    
+    public LinkedList<Item> containedItems(){return itemsContained;}
+    
+
+}

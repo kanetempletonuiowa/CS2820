@@ -11,7 +11,7 @@ import production.Master;
  * @author scott hoefer
  *
  */
-public class CustomerOrder extends Master implements Event {
+public class CustomerOrder  {
 	ArrayList<Item> itemsInOrder = new ArrayList<Item>();
 	String address;
 	String status;
@@ -74,21 +74,18 @@ public class CustomerOrder extends Master implements Event {
 	/**
 	 * @author scott hoefer 
 	 */
-	@Override
 	public void fire() {
-		super.output("Order Received...");
+		Production.controls().output("Order Received...");
 		Shelf s = itemsInOrder.get(0).getPlace();
-		super.robotSched.requestShelf(s);
-		super.output("Sending robot to retrieve shelf...");
+		Production.getMaster().getRobotScheduler().requestShelf(s);
+		Production.controls().output("Sending robot to retrieve shelf...");
 		
 	}
 
-	@Override
 	public int getFireTime() {
 		return this.fireTime;
 	}
 
-	@Override
 	public void setFireTime(int t) {
 		this.fireTime = t;
 	}

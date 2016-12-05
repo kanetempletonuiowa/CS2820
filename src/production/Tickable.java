@@ -1,6 +1,5 @@
 package production;
 
-import production.Event;
 
 /*
     Tickable
@@ -16,5 +15,10 @@ public interface Tickable {
         logic for every "tick" of the simulation's master clock
     */
     public void tick();
+    
+    public int getX();
+    public int getY();
+    public int getID();
+    public void setCoordinates(int x, int y);
 
 }

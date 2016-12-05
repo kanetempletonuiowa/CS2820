@@ -1,53 +1,45 @@
 package production;
 
-/**
- * 
- * @author Ted Herman
- * Cell is an extension (subclass) of Point which also has 
- * possible content (a Robot or Shelf). Floor should be "in charge"
- * of having all the Cell objects, and Robot, Orders, Inventory, 
- * maybe even Belt should update Cell objects using methods of Floor
- *
- */
-public class Cell extends Point {
-  private Object contents;  // Robot or Shelf
-  private Robot  shadow;    // could be Robot at same place as Shelf
-  Cell(int x, int y) {
-	super(x,y); contents = null; shadow = null;
-	}
-  Object getContents() {
-	return contents;
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Cell {
+    
+    private FloorEntity entity;
+    private boolean gfxUpdateRequired;
+    private int x,y;
+    
+    public Cell(int x, int y) {
+        entity=null;
+        this.x=x;
+        this.y=y;
+        gfxUpdateRequired=true;
     }
-  Robot getShadow() {
-	return shadow;
+    
+    public void setEntity(Tickable t) {
+        entity=new FloorEntity(t);
     }
-  void setShadow(Robot R) {
-	shadow = R;
+    
+    public void setEntity(FloorEntity t){
+        entity=t;
     }
-  void setContents(Object O) {
-	contents = O;  
+    public FloorEntity getEntity(){return entity;}
+    public void setUpdateRequired(boolean b){gfxUpdateRequired=b;}
+    public void render(Graphics g) {
+        if (entity==null) {
+            g.setColor(Color.red);
+            int size = Production.SQUARE_SIZE;
+            g.drawRect(x*size, y*size, size, size);
+            g.setColor(Color.blue);
+            g.fillRect(x*size+1, y*size+1, size-1, size-1);
+        }
+        else {
+            entity.render(g);
+        }
     }
-  /**
-   * Display Cell as a string
-   */
-  public String toString() {
-    String result = super.toString();
-    if (contents instanceof Robot) result += " contains Robot";
-    if (contents instanceof Shelf) result += " contains Shelf";
-    if (contents instanceof Bin) result += " contains Bin";
-    if (contents instanceof Parcel) result += " contains Parcel";
-    return result;
-    }
-  /**
-   * Provide a clone() method for Visualizer; this code has a 
-   * BUG - the clone is not a deep copy (to make it a deep copy,
-   * things like Robot, Shelf, etc, would all need to implement
-   * clone as well).
-   */
-  public Object clone() {
-	Cell n = new Cell(this.x,this.y);
-	n.contents = this.contents;
-	n.shadow = this.shadow;
-	return n;
-    }
-  }
+    
+    public int getX() {return x;}
+    public int getY() {return y;}
+    
+    
+}

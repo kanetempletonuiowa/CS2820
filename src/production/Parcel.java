@@ -23,7 +23,3 @@ public class Parcel {
   public String toString() { return "Parcel"; }
   }
 
-
-
-
-// addy, list of items 

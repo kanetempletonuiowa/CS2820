@@ -1,29 +1,44 @@
-// Kane Templeton
-// Production.java
-
 package production;
+
+import java.io.IOException;
+
+/*  MASTER TODO:
+    - add path finding to floor
+    - master orders working
+    - inventory
+    - shelves containing items
+    - finish this todo list
+*/
+
 
 
 public class Production {
     
-    private static Master master;
+    private static ControlPanel panel;
+    private static Visualizer visualizer;
+
+    public static final int SQUARE_SIZE=32;
+    public static final int FLOOR_SIZE=20;
     
-    public static void main(String[] args) {
-        master = new Master();
-        master.orders.initialOrders(2);
-        master.start();
+    
+    public static void main(String[] args) throws IOException {
+        panel = new ControlPanel();
+        Master M = new Master();
+        M.initializeEvents();
+        init();
+        panel.getMaster().start();
+    }
+    
+    public static void init() throws IOException {
+        Constants.initImages();
+        visualizer = new Visualizer(FLOOR_SIZE*SQUARE_SIZE,FLOOR_SIZE*SQUARE_SIZE);
     }
     
     public static Master getMaster() {
-        return master;
+        return panel.getMaster();
     }
     
-    public static void output(String msg) {
-        master.output(msg);
-    }
-    
-    public static void addEvent(Event e) {
-        master.addEvent(e);
-    }
+    public static ControlPanel controls(){return panel;}
+    public static Visualizer getVisualizer() {return visualizer;}
 
 }
