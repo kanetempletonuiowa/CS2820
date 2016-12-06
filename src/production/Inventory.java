@@ -8,7 +8,7 @@ import java.util.Random;
 
 /**
  * 
- * @author scott hoefer (wrote everything unless otherwise noted above a certain method)
+ * @author scott hoefer 
  * 
  */
 public class Inventory {
@@ -20,7 +20,7 @@ public class Inventory {
     }
     
     /**
-     * 
+     * @author scott hoefer
      * @param Item 
      * @return true is item is in stock, false otherwise. 
      * 
@@ -31,7 +31,7 @@ public class Inventory {
     }
     
     /**
-     * 
+     * @author scott hoefer
      * @param an instance of the Item class
      * @return The shelf containing that item, or null if out of stock
      * 
@@ -52,7 +52,7 @@ public class Inventory {
     }
     
     /**
-     * 
+     * @author scott hoefer
      * @param i is the item to be removed 
      * @param q is the quantity of that item to be removed
      * 
@@ -68,7 +68,7 @@ public class Inventory {
     }
     
     /**
-     * 
+     * @author scott hoefer
      * @return a random item from the catalog
      */
     public Item getRandomItem() {
@@ -112,7 +112,7 @@ public class Inventory {
     }
     
     /**
-     * 
+     * @author scott hoefer
      * @param co - an instance of the CustomerOrder class
      * @return the shelf which contains the most items from the given CustomerOrder
      */
@@ -131,7 +131,7 @@ public class Inventory {
 	}
 
 	/**
-	 * 
+	 * @author scott hoefer
 	 * @param item - instance of the Item class, of which we will add 5 to our current Stock and place on shelves
 	 * 
 	 * Called when inStock == false for an item, it replenishes its stock
