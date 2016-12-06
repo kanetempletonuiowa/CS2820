@@ -33,6 +33,8 @@ public class CustomerOrder  {
 	 * 
 	 * @author scott hoefer
 	 * @param An instance of the Item class
+	 * 
+	 * This will add the item to this CustomerOrder instance
 	 */
 	public void addItemsToOrder(Item i) {
 		itemsInOrder.add(i);

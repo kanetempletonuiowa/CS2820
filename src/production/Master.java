@@ -1,5 +1,6 @@
 package production;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 /*
@@ -25,7 +26,7 @@ public class Master {
         private Inventory inventory;
         
         
-        public Master() {
+        public Master() throws FileNotFoundException {
             Production.controls().setMaster(this);
             masterOrders = new Orders();
             //initialize orders here

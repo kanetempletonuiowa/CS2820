@@ -1,5 +1,7 @@
 package production;
 
+import java.io.FileNotFoundException;
+
 import production.Master;
 /**
  * 
@@ -17,7 +19,7 @@ public class Item extends Master {
 	 * @param n - an integer representing the Item number or item id or serial number or whatevs 
 	 * @param d - The string description for the item
 	 */
-	public Item (int n, String d) {
+	public Item (int n, String d) throws FileNotFoundException {
 		this.itemNum = n;
 		this.description = d;
 		this.location = null;
