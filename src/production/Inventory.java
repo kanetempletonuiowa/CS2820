@@ -18,6 +18,7 @@ public class Inventory {
 
 /**
  * 
+ * 
  * @author Ted Herman
  *
  * A local class to be the catalog of available
