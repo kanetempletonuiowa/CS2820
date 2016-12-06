@@ -36,8 +36,11 @@ public class Floor {
         shelves = new Shelf[SHELVES_PER_ROW*Constants.SHELF_START.length];
         int k=0;
         for (int i=0; i<Constants.SHELF_START.length; i++) {
-            for (int j=Constants.SHELF_START[i][0]; j<Constants.SHELF_START[i][0]+SHELVES_PER_ROW; j++)
-                shelves[k++]= new Shelf(j,Constants.SHELF_START[i][1]);
+            for (int j=Constants.SHELF_START[i][0]; j<Constants.SHELF_START[i][0]+SHELVES_PER_ROW; j++) {
+                shelves[k]= new Shelf(j,Constants.SHELF_START[i][1]);
+                shelves[k].setIndex(k);
+                k++;
+            }
         }
         picker = new FloorPicker(1,Constants.PICKER_POS);
         packer = new FloorPacker(1,Constants.PACKER_POS);
@@ -230,6 +233,9 @@ public class Floor {
 
     public int getNumShelfAreas() {
         return Constants.SHELF_START.length;
+    }
+    public int numberOfShelves() {
+        return Constants.SHELF_START.length*SHELVES_PER_ROW;
     }
 
 

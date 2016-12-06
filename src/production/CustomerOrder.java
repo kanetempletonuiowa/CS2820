@@ -24,7 +24,7 @@ public class CustomerOrder  {
 	// constructor
 	CustomerOrder(Item i, String address, int orderNumber) {
 		this.address = address;
-		this.status = "pending";
+		this.status = Constants.PENDING;
 		this.number = orderNumber;
 		itemsInOrder.add(i);
 		this.fireTime = rand.nextInt(60);

@@ -25,7 +25,7 @@ public class Master {
         private Inventory inventory;
         
         
-        private static final int TICK_SPEED_MS=250;
+        private static final int TICK_SPEED_MS=100;
         
         public Master() {
             

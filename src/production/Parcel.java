@@ -11,8 +11,8 @@ public class Parcel {
    * A Parcel has an address and a list of Items
    *
    */
-  String address;
-LinkedList<Item> items;
+    String address;
+    LinkedList<Item> items;
   boolean finished;
   public Parcel(CustomerOrder o) { 
 	this.address = o.address;
