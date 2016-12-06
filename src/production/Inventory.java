@@ -21,6 +21,7 @@ public class Inventory {
  * 
  * @author Ted Herman
  *
+ *
  * A local class to be the catalog of available
  * items that Inventory can use: CatItem.catalog
  * is an array of CatItem objects, each with an
