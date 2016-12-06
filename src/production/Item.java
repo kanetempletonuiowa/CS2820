@@ -14,7 +14,8 @@ public class Item extends Master {
 	/**
 	 * 
 	 * @author Scott Hoefer
-	 *
+	 * @param n - an integer representing the Item number or item id or serial number or whatevs 
+	 * @param d - The string description for the item
 	 */
 	public Item (int n, String d) {
 		this.itemNum = n;
