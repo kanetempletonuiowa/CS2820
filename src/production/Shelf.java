@@ -3,12 +3,14 @@
 
 package production;
 
+import java.util.ArrayList;
 
 public class Shelf implements Tickable {
     
     private int homeX,homeY;
     private int curX,curY;
     private boolean onFloor;
+    ArrayList<Item> itemsOnShelf;
     
     public Shelf(int x, int y) {
         homeX=x;
@@ -16,6 +18,7 @@ public class Shelf implements Tickable {
         curX=x;
         curY=y;
         onFloor=true;
+        itemsOnShelf = new ArrayList<Item>();
         Production.controls().addEntity(this);
     }
     

@@ -3,17 +3,147 @@
 
 package production;
 
+import java.util.ArrayList;
+import java.util.Random;
 
+/**
+ * 
+ * @author scott hoefer (wrote everything unless otherwise noted above a certain method)
+ * 
+ */
 public class Inventory {
+	ArrayList<Item> Stock;
+	private Random r = new Random();
     
     public Inventory() {
-        
+        Stock = new ArrayList<Item>();
     }
     
-    public Item getRandomItem() {
-        return null;
+    /**
+     * 
+     * @param Item 
+     * @return true is item is in stock, false otherwise. 
+     * 
+     */
+    public boolean inStock(Item i) {
+    	if (Stock.contains(i)) { return true; }
+    	else return false;
     }
+    
+    /**
+     * 
+     * @param an instance of the Item class
+     * @return The shelf containing that item, or null if out of stock
+     * 
+     */
+    public Shelf getShelf(Item i) {
+    	if (this.inStock(i)) {
+    		for (Shelf s : Production.getMaster().masterFloor.shelves) {
+    			if (s.itemsOnShelf.contains(i)) { 
+    				Production.getMaster().output("Retrieving Item from shelf " + s.getID()); 
+    				return s; 
+    			}
+    		}
+    	}
+    	Production.getMaster().output("Item not in stock. Requesting restock");
+    	// this will restock the item 
+    	this.stockItem(i);
+		return null;
+    }
+    
+    /**
+     * 
+     * @param i is the item to be removed 
+     * @param q is the quantity of that item to be removed
+     * 
+     *  this will remove the desired amount of the given item from both the global inStock and the shelf 
+     *  which is carrying its personal itemsOnShelf
+     */
+    public void removeItem(Item i, int q) {
+    	for (int j=0; j<q; j++) {
+    		if (this.inStock(i)) {
+    			Stock.remove(i);
+    		}
+    	}
+    }
+    
+    /**
+     * 
+     * @return a random item from the catalog
+     */
+    public Item getRandomItem() {
+    	int x = r.nextInt(CatItem.catalog.length);
+    	Item randItem = new Item(CatItem.catalog[x].id, CatItem.catalog[x].description);
+    	return randItem;
+    }
+    
+    /**
+     * 
+     * @param item - the item to be added to the inventory
+     * @param n - the number of that item to add
+     * 
+     * This adds the desired amount of item to Stock and places it on a shelf
+     */
+    public void addItem(Item item, int n) {
+    	int whichShelf = r.nextInt(3);
+    	for (int i=0; i<n; i++) {
+    		Production.getMaster().masterFloor.shelves[whichShelf].itemsOnShelf.add(item);
+    		this.Stock.add(item);
+    	}
+    }
+    
+    /**
+     * @author scott hoefer
+     * 
+     * this will initially stock the inventory and place each item on a shelf. 
+     * inStock is the global list of items on every shelf in the warehouse.
+     * Each shelf also has a list of items on that particular shelf. 
+     */
+    public void stockShelves() {
+    	for (CatItem ci : CatItem.catalog) {
+        	int quantity = r.nextInt(5) +1; // will stock 1-5 of each item
+    		for (int i = 0; i < quantity; i++){
+    			Item n = new Item(ci.id, ci.description);
+    			int whichShelf = r.nextInt(3);
+    			Production.getMaster().masterFloor.shelves[whichShelf].itemsOnShelf.add(n);
+    			this.Stock.add(n);
+    		}
+    	}
+    }
+    
+    /**
+     * 
+     * @param co - an instance of the CustomerOrder class
+     * @return the shelf which contains the most items from the given CustomerOrder
+     */
+	public Shelf maxShelf(CustomerOrder co) {
+		int max = 0;
+		Shelf most = null; // this will be the shelf with the most items in co on it
+		for (Shelf s : Production.getMaster().masterFloor.shelves) {
+			int n = 0;
+			for (Item i : co.itemsInOrder) {
+				// all items of the same type are on the same shelf i.e. all digital cameras are placed on one shelf when added
+				if (s.itemsOnShelf.contains(i)) n++;
+			}
+			if (n > max) most = s;
+		}
+		return most;
+	}
 
+	/**
+	 * 
+	 * @param item - instance of the Item class, of which we will add 5 to our current Stock and place on shelves
+	 * 
+	 * Called when inStock == false for an item, it replenishes its stock
+	 */
+	public void stockItem(Item item) {
+		// I will have it just automatically stock 5 of an Item if we run out
+		for (int i=0; i< 5; i++) {
+			this.Stock.add(item);
+			int whichShelf = r.nextInt(3);
+			Production.getMaster().masterFloor.shelves[whichShelf].itemsOnShelf.add(item);
+		}
+	}
 }
 
 /**
@@ -425,5 +555,6 @@ class CatItem {
     new CatItem(920567,"iPad Back Cover"),
     new CatItem(305144,"iPad Blender"),
     new CatItem(743421,"iPhone/iPod Stereo"),
-    };  
-  }
+    };
+}
+  

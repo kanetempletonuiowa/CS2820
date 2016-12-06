@@ -16,7 +16,7 @@ public class Floor {
     
     private FloorPicker picker;
     private FloorPacker packer;
-    private Shelf shelves[];
+    Shelf[] shelves;
         
     public Floor(int l, int w) {
         length=l;
