@@ -74,10 +74,21 @@ public class Constants {
     
     
     //Floor stuff
-    public static final int ROBOT_X[] = {15,15};
-    public static final int ROBOT_Y[] = {6,8};
-    public static final int SHELF_START[][] = {{5,5},{5,7},{5,9}};
+    public static final int ROBOT_X[] = {19,18};
+    public static final int ROBOT_Y[] = {0,0};
+    public static final int SHELF_START[][] = {{5,5},{5,10}};
     public static final int PACKER_POS = 5;
     public static final int PICKER_POS = 15;
+    
+    //order status
+    public static final String PENDING = "pending";
+    public static final String COMPLETE = "complete";
+    
+    //path types
+    public static final int STANDARD=0;
+    public static final int GRAB_SHELF=1;
+    public static final int DELIVER_SHELF=2;
+    public static final int RETURN_SHELF=3;
+    public static final int CHARGE=4;
 
 }

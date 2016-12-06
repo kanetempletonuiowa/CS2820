@@ -1,6 +1,7 @@
 package production;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Random;
 
 import production.Item;
@@ -12,7 +13,7 @@ import production.Master;
  *
  */
 public class CustomerOrder  {
-	ArrayList<Item> itemsInOrder = new ArrayList<Item>();
+	LinkedList<Item> itemsInOrder = new LinkedList<Item>();
 	String address;
 	String status;
 	int number;
@@ -59,9 +60,16 @@ public class CustomerOrder  {
 	/**
 	 * @author scott hoefer 
 	 */
-	public ArrayList<Item> getOrderItems() {
+	public LinkedList<Item> getOrderItems() {
 		return this.itemsInOrder;
 	}
+        
+        public Item removeNextItem() {
+            return itemsInOrder.removeFirst();
+        }
+        public Item nextItem() {
+            return itemsInOrder.getFirst();
+        }
 	
 	/**
 	 * @author scott hoefer

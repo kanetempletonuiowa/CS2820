@@ -1,6 +1,7 @@
 package production;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Parcel {
   /**
@@ -11,7 +12,7 @@ public class Parcel {
    *
    */
   String address;
-  ArrayList<Item> items;
+LinkedList<Item> items;
   boolean finished;
   public Parcel(CustomerOrder o) { 
 	this.address = o.address;

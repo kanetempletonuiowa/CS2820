@@ -78,6 +78,14 @@ public class ControlPanel {
         return master.getMasterFloor().getCell(x, y);
     }
     
+    public Cell cell(Tickable T) {
+        return master.getMasterFloor().getCell(T.getX(), T.getY());
+    }
+    
+    public Robot getRobot() {
+        return Production.getMaster().getMasterFloor().getRobot();
+    }
+    
     public Master getMaster(){return master;}
     public void setMaster(Master M) {
         master=M;

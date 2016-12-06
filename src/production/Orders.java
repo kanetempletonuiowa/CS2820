@@ -1,6 +1,7 @@
 package production;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Random;
 import production.Master;
 import production.Item;
@@ -10,7 +11,7 @@ import production.Item;
  * @author scott hoefer
  */
 public class Orders implements Picker {
-	ArrayList<CustomerOrder> currentOrders;
+	LinkedList<CustomerOrder> currentOrders;
 	Random rand = new Random();
 	int orderNum;
 	
@@ -21,7 +22,7 @@ public class Orders implements Picker {
 	 */
 	// constructor 
 	public Orders() {
-		this.currentOrders = new ArrayList<CustomerOrder>();
+		this.currentOrders = new LinkedList<CustomerOrder>();
 		this.orderNum = 0;
 	}
 	
@@ -43,8 +44,7 @@ public class Orders implements Picker {
 	 * 
 	 */
 	public void enqueueOrder(CustomerOrder order) {
-		currentOrders.add(order);
-		//Master.addEvent(order); <- TODO: add event to queue
+		currentOrders.addLast(order);
 	}
 	
 	/**
@@ -55,8 +55,7 @@ public class Orders implements Picker {
 	 */
 	public void initialOrders(int x) {
 		for (int i=0; i<x; i++) {
-			generateOrder(Production.getMaster().getInventory().getRandomItem(), "Address");
-			
+                    generateOrder(Production.getMaster().getInventory().getRandomItem(), "Address");
 		}
 	}
 
@@ -73,4 +72,21 @@ public class Orders implements Picker {
 		Production.output("The picker has placed the items in the bin and moved it onto the best");
 		this.belt.tick();*/
 	}
+        
+        public CustomerOrder nextOrder() {
+            CustomerOrder O = currentOrders.removeFirst();
+            Item I = O.nextItem();
+            Production.getMaster().getInventory().addItem(I, 1);
+            return O;
+        }
+        public boolean hasNext() {
+            return currentOrders.size()>0;
+        }
+        public boolean ordersToComplete() {
+            if (hasNext())
+                return true;
+            return !Production.getMaster().currentOrder.status.equals(Constants.COMPLETE);
+        }
+        
+        
 }

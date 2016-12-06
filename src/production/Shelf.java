@@ -28,6 +28,9 @@ public class Shelf implements Tickable {
     public Cell getHome() {
         return Production.controls().cell(homeX, homeY);
     }
+    public Cell pickupSpace() {
+        return getHome().above();
+    }
     
     public int getX(){return curX;}
     public int getY(){return curY;}

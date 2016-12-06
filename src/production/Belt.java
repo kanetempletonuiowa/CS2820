@@ -75,7 +75,6 @@ public class Belt implements Tickable {
     
     public Belt() {
         spaces = new FloorEntity[Production.FLOOR_SIZE];
-        System.out.println(spaces.length);
         int x=0;
         int y=Production.FLOOR_SIZE-1;
         for (int i=0; i<spaces.length; i++) {

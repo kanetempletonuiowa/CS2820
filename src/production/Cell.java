@@ -43,6 +43,19 @@ public class Cell {
         }
     }
     
+    public Cell under() {
+        return Production.controls().cell(x, y+1);
+    }
+    public Cell above() {
+        return Production.controls().cell(x, y-1);
+    }
+    public Cell left() {
+        return Production.controls().cell(x-1, y);
+    }
+    public Cell right() {
+        return Production.controls().cell(x+1, y);
+    }
+    
     public int getX() {return x;}
     public int getY() {return y;}
     

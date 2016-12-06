@@ -14,7 +14,7 @@ public class Master {
         private int clockTime;
         
 	
-        private ArrayList<CustomerOrder> activeOrders;
+        public CustomerOrder currentOrder; //current order being processed
         
         public Orders masterOrders;
         public Floor masterFloor;
@@ -25,21 +25,28 @@ public class Master {
         private Inventory inventory;
         
         
+        private static final int TICK_SPEED_MS=250;
+        
         public Master() {
+            
             Production.controls().setMaster(this);
+            
             masterOrders = new Orders();
-            //initialize orders here
-            
-            //
-            
-            
-            addInitialEntities();
-            
             scheduler = new RobotScheduler();
             inventory = new Inventory();
             
-            
+            addInitialEntities();
+                        
+            masterOrders.initialOrders(2);
+            firstOrder();
             clockTime=0;
+        }
+        
+        private void firstOrder() {
+            currentOrder=masterOrders.nextOrder();
+            Shelf S = inventory.getShelf(currentOrder.nextItem());
+            Path P = new Path(Production.controls().getRobot(),S.pickupSpace(),Constants.GRAB_SHELF);
+            scheduler.setRobotPath(P);
         }
         
         /*  addInitialEntities()
@@ -49,7 +56,6 @@ public class Master {
         private void addInitialEntities() {
             masterFloor = new Floor(20,20);
             masterFloor.initFloor();
-            
             
             masterBelt = new Belt();
             masterFloor.addNewEntity(masterBelt);
@@ -80,25 +86,60 @@ public class Master {
 	}
 	
         
+        public void completeOrder() {
+            currentOrder.status=Constants.COMPLETE;
+        }
+        
         /*  run()
             @author: Kane Templeton
             contains the running loop for the simulation
         */
 	private void run() {
             double clock=System.currentTimeMillis();
+            double stopDelay=5;
             while (running) {
-                //create a reasonable time structure, time incrememts approx. every second
-                if (System.currentTimeMillis()-clock >= 1000) {
+                if (System.currentTimeMillis()-clock >= TICK_SPEED_MS) {
                     clockTime++;
                     clock=System.currentTimeMillis();
                     for (FloorEntity e:masterFloor.getEntities()) //tick active tickable entities
                         e.getTickable().tick();
+                    
+                    if (masterOrders.ordersToComplete()) {
+                        if (currentOrder.status.equals(Constants.COMPLETE)) {
+                            currentOrder = masterOrders.nextOrder();
+                            Shelf S = inventory.getShelf(currentOrder.nextItem());
+                            Path P = new Path(Production.controls().getRobot(),S.pickupSpace(),Constants.GRAB_SHELF);
+                            scheduler.setRobotPath(P);
+                        }
+                    }
+                    else {
+                        stop();
+                    }
+                    
+                    /*if (currentOrder.statusUpdate().equals(Constants.COMPLETE)) {
+                        output("Order #"+currentOrder.number+" has been shipped to "+currentOrder.address);
+                        if (!masterOrders.hasNext()) {
+                            if (stopDelay==0)
+                                stop();
+                            else stopDelay--;
+                        }
+                        else 
+                            currentOrder = masterOrders.nextOrder();
+                        
+                    } 
+                    else {
+                        //process pending orders
+                        if (masterFloor.getRobot().walkPath==null) {
+                            Shelf S = inventory.getShelf(currentOrder.nextItem());
+                            scheduler.setRobotPath(S.pickupSpace());
+                        }
+        
+                    }*/
                                         
                 }
                 
                 //render everything
-                Production.getVisualizer().render();
-                
+                Production.getVisualizer().render(); 
                 
             }
 	}

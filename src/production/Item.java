@@ -6,7 +6,7 @@ import production.Master;
  * @author Scott Hoefer
  *
  */
-public class Item extends Master {
+public class Item  {
 	protected int itemNum;
 	protected String description;
 	public Shelf location;
