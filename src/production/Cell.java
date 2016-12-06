@@ -6,14 +6,14 @@ import java.awt.Graphics;
 public class Cell {
     
     private FloorEntity entity;
-    private boolean gfxUpdateRequired;
+    private boolean walkable;
     private int x,y;
     
     public Cell(int x, int y) {
         entity=null;
         this.x=x;
         this.y=y;
-        gfxUpdateRequired=true;
+        walkable=true;
     }
     
     public void setEntity(Tickable t) {
@@ -23,8 +23,13 @@ public class Cell {
     public void setEntity(FloorEntity t){
         entity=t;
     }
+    
+    public boolean walkable() {
+        return entity==null;
+    }
+    
     public FloorEntity getEntity(){return entity;}
-    public void setUpdateRequired(boolean b){gfxUpdateRequired=b;}
+    
     public void render(Graphics g) {
         if (entity==null) {
             g.setColor(Color.red);

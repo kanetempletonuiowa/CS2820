@@ -30,8 +30,6 @@ public class Constants {
      */
     public static BufferedImage getImage(int id) {
         switch (id) {
-            case MOCK_ID:
-                return IMG_Mock;
             case BELT_ID:
                 return IMG_Belt;
             case BIN_ID:
@@ -52,7 +50,6 @@ public class Constants {
     
     
     //Images
-    private static BufferedImage IMG_Mock;
     private static BufferedImage IMG_Belt;
     private static BufferedImage IMG_Bin;
     private static BufferedImage IMG_Robot;
@@ -64,13 +61,12 @@ public class Constants {
         load image data from files
     */
     public static void initImages() throws IOException {
-        IMG_Mock = ImageIO.read(new FileInputStream("images/mock.png"));
-        IMG_Belt = ImageIO.read(new FileInputStream("images/belt.png"));
-        IMG_Bin = ImageIO.read(new FileInputStream("images/bin.png"));
-        IMG_Robot = ImageIO.read(new FileInputStream("images/robot.png"));
-        IMG_Shelf = ImageIO.read(new FileInputStream("images/shelf.png"));
-        IMG_Picker = ImageIO.read(new FileInputStream("images/picker.png"));
-        IMG_Packer = ImageIO.read(new FileInputStream("images/packer.png"));
+        IMG_Belt = ImageIO.read(new FileInputStream("img/Belt.png"));
+        IMG_Bin = ImageIO.read(new FileInputStream("img/Bin.png"));
+        IMG_Robot = ImageIO.read(new FileInputStream("img/Robot.png"));
+        IMG_Shelf = ImageIO.read(new FileInputStream("img/Shelf.png"));
+        IMG_Picker = ImageIO.read(new FileInputStream("img/Picker.png"));
+        IMG_Packer = ImageIO.read(new FileInputStream("img/Packer.png"));
     }
     
     

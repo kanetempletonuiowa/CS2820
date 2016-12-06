@@ -2,6 +2,7 @@ package production;
 
 import java.awt.Point;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 
@@ -81,8 +82,52 @@ public class Floor {
         return grid[x][y];
     }
     
+    /*  getPath(start, end)
+        @author: Kane Templeton
+        returns a list of cells that defines a walking path from start to end
+        note: for this to work, floor must not have any 'dead ends'
+    */
     public List<Cell> getPath(Cell start, Cell end) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int x = start.getX();
+        int y = start.getY();
+        int endX = end.getX();
+        int endY = end.getY();
+        boolean unreachable = false;
+        LinkedList<Cell> path = new LinkedList();
+        path.addLast(start);
+        while (x!=endX&&y!=endY||!unreachable) {
+            if (x>endX) { //must walk left
+                Cell c = Production.controls().cell(x-1, y);
+                if (c.walkable()) {
+                    path.addLast(c);
+                    x--;
+                }
+            }
+            else if (x<endX) { //must walk right
+                Cell c = Production.controls().cell(x+1, y);
+                if (c.walkable()) {
+                    path.addLast(c);
+                    x++;
+                }
+            }
+            if (y>endY) { //must walk up
+                Cell c = Production.controls().cell(x, y-1);
+                if (c.walkable()) {
+                    path.addLast(c);
+                    y--;
+                }
+            }
+            else if (y<endY) {
+                Cell c = Production.controls().cell(x, y+1);
+                if (c.walkable()) {
+                    path.addLast(c);
+                    y++;
+                }
+            }
+        }
+        
+        
+        return path;
     }
     
     
