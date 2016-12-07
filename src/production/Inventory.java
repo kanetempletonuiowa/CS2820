@@ -1,8 +1,9 @@
-// Kane Templeton
+
 // Inventory.java
 
 package production;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -70,8 +71,9 @@ public class Inventory {
     /**
      * @author scott hoefer
      * @return a random item from the catalog
+     * @throws FileNotFoundException 
      */
-    public Item getRandomItem() {
+    public Item getRandomItem() throws FileNotFoundException {
     	int x = r.nextInt(CatItem.catalog.length);
     	Item randItem = new Item(CatItem.catalog[x].id, CatItem.catalog[x].description);
     	return randItem;
@@ -98,8 +100,9 @@ public class Inventory {
      * this will initially stock the inventory and place each item on a shelf. 
      * inStock is the global list of items on every shelf in the warehouse.
      * Each shelf also has a list of items on that particular shelf. 
+     * @throws FileNotFoundException 
      */
-    public void stockShelves() {
+    public void stockShelves() throws FileNotFoundException {
     	for (CatItem ci : CatItem.catalog) {
         	int quantity = r.nextInt(5) +1; // will stock 1-5 of each item
     		for (int i = 0; i < quantity; i++){

@@ -159,7 +159,7 @@ public class Robot implements Tickable  {
 		// send our lil robot friend home to rest, but he can be interrupted on the way with another task (hence the idle setting)
 		this.route = f.getPath(this.currentLocation, this.home);
 		this.task = "idle";
-		Production.getMaster().getMasterOrders().pickItems(Production.getMaster().getMasterOrders().currentOrders.get(0), this.carrying);
+		Production.getMaster().getMasterOrders().pickItems(Production.getMaster().getMasterOrders().queuedOrders.get(0), this.carrying);
 		this.carrying = null;
 	}
 	

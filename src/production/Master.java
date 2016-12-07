@@ -1,5 +1,6 @@
 package production;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 /*
@@ -24,7 +25,7 @@ public class Master {
         
         private static final int TICK_SPEED_MS=250;
         
-        public Master() {
+        public Master() throws FileNotFoundException {
             
             Production.controls().setMaster(this);
             
@@ -178,5 +179,4 @@ public class Master {
         public RobotScheduler getRobotScheduler() {return scheduler;}
         public Inventory getInventory() {return inventory;}
         
-	
 }
