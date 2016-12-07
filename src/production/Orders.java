@@ -46,7 +46,9 @@ public class Orders {
 			//System.out.println(s);
 			this.addresses.add(s);
 		}
-		//System.out.println(this.addresses.get(45).toString());
+		//System.out.println(this.addresses.size());
+		//System.out.println(this.addresses.get(0));
+		//System.out.println(this.addresses.get(100));
 		sc.close();
 	}
 	
@@ -89,7 +91,8 @@ public class Orders {
 	 */
 	public void initialOrders(int x) throws FileNotFoundException {
 		for (int i=0; i<x; i++) {
-			int y = rand.nextInt(this.addresses.size());
+			// addresses.get(100) is and empty string so limit it to indexes 0-99
+			int y = rand.nextInt(100);
 			generateOrder(Production.getMaster().getInventory().getRandomItem(), this.addresses.get(y));
 		}
 	}
