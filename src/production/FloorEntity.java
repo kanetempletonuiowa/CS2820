@@ -11,6 +11,9 @@ public class FloorEntity {
         entity=t;
     }
     
+    public void setVisible(boolean v){entity.setVisible(v);}
+    public boolean isVisible(){return entity.isVisible();}
+    
     public Tickable getTickable() {
         return entity;
     }
@@ -26,7 +29,8 @@ public class FloorEntity {
     
     public void render(Graphics g) {
         int size = Production.SQUARE_SIZE;
-        g.drawImage(Constants.getImage(getEntityType()), getX()*size, getY()*size, null);
+        if (isVisible())
+            g.drawImage(Constants.getImage(getEntityType()), getX()*size, getY()*size, null);
     }
     
     public int getEntityType() {

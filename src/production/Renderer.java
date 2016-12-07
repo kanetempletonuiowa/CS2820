@@ -47,7 +47,7 @@ public class Renderer {
     
 
     private void renderBelt(Graphics g) {
-        Production.getMaster().masterBelt.render(g);
+        Production.getMaster().getMasterFloor().getBelt().render(g);
     }
     
     private void renderFloor(Graphics g) {
@@ -57,11 +57,11 @@ public class Renderer {
         for (int i=0; i<f.length(); i++) {
             for (int j=0;j<f.width();j++) {
                 
-                g.setColor(Color.red);
+                g.setColor(Color.black);
                 int size = Production.SQUARE_SIZE;
                 g.drawRect(i*size, j*size, size, size);
-                g.setColor(Color.blue);
-                g.fillRect(i*size+1, j*size+1, size-1, size-1);
+                g.setColor(Color.gray);
+                g.fillRect(i*size, j*size, size, size);
             }
         }
 

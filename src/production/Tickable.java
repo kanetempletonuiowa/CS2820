@@ -20,5 +20,7 @@ public interface Tickable {
     public int getY();
     public int getID();
     public void setCoordinates(int x, int y);
+    public void setVisible(boolean vis);
+    public boolean isVisible();
 
 }

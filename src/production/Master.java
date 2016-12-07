@@ -17,15 +17,12 @@ public class Master {
         public CustomerOrder currentOrder; //current order being processed
         
         public Orders masterOrders;
-        public Floor masterFloor;
-        
-        public Belt masterBelt;
-        
+        public Floor masterFloor;        
         private RobotScheduler scheduler;
         private Inventory inventory;
         
         
-        private static final int TICK_SPEED_MS=100;
+        private static final int TICK_SPEED_MS=250;
         
         public Master() {
             
@@ -57,8 +54,8 @@ public class Master {
             masterFloor = new Floor(20,20);
             masterFloor.initFloor();
             
-            masterBelt = new Belt();
-            masterFloor.addNewEntity(masterBelt);
+            //masterBelt = new Belt();
+            //masterFloor.addNewEntity(masterBelt);
             
             
         }

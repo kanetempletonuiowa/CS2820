@@ -7,11 +7,32 @@ package production;
 public class FloorPicker implements Picker, Tickable {
     
     private int posX,posY;
+    private Bin workingBin;
+    private boolean visible;
     
     public FloorPicker(int x, int y) {
         posX=x;
         posY=y;
+        workingBin=new Bin();
+        visible=true;
         Production.controls().addEntity(this);
+    }
+    public boolean isVisible() {return visible;}
+    public void setVisible(boolean vis) {visible=vis;}
+    
+    public void pickItems(Robot R, CustomerOrder order) {
+        Shelf S = R.getShelf();
+        for (Item I:order.getOrderItems()) {
+            if (S.containsItem(I)) {
+                workingBin.addItem(I);
+                S.removeItem(I);
+                Production.getMaster().getInventory().removeItem(I, 1);
+            }
+        }
+        if (workingBin.containsFullOrder(order)) {
+            Production.getMaster().getMasterFloor().getBelt().placeBin(posY, workingBin);
+        }
+            
     }
 
     @Override

@@ -22,10 +22,18 @@ public class Bin{
     public Item removeItem() {
         return itemsContained.removeFirst();
     }
-    
-    public int numberOfItems() {return itemsContained.size();}
-    
+    public boolean containsItem(Item I) {
+        return itemsContained.contains(I);
+    }
+    public int numberOfItems() {return itemsContained.size();}    
     public LinkedList<Item> containedItems(){return itemsContained;}
+    
+    public boolean containsFullOrder(CustomerOrder order) {
+        for (Item I: order.getOrderItems())
+            if (!containsItem(I))
+                return false;
+        return true;
+    }
     
 
 }

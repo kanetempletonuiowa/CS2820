@@ -19,6 +19,7 @@ public class Robot implements Tickable  {
 	Shelf carrying;
 	Floor f;
         Path walkPath,nextPath;
+        boolean visible;
         
         
         //@author: Alex Wang
@@ -32,7 +33,10 @@ public class Robot implements Tickable  {
             walkPath=null;
             nextPath=null;
             carrying=null;
+            visible=true;
         }
+        public boolean isVisible() {return visible;}
+        public void setVisible(boolean vis) {visible=vis;}
 	
 	
 	//@author: Alex Wang
@@ -143,7 +147,7 @@ public class Robot implements Tickable  {
 	 */
 	public void grabShelf(){
 		this.carrying.pickup();
-		this.route = f.getPath(this.currentLocation, f.getPicker());
+		this.route = f.getPath(this.currentLocation, f.getPickerLoc());
 		System.out.println("ROBOT " + this.number + "has retrieved the shelf. Moving to picker.");
 	}
 	
@@ -189,6 +193,6 @@ public class Robot implements Tickable  {
             carrying=S;
         }
         public Shelf getShelf(){return carrying;}
-
+        
 }
 

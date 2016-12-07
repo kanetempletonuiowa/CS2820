@@ -1,9 +1,8 @@
 package production;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class Parcel {
+public class Parcel extends Bin {
   /**
    * 
    * @author Ted Herman
@@ -13,7 +12,7 @@ public class Parcel {
    */
     String address;
     LinkedList<Item> items;
-  boolean finished;
+    boolean finished;
   public Parcel(CustomerOrder o) { 
 	this.address = o.address;
 	this.items = o.itemsInOrder;

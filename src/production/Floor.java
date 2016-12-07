@@ -19,6 +19,8 @@ public class Floor {
     Shelf[] shelves;
     
     private Robot floorBot;
+    private Belt floorBelt;
+    private Charger charger;
         
     public Floor(int l, int w) {
         length=l;
@@ -33,6 +35,7 @@ public class Floor {
     
     public void initFloor() {
         //will clean this up later
+        
         shelves = new Shelf[SHELVES_PER_ROW*Constants.SHELF_START.length];
         int k=0;
         for (int i=0; i<Constants.SHELF_START.length; i++) {
@@ -45,6 +48,8 @@ public class Floor {
         picker = new FloorPicker(1,Constants.PICKER_POS);
         packer = new FloorPacker(1,Constants.PACKER_POS);
         floorBot = new Robot(1,19,0);
+        floorBelt = new Belt();
+        charger = new Charger(Constants.CHARGER_X,Constants.CHARGER_Y);
     }
     
     public void addNewEntity(Tickable t) {
@@ -194,6 +199,8 @@ public class Floor {
     public int width(){return width;}
     public ArrayList<FloorEntity> getEntities(){return entities;}
     public Robot getRobot() {return floorBot;}
+    public Belt getBelt() {return floorBelt;}
+    public Charger getCharger(){return charger;}
 
     public int getWarehouseWidth() {
         return Production.FLOOR_SIZE;
@@ -203,23 +210,22 @@ public class Floor {
         return Production.FLOOR_SIZE;
     }
 
-    public Cell getPicker() {
+    public Cell getPickerLoc() {
         return Production.controls().cell(picker.getX(), picker.getY());
     }
 
-    public Cell getPacker() {
+    public Cell getPackerLoc() {
         return Production.controls().cell(packer.getX(), packer.getY());
     }
+    
+    public FloorPicker getPicker(){return picker;}
+    public FloorPacker getPacker(){return packer;}
 
     public Cell getShippingDock() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public Cell getReceivingDock() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public Cell getCharger() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

@@ -22,6 +22,7 @@ public class Constants {
     public static final int ROBOT_ID = 4;
     public static final int PICKER_ID = 5;
     public static final int PACKER_ID = 6;
+    public static final int CHARGER_ID=7;
     
     
      /* getImage(id)
@@ -42,6 +43,8 @@ public class Constants {
                 return IMG_Picker;
             case PACKER_ID:
                 return IMG_Packer;
+            case CHARGER_ID:
+                return IMG_Charger;
         }
         return null;
     }
@@ -56,6 +59,7 @@ public class Constants {
     private static BufferedImage IMG_Shelf;
     private static BufferedImage IMG_Picker;
     private static BufferedImage IMG_Packer;
+    private static BufferedImage IMG_Charger;
     
     /*  initImages()
         load image data from files
@@ -67,6 +71,7 @@ public class Constants {
         IMG_Shelf = ImageIO.read(new FileInputStream("img/Shelf.png"));
         IMG_Picker = ImageIO.read(new FileInputStream("img/Picker.png"));
         IMG_Packer = ImageIO.read(new FileInputStream("img/Packer.png"));
+        IMG_Charger = ImageIO.read(new FileInputStream("img/Charger.png"));
     }
     
     
@@ -79,6 +84,8 @@ public class Constants {
     public static final int SHELF_START[][] = {{5,5},{5,10}};
     public static final int PACKER_POS = 5;
     public static final int PICKER_POS = 15;
+    public static final int CHARGER_X = 12;
+    public static final int CHARGER_Y = 15;
     
     //order status
     public static final String PENDING = "pending";

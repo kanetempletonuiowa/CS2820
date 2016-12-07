@@ -25,7 +25,11 @@ public class Cell {
     }
     
     public boolean walkable() {
-        return entity==null;
+        if (entity==null)
+            return true;
+        if (entity.getEntityType()==Constants.CHARGER_ID)
+            return true;
+        return !Production.getMaster().getMasterFloor().entityAt(x, y).isVisible();
     }
     
     public FloorEntity getEntity(){return entity;}

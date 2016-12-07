@@ -12,6 +12,7 @@ public class Shelf implements Tickable {
     private boolean onFloor;
     ArrayList<Item> itemsOnShelf;
     private int index;
+    private boolean visible;
     
     public Shelf(int x, int y) {
         index=0;
@@ -20,13 +21,22 @@ public class Shelf implements Tickable {
         curX=x;
         curY=y;
         onFloor=true;
+        visible=true;
         itemsOnShelf = new ArrayList<Item>();
         Production.controls().addEntity(this);
     }
+    public boolean isVisible() {return visible;}
+    public void setVisible(boolean vis) {visible=vis;}
     
     public void setIndex(int in){index=in;}
     public int getIndex(){return index;}
     
+    public boolean containsItem(Item I) {
+        return itemsOnShelf.contains(I);
+    }
+    public void removeItem(Item I) {
+        itemsOnShelf.remove(I);
+    }
     public boolean onFloor(){return onFloor;}
     public void pickup(){onFloor=false;}
     public void putdown(){onFloor=true;}

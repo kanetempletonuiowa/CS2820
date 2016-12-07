@@ -12,12 +12,16 @@ class BeltSpace implements Tickable {
     
     private int spaceX,spaceY;
     private Bin bin; //bin of items stored at the belt space
+    private boolean visible;
     
     public BeltSpace(int x, int y) {
         spaceX=x;
         spaceY=y;
         bin=null;
+        visible=true;
     }
+    public boolean isVisible() {return visible;}
+    public void setVisible(boolean vis) {visible=vis;}
     
     public void setBin(Bin b){bin=b;}
     public Bin getBin(){return bin;}
@@ -27,7 +31,7 @@ class BeltSpace implements Tickable {
         transfer bin to the next belt space
     */
     public void tick() {
-        Production.getMaster().masterBelt.advanceBin(spaceY);
+        Production.getMaster().getMasterFloor().getBelt().advanceBin(spaceY);
     }
 
     /*  getX(),getY(),setCoordinates(x,y)
@@ -72,6 +76,7 @@ public class Belt implements Tickable {
     */
     
     private FloorEntity[] spaces;
+    private boolean visible;
     
     public Belt() {
         spaces = new FloorEntity[Production.FLOOR_SIZE];
@@ -81,7 +86,12 @@ public class Belt implements Tickable {
             BeltSpace s = new BeltSpace(x,y--);
             spaces[i]=new FloorEntity(s);
         }
+        visible=true;
+        Production.controls().addEntity(this);
     }
+    
+    public boolean isVisible() {return visible;}
+    public void setVisible(boolean vis) {visible=vis;}
     
     /*  advanceBin(id)
         @author: Kane Templeton
@@ -90,7 +100,11 @@ public class Belt implements Tickable {
     public void advanceBin(int id) {
         if (id<0) 
             return;
-        if (id>=spaces.length-1) {
+        if (id==convert(Constants.PACKER_POS)) {
+            BeltSpace current = belt(id);
+        }
+            
+        if (id>=spaces.length-1) { //at final position
             BeltSpace finalSpace = belt(spaces.length-1);
             Bin b = finalSpace.getBin(); //<- use this
             //TAKE ITEMS OUT OF THE BIN TO SHIP
@@ -124,11 +138,20 @@ public class Belt implements Tickable {
     /*  space(y)
         @author: Kane Templeton
         returns the Belt Space at spacecs[y]
-        y=0 is the beginning of the belt
+        y=19 is the beginning of the belt
     */
     private BeltSpace belt(int y) {
         return (BeltSpace)spaces[y].getTickable();
     }
+    
+    private int convert(int coord) {
+        return spaces.length-coord-1;
+    }
+    
+    public void placeBin(int y,Bin B) {
+        belt(convert(y)).setBin(B);
+    }
+    
     
     
     

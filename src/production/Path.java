@@ -48,16 +48,30 @@ public class Path {
 
     public void complete() {
         Robot R = Production.controls().getRobot();
+        Path P;
         switch(pathType) {
             case Constants.GRAB_SHELF:
                 Shelf S = (Shelf)Production.controls().cell(R).under().getEntity().getTickable();
                 R.setShelf(S);
-                Production.getMaster().getMasterFloor().removeEntity(S);
-                Path P = new Path(R,Production.getMaster().getMasterFloor().pickerLocation(),Constants.DELIVER_SHELF);
+                S.setVisible(false);
+                //Production.getMaster().getMasterFloor().entityAt(S.getX(), S.getY()).setVisible(false);
+                //Production.getMaster().getMasterFloor().removeEntity(S);
+                P = new Path(R,Production.getMaster().getMasterFloor().pickerLocation(),Constants.DELIVER_SHELF);
                 Production.getMaster().getRobotScheduler().setRobotPath(P);
                 break;
-                
-               
+            case Constants.DELIVER_SHELF:
+                Production.getMaster().getMasterFloor().getPicker().pickItems(R, Production.getMaster().currentOrder);
+                P = new Path(R,R.getShelf().pickupSpace(),Constants.RETURN_SHELF);
+                Production.getMaster().getRobotScheduler().setRobotPath(P);
+                break;
+            case Constants.RETURN_SHELF:
+                S = R.getShelf();
+                Cell C = S.getHome();
+                S.setVisible(true);
+                R.setShelf(null);
+                P = new Path(R,Production.getMaster().getMasterFloor().getCharger().chargeCell(),Constants.CHARGER_ID);
+                Production.getMaster().getRobotScheduler().setRobotPath(P);
+                break;
         }
     }
     
