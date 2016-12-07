@@ -16,8 +16,10 @@ public class Robot implements Tickable  {
 	List<Cell> route = new LinkedList();
 	Cell home;
 	Cell robotsCurrentCell;
-	Shelf theGoods= null;
+	Shelf carrying;
 	Floor f;
+        Path walkPath,nextPath;
+        
         
         //@author: Alex Wang
 	//Assigns the robot a unique reference number, as well as it's starting point
@@ -27,6 +29,9 @@ public class Robot implements Tickable  {
             this.home=Production.controls().cell(x, y);
             this.f = Production.getMaster().getMasterFloor();
             Production.controls().addEntity(this);
+            walkPath=null;
+            nextPath=null;
+            carrying=null;
         }
 	
 	
@@ -60,7 +65,39 @@ public class Robot implements Tickable  {
 	 * 
 	 */
 	
+        public void setPath(Path P) {
+            walkPath=P;
+        }
+        public void setNextPath(Path P) {
+            if (walkPath==null) {
+                walkPath=P;
+                nextPath=null;
+            }
+            else {
+                nextPath=P;
+            }
+        }
+        public void updatePath() {
+            if (walkPath==null)
+                return;
+            if (nextPath==null)
+                walkPath=null;
+            else {
+                walkPath=nextPath;
+                nextPath=null;
+            }
+        }
+        
 	public void tick() {
+            if (walkPath!=null) {
+                Cell c = walkPath.next();
+                Production.controls().moveEntity(this, c.getX(), c.getY());
+                if (!walkPath.hasNext()) { //end of path
+                    walkPath.complete();
+                    updatePath();
+                }
+                
+            }
 		// re-charge if low after the current task
 		if (this.charge <= 5.0 && this.task == "idle") this.task = "toCharge";
 		if (task != "idle") {
@@ -70,7 +107,7 @@ public class Robot implements Tickable  {
 					this.route.remove(0);
 					this.task = "toPicker";
 					// this will handle picking up the shelf
-					this.getShelf();
+					this.grabShelf();
 				} else if ( this.task == "toPicker") {
 					this.route.remove(0);
 					// this will drop the shelf at the picker and wait to bring it back to the shelf area
@@ -104,8 +141,8 @@ public class Robot implements Tickable  {
 	/**
 	 * @author scott hoefer
 	 */
-	public void getShelf(){
-		this.theGoods.pickup();
+	public void grabShelf(){
+		this.carrying.pickup();
 		this.route = f.getPath(this.currentLocation, f.getPicker());
 		System.out.println("ROBOT " + this.number + "has retrieved the shelf. Moving to picker.");
 	}
@@ -114,12 +151,12 @@ public class Robot implements Tickable  {
 	 * @author scott hoefer
 	 */
 	public void setShelf() {
-		this.theGoods.putdown();
+		this.carrying.putdown();
 		// send our lil robot friend home to rest, but he can be interrupted on the way with another task (hence the idle setting)
 		this.route = f.getPath(this.currentLocation, this.home);
 		this.task = "idle";
-		Production.getMaster().getMasterOrders().pickItems(Production.getMaster().getMasterOrders().currentOrders.get(0), this.theGoods);
-		this.theGoods = null;
+		Production.getMaster().getMasterOrders().pickItems(Production.getMaster().getMasterOrders().currentOrders.get(0), this.carrying);
+		this.carrying = null;
 	}
 	
 	//@author: Alex Wang
@@ -142,11 +179,16 @@ public class Robot implements Tickable  {
 		return this.currentLocation.getY();	
         }
         public void setCoordinates(int x, int y) {
-            Production.controls().moveEntity(this, x, y);
+            this.currentLocation=Production.controls().cell(x, y);
         }
         public int getID() {
             return Constants.ROBOT_ID;
         }
+        public void setShelf(Shelf S) {
+            
+            carrying=S;
+        }
+        public Shelf getShelf(){return carrying;}
 
 }
 

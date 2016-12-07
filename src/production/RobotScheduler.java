@@ -10,8 +10,8 @@ public class RobotScheduler {
 	//@author: Alex Wang
 	//Add robots, to be changed later w/Floor
 	public RobotScheduler(){
-		robots.add(new Robot(1,Constants.ROBOT_X[0],Constants.ROBOT_Y[0]));
-		robots.add(new Robot(2,Constants.ROBOT_X[1],Constants.ROBOT_Y[1]));
+//		robots.add(new Robot(1,Constants.ROBOT_X[0],Constants.ROBOT_Y[0]));
+//		robots.add(new Robot(2,Constants.ROBOT_X[1],Constants.ROBOT_Y[1]));
 		this.F = Production.getMaster().getMasterFloor();
 	}
 	
@@ -26,7 +26,7 @@ public class RobotScheduler {
 		Robot robot = findRobot(); // get some idle robot
 		robot.route = F.getPath(robot.currentLocation,target);
 		robot.task = "toShelf";
-		robot.theGoods = s;
+		robot.carrying = s;
 	    };
 	
 	/**
@@ -88,5 +88,15 @@ public class RobotScheduler {
 	public void tick(){
 		this.checkRobots();
 	}
+        
+        
+        public void setRobotPath(Path P) {
+            Production.getMaster().getMasterFloor().getRobot().setNextPath(P);
+        }
+        
+        public void setRobotPath(Cell C) {
+            Path P = new Path(Production.getMaster().getMasterFloor().getRobot(),C);
+            Production.getMaster().getMasterFloor().getRobot().setNextPath(P);
+        }
 
 }

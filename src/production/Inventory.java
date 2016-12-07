@@ -41,7 +41,7 @@ public class Inventory {
     	if (this.inStock(i)) {
     		for (Shelf s : Production.getMaster().masterFloor.shelves) {
     			if (s.itemsOnShelf.contains(i)) { 
-    				Production.getMaster().output("Retrieving Item from shelf " + s.getID()); 
+    				Production.getMaster().output("Retrieving Item from shelf " + s.getIndex()); 
     				return s; 
     			}
     		}
@@ -87,7 +87,7 @@ public class Inventory {
      * This adds the desired amount of item to Stock and places it on a shelf
      */
     public void addItem(Item item, int n) {
-    	int whichShelf = r.nextInt(3);
+    	int whichShelf = r.nextInt(Production.getMaster().getMasterFloor().numberOfShelves());
     	for (int i=0; i<n; i++) {
     		Production.getMaster().masterFloor.shelves[whichShelf].itemsOnShelf.add(item);
     		this.Stock.add(item);
@@ -107,7 +107,8 @@ public class Inventory {
         	int quantity = r.nextInt(5) +1; // will stock 1-5 of each item
     		for (int i = 0; i < quantity; i++){
     			Item n = new Item(ci.id, ci.description);
-    			int whichShelf = r.nextInt(3);
+    			int whichShelf = r.nextInt(Production.getMaster().getMasterFloor().numberOfShelves());
+                        Production.controls().output(Production.getMaster().getMasterFloor().numberOfShelves()+"");
     			Production.getMaster().masterFloor.shelves[whichShelf].itemsOnShelf.add(n);
     			this.Stock.add(n);
     		}
@@ -143,7 +144,7 @@ public class Inventory {
 		// I will have it just automatically stock 5 of an Item if we run out
 		for (int i=0; i< 5; i++) {
 			this.Stock.add(item);
-			int whichShelf = r.nextInt(3);
+			int whichShelf = r.nextInt(Production.getMaster().getMasterFloor().numberOfShelves());
 			Production.getMaster().masterFloor.shelves[whichShelf].itemsOnShelf.add(item);
 		}
 	}

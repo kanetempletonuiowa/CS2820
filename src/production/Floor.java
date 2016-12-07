@@ -17,6 +17,8 @@ public class Floor {
     private FloorPicker picker;
     private FloorPacker packer;
     Shelf[] shelves;
+    
+    private Robot floorBot;
         
     public Floor(int l, int w) {
         length=l;
@@ -34,11 +36,15 @@ public class Floor {
         shelves = new Shelf[SHELVES_PER_ROW*Constants.SHELF_START.length];
         int k=0;
         for (int i=0; i<Constants.SHELF_START.length; i++) {
-            for (int j=Constants.SHELF_START[i][0]; j<Constants.SHELF_START[i][0]+SHELVES_PER_ROW; j++)
-                shelves[k++]= new Shelf(j,Constants.SHELF_START[i][1]);
+            for (int j=Constants.SHELF_START[i][0]; j<Constants.SHELF_START[i][0]+SHELVES_PER_ROW; j++) {
+                shelves[k]= new Shelf(j,Constants.SHELF_START[i][1]);
+                shelves[k].setIndex(k);
+                k++;
+            }
         }
         picker = new FloorPicker(1,Constants.PICKER_POS);
         packer = new FloorPacker(1,Constants.PACKER_POS);
+        floorBot = new Robot(1,19,0);
     }
     
     public void addNewEntity(Tickable t) {
@@ -49,6 +55,16 @@ public class Floor {
     public void addNewEntity(FloorEntity E) {
         entities.add(E);
         grid[E.getX()][E.getY()].setEntity(E);
+    }
+    public void removeEntity(Tickable T) {
+        Cell C = grid[T.getX()][T.getY()];
+        FloorEntity e = C.getEntity();
+        C.setEntity((FloorEntity)null);
+        entities.remove(e);
+    }
+    
+    public Cell pickerLocation() {
+        return Production.controls().cell(2,Constants.PICKER_POS);
     }
     
     
@@ -87,20 +103,30 @@ public class Floor {
         returns a list of cells that defines a walking path from start to end
         note: for this to work, floor must not have any 'dead ends'
     */
-    public List<Cell> getPath(Cell start, Cell end) {
+    public LinkedList<Cell> getPath(Cell start, Cell end) {
         int x = start.getX();
         int y = start.getY();
         int endX = end.getX();
         int endY = end.getY();
-        boolean unreachable = false;
         LinkedList<Cell> path = new LinkedList();
         path.addLast(start);
-        while (x!=endX&&y!=endY||!unreachable) {
+        while (x!=endX||y!=endY) {
             if (x>endX) { //must walk left
                 Cell c = Production.controls().cell(x-1, y);
                 if (c.walkable()) {
                     path.addLast(c);
                     x--;
+                }
+                else if (y==endY) {
+                    c= Production.controls().cell(x, y);
+                    while (!c.left().walkable()) {
+                        y++;
+                        c = Production.controls().cell(x, y);
+                        path.addLast(c);
+                    }
+                    x--;
+                    c=Production.controls().cell(x, y);
+                    path.addLast(c);
                 }
             }
             else if (x<endX) { //must walk right
@@ -109,6 +135,17 @@ public class Floor {
                     path.addLast(c);
                     x++;
                 }
+                else if (y==endY) {
+                    c= Production.controls().cell(x, y);
+                    while (!c.right().walkable()) {
+                        y++;
+                        c = Production.controls().cell(x, y);
+                        path.addLast(c);
+                    }
+                    y--;
+                    c=Production.controls().cell(x, y);
+                    path.addLast(c);
+                }
             }
             if (y>endY) { //must walk up
                 Cell c = Production.controls().cell(x, y-1);
@@ -116,12 +153,34 @@ public class Floor {
                     path.addLast(c);
                     y--;
                 }
+                else if (x==endX) {
+                    c= Production.controls().cell(x, y);
+                    while (!c.above().walkable()) {
+                        x++;
+                        c = Production.controls().cell(x, y);
+                        path.addLast(c);
+                    }
+                    y--;
+                    c=Production.controls().cell(x, y);
+                    path.addLast(c);
+                }
             }
-            else if (y<endY) {
+            else if (y<endY) { //must walk down
                 Cell c = Production.controls().cell(x, y+1);
                 if (c.walkable()) {
                     path.addLast(c);
                     y++;
+                }
+                else if (x==endX) {
+                    c= Production.controls().cell(x, y);
+                    while (!c.under().walkable()) {
+                        x++;
+                        c = Production.controls().cell(x, y);
+                        path.addLast(c);
+                    }
+                    y++;
+                    c=Production.controls().cell(x, y);
+                    path.addLast(c);
                 }
             }
         }
@@ -134,6 +193,7 @@ public class Floor {
     public int length(){return length;}
     public int width(){return width;}
     public ArrayList<FloorEntity> getEntities(){return entities;}
+    public Robot getRobot() {return floorBot;}
 
     public int getWarehouseWidth() {
         return Production.FLOOR_SIZE;
@@ -174,10 +234,10 @@ public class Floor {
     public int getNumShelfAreas() {
         return Constants.SHELF_START.length;
     }
-
-    public ShelfArea getShelfArea(int which) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int numberOfShelves() {
+        return Constants.SHELF_START.length*SHELVES_PER_ROW;
     }
+
 
     public Cell randomInShelfArea() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

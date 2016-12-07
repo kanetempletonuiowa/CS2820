@@ -1,6 +1,7 @@
 package production;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Random;
 
 import production.Item;
@@ -12,7 +13,7 @@ import production.Master;
  *
  */
 public class CustomerOrder  {
-	ArrayList<Item> itemsInOrder = new ArrayList<Item>();
+	LinkedList<Item> itemsInOrder = new LinkedList<Item>();
 	String address;
 	String status;
 	int number;
@@ -23,7 +24,7 @@ public class CustomerOrder  {
 	// constructor
 	CustomerOrder(Item i, String address, int orderNumber) {
 		this.address = address;
-		this.status = "pending";
+		this.status = Constants.PENDING;
 		this.number = orderNumber;
 		itemsInOrder.add(i);
 		this.fireTime = rand.nextInt(60);
@@ -61,9 +62,16 @@ public class CustomerOrder  {
 	/**
 	 * @author scott hoefer 
 	 */
-	public ArrayList<Item> getOrderItems() {
+	public LinkedList<Item> getOrderItems() {
 		return this.itemsInOrder;
 	}
+        
+        public Item removeNextItem() {
+            return itemsInOrder.removeFirst();
+        }
+        public Item nextItem() {
+            return itemsInOrder.getFirst();
+        }
 	
 	/**
 	 * @author scott hoefer

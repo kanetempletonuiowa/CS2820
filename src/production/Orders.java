@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -14,12 +15,12 @@ import production.Item;
  * 
  * @author scott hoefer
  */
+
 public class Orders {
-	ArrayList<CustomerOrder> currentOrders;
 	ArrayList<String> addresses;
+	LinkedList<CustomerOrder> currentOrders;
 	Random rand = new Random();
 	int orderNum;
-	Random r = new Random();
 	
 	/**
 	 * 
@@ -29,7 +30,7 @@ public class Orders {
 	 */
 	// constructor 
 	public Orders() throws FileNotFoundException {
-		this.currentOrders = new ArrayList<CustomerOrder>();
+		this.currentOrders = new LinkedList<CustomerOrder>();
 		this.orderNum = 0;
 		this.addresses = new ArrayList<String>();
 		initAddresses();
@@ -67,13 +68,13 @@ public class Orders {
 	 * @throws FileNotFoundException 
 	 */
 	public void enqueueOrder(CustomerOrder order) throws FileNotFoundException {
-		int x = r.nextInt(6);  // this will add 0-5 items to the order
+		int x = rand.nextInt(6);  // this will add 0-5 items to the order
 		for (int i=0; i<x; i++) {
 			Item item;
 			item = Production.getMaster().getInventory().getRandomItem();
 			order.addItemsToOrder(item);
 		}
-		currentOrders.add(order);
+		currentOrders.addLast(order);
 	}
 	
 	/**
@@ -85,7 +86,7 @@ public class Orders {
 	 */
 	public void initialOrders(int x) throws FileNotFoundException {
 		for (int i=0; i<x; i++) {
-			int y = r.nextInt(this.addresses.size());
+			int y = rand.nextInt(this.addresses.size());
 			generateOrder(Production.getMaster().getInventory().getRandomItem(), this.addresses.get(y));
 		}
 	}
@@ -102,6 +103,23 @@ public class Orders {
 		Production.output("The picker has placed the items in the bin and moved it onto the best");
 		this.belt.tick();*/
 	}
+        
+        public CustomerOrder nextOrder() {
+            CustomerOrder O = currentOrders.removeFirst();
+            Item I = O.nextItem();
+            Production.getMaster().getInventory().addItem(I, 1);
+            return O;
+        }
+        public boolean hasNext() {
+            return currentOrders.size()>0;
+        }
+        public boolean ordersToComplete() {
+            if (hasNext())
+                return true;
+            return !Production.getMaster().currentOrder.status.equals(Constants.COMPLETE);
+        }
+        
+        
 }
 	
 
