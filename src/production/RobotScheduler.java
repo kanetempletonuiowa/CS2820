@@ -1,6 +1,13 @@
 package production;
 
 import java.util.ArrayList;
+
+/**
+ * 
+ * @author SCOTT HOEFER
+ * @author ALEX WANG
+ *
+ */
 public class RobotScheduler {
 	//Arraylist of robots and boolean for charging station to see if it's open
 	ArrayList<Robot> robots = new ArrayList();
@@ -18,6 +25,9 @@ public class RobotScheduler {
 	/**
 	 * @author scott hoefer
 	 * @param A shelf, s, which the robot will then retrieve
+	 * 
+	 * THIS METHOD NOT USED IN FINAL IMPLEMENTATION
+	 * SEE getShelf() IN INVENTORY
 	 */
 	
     public void requestShelf(Shelf s) { 
@@ -44,6 +54,8 @@ public class RobotScheduler {
 	/**
 	 * @author scott hoefer
 	 * moveRobots just gets called every tick and then calls tick() for each non-idle robot
+	 * 
+	 * NOT USED IN FINAL IMPLEMENTATION
 	 */
 	public void moveRobots() {
 		for (Robot r : this.robots) {

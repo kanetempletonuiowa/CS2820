@@ -6,7 +6,7 @@ import java.util.List;
 public class Robot implements Tickable  {
 	//@author: Alex Wang
 	/**
-	 * author: Scott Hoefer (11/2316 )
+	 * author: Scott Hoefer (11/23/16 )
 	 */
 	int number;
 	Cell currentLocation;

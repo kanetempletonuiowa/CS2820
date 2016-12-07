@@ -2,7 +2,11 @@ package production;
 
 import java.awt.Color;
 import java.awt.Graphics;
-
+/**
+ * 
+ * @author KANE TEMPLETON
+ *
+ */
 public class Cell {
     
     private FloorEntity entity;
