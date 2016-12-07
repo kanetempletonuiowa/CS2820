@@ -35,5 +35,8 @@ public class Bin{
         return true;
     }
     
-
+    public void empty() {
+        itemsContained = new LinkedList();
+    }
+    
 }

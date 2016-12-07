@@ -1,25 +1,22 @@
 package production;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class Parcel extends Bin {
-  /**
-   * 
-   * @author Ted Herman
-   * 
-   * A Parcel has an address and a list of Items
-   *
-   */
-    String address;
-    LinkedList<Item> items;
-    boolean finished;
-  public Parcel(CustomerOrder o) { 
-	this.address = o.address;
-	this.items = o.itemsInOrder;
-	finished = false;
+public class Parcel {
+    
+    private ArrayList<Item> items;
+    private String address;
+    
+    public Parcel(Bin B) {
+        items = new ArrayList();
+        for (Item I:B.containedItems())
+            items.add(I);
+        B.empty();
+        address=Production.getMaster().currentOrder.address;
     }
-  public boolean isFinished() { return finished; }
-  public void setFinished() { finished = true; }
-  public String toString() { return "Parcel"; }
-  }
-
+    
+    public ArrayList<Item> getItems() {return items;}
+    public String getAddress() {return address;}
+    
+}

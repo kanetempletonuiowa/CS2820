@@ -66,11 +66,21 @@ public class Path {
                 break;
             case Constants.RETURN_SHELF:
                 S = R.getShelf();
-                Cell C = S.getHome();
                 S.setVisible(true);
                 R.setShelf(null);
-                P = new Path(R,Production.getMaster().getMasterFloor().getCharger().chargeCell(),Constants.CHARGER_ID);
+                P = new Path(R,Production.getMaster().getMasterFloor().getCharger().chargeCell(),Constants.CHARGE);
                 Production.getMaster().getRobotScheduler().setRobotPath(P);
+                break;
+            case Constants.CHARGE:
+                if (!Production.getMaster().currentOrder.doneBinning()) {
+                    if (Production.getMaster().currentOrder.nextItem()==null) {
+                        System.out.println(Production.getMaster().currentOrder.itemsRemaining());
+                        return;
+                    }
+                    S = Production.getMaster().getInventory().getShelf(Production.getMaster().currentOrder.nextItem());                    
+                    P = new Path(R,S.pickupSpace(),Constants.GRAB_SHELF);
+                    Production.getMaster().getRobotScheduler().setRobotPath(P);
+                }
                 break;
         }
     }

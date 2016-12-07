@@ -12,6 +12,7 @@ class BeltSpace implements Tickable {
     
     private int spaceX,spaceY;
     private Bin bin; //bin of items stored at the belt space
+    private Parcel par;
     private boolean visible;
     
     public BeltSpace(int x, int y) {
@@ -19,10 +20,13 @@ class BeltSpace implements Tickable {
         spaceY=y;
         bin=null;
         visible=true;
+        par=null;
     }
     public boolean isVisible() {return visible;}
     public void setVisible(boolean vis) {visible=vis;}
     
+    public void setParcel(Parcel p){par=p;}
+    public Parcel getParcel(){return par;}
     public void setBin(Bin b){bin=b;}
     public Bin getBin(){return bin;}
 
@@ -53,9 +57,12 @@ class BeltSpace implements Tickable {
         otherwise uses the bin image
     */
     public int getID() {
-        if (bin==null)
-            return Constants.BELT_ID;
-        return Constants.BIN_ID;
+        if (bin!=null)
+            return Constants.BIN_ID;
+        if (par!=null)
+            return Constants.PARCEL_ID;
+        
+        return Constants.BELT_ID;
     }
     
     /*  hasBin()
@@ -64,6 +71,9 @@ class BeltSpace implements Tickable {
     */
     public boolean hasBin() {
         return bin!=null;
+    }
+    public boolean hasParcel() {
+        return par!=null;
     }
     
 }
@@ -102,13 +112,20 @@ public class Belt implements Tickable {
             return;
         if (id==convert(Constants.PACKER_POS)) {
             BeltSpace current = belt(id);
+            if (current.hasBin()) {
+                Parcel P = new Parcel(current.getBin());
+                current.setBin(null);
+                current.setParcel(P);
+            }   
         }
             
         if (id>=spaces.length-1) { //at final position
             BeltSpace finalSpace = belt(spaces.length-1);
-            Bin b = finalSpace.getBin(); //<- use this
-            //TAKE ITEMS OUT OF THE BIN TO SHIP
-            finalSpace.setBin(null);
+            Parcel P = finalSpace.getParcel();
+            if (P!=null) {
+                Production.getMaster().ship(P);
+                finalSpace.setParcel(null);
+            }
             return;
         }
         
@@ -117,6 +134,10 @@ public class Belt implements Tickable {
         if (spaceFrom.hasBin()) {
             spaceTo.setBin(spaceFrom.getBin());
             spaceFrom.setBin(null);
+        }
+        if (spaceFrom.hasParcel()) {
+            spaceTo.setParcel(spaceFrom.getParcel());
+            spaceFrom.setParcel(null);
         }
     }
     
@@ -150,6 +171,12 @@ public class Belt implements Tickable {
     
     public void placeBin(int y,Bin B) {
         belt(convert(y)).setBin(B);
+    }
+    public boolean isEmpty() {
+        for (FloorEntity s:spaces)
+            if (((BeltSpace)s.getTickable()).hasBin())
+                return false;
+        return true;
     }
     
     

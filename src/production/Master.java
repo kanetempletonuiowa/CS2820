@@ -22,9 +22,6 @@ public class Master {
         private RobotScheduler scheduler;
         private Inventory inventory;
         
-        
-        private static final int TICK_SPEED_MS=250;
-        
         public Master() throws FileNotFoundException {
             
             Production.controls().setMaster(this);
@@ -35,16 +32,18 @@ public class Master {
             
             addInitialEntities();
                         
-            masterOrders.initialOrders(2);
+            masterOrders.initialOrders(100);
             firstOrder();
             clockTime=0;
         }
         
         private void firstOrder() {
             currentOrder=masterOrders.nextOrder();
-            Shelf S = inventory.getShelf(currentOrder.nextItem());
+            for (Item I:currentOrder.getOrderItems())
+                inventory.addItem(I, 1);
+          /*  Shelf S = inventory.getShelf(currentOrder.nextItem());
             Path P = new Path(Production.controls().getRobot(),S.pickupSpace(),Constants.GRAB_SHELF);
-            scheduler.setRobotPath(P);
+            scheduler.setRobotPath(P);*/
         }
         
         /*  addInitialEntities()
@@ -86,6 +85,7 @@ public class Master {
         
         public void completeOrder() {
             currentOrder.status=Constants.COMPLETE;
+            currentOrder = masterOrders.nextOrder();
         }
         
         /*  run()
@@ -94,17 +94,16 @@ public class Master {
         */
 	private void run() {
             double clock=System.currentTimeMillis();
-            double stopDelay=5;
             while (running) {
-                if (System.currentTimeMillis()-clock >= TICK_SPEED_MS) {
+                if (System.currentTimeMillis()-clock >=0) {
                     clockTime++;
                     clock=System.currentTimeMillis();
                     for (FloorEntity e:masterFloor.getEntities()) //tick active tickable entities
                         e.getTickable().tick();
                     
                     if (masterOrders.ordersToComplete()) {
-                        if (currentOrder.status.equals(Constants.COMPLETE)) {
-                            currentOrder = masterOrders.nextOrder();
+                        if (currentOrder.status.equals(Constants.WAITING)) {
+                            currentOrder.status = Constants.PENDING;
                             Shelf S = inventory.getShelf(currentOrder.nextItem());
                             Path P = new Path(Production.controls().getRobot(),S.pickupSpace(),Constants.GRAB_SHELF);
                             scheduler.setRobotPath(P);
@@ -141,6 +140,15 @@ public class Master {
                 
             }
 	}
+        
+        
+        public void ship(Parcel P) {
+            output("SHIPPING ORDER #"+currentOrder.number+" TO "+P.getAddress());
+            System.out.println("\tItems:");
+            for (Item I: P.getItems())
+                System.out.println("\t\t"+I.description);
+            completeOrder();
+        }
         
 	
         

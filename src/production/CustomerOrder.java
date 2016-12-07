@@ -14,6 +14,7 @@ import production.Master;
  */
 public class CustomerOrder  {
 	LinkedList<Item> itemsInOrder = new LinkedList<Item>();
+        LinkedList<Item> binItems = new LinkedList();
 	String address;
 	String status;
 	int number;
@@ -23,12 +24,22 @@ public class CustomerOrder  {
 	
 	// constructor
 	CustomerOrder(Item i, String address, int orderNumber) {
+            itemsInOrder = new LinkedList();
+            binItems = new LinkedList();
 		this.address = address;
-		this.status = Constants.PENDING;
+		this.status = Constants.WAITING;
 		this.number = orderNumber;
 		itemsInOrder.add(i);
 		this.fireTime = rand.nextInt(60);
 	}
+        
+        public LinkedList<Item> binItems() {
+            return binItems;
+        }
+        public boolean doneBinning() {
+            return itemsRemaining()==0;
+            
+        }
 	
 	/**
 	 * 
@@ -39,6 +50,7 @@ public class CustomerOrder  {
 	 */
 	public void addItemsToOrder(Item i) {
 		itemsInOrder.add(i);
+                
 	}
 	
 	/**
@@ -65,12 +77,16 @@ public class CustomerOrder  {
 	public LinkedList<Item> getOrderItems() {
 		return this.itemsInOrder;
 	}
-        
-        public Item removeNextItem() {
-            return itemsInOrder.removeFirst();
-        }
+
         public Item nextItem() {
-            return itemsInOrder.getFirst();
+            for (Item I: itemsInOrder)
+                if (!binItems.contains(I))
+                    return I;
+            return null;
+        }
+        public int itemsRemaining() {
+            System.out.println(itemsInOrder.size()+","+binItems.size());
+            return itemsInOrder.size()-binItems.size();
         }
 	
 	/**

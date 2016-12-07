@@ -14,6 +14,7 @@ public class Constants {
         need to be referenced
     */
     
+    
     //IDs of entities
     public static final int MOCK_ID = 0;
     public static final int BELT_ID = 1;
@@ -23,6 +24,7 @@ public class Constants {
     public static final int PICKER_ID = 5;
     public static final int PACKER_ID = 6;
     public static final int CHARGER_ID=7;
+    public static final int PARCEL_ID=8;
     
     
      /* getImage(id)
@@ -45,6 +47,8 @@ public class Constants {
                 return IMG_Packer;
             case CHARGER_ID:
                 return IMG_Charger;
+            case PARCEL_ID:
+                return IMG_Parcel;
         }
         return null;
     }
@@ -60,6 +64,7 @@ public class Constants {
     private static BufferedImage IMG_Picker;
     private static BufferedImage IMG_Packer;
     private static BufferedImage IMG_Charger;
+    private static BufferedImage IMG_Parcel;
     
     /*  initImages()
         load image data from files
@@ -72,6 +77,7 @@ public class Constants {
         IMG_Picker = ImageIO.read(new FileInputStream("img/Picker.png"));
         IMG_Packer = ImageIO.read(new FileInputStream("img/Packer.png"));
         IMG_Charger = ImageIO.read(new FileInputStream("img/Charger.png"));
+        IMG_Parcel = ImageIO.read(new FileInputStream("img/Parcel.png"));
     }
     
     
@@ -90,6 +96,7 @@ public class Constants {
     //order status
     public static final String PENDING = "pending";
     public static final String COMPLETE = "complete";
+    public static final String WAITING = "waiting";
     
     //path types
     public static final int STANDARD=0;

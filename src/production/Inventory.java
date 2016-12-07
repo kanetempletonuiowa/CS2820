@@ -38,18 +38,22 @@ public class Inventory {
      * 
      */
     public Shelf getShelf(Item i) {
+        
     	if (this.inStock(i)) {
     		for (Shelf s : Production.getMaster().masterFloor.shelves) {
-    			if (s.itemsOnShelf.contains(i)) { 
-    				Production.getMaster().output("Retrieving Item from shelf " + s.getIndex()); 
-    				return s; 
+    			if (s.containsItem(i)) { 
+                            
+                            Production.getMaster().output("Retrieving "+i.description+" from shelf " + s.getIndex()+"; Items remaining in order: "+Production.getMaster().currentOrder.itemsRemaining()); 
+                            return s; 
     			}
     		}
     	}
+        
     	Production.getMaster().output("Item not in stock. Requesting restock");
     	// this will restock the item 
-    	this.stockItem(i);
-		return null;
+        this.stockItem(i);
+    	
+	return getShelf(i);
     }
     
     /**

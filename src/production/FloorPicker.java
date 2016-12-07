@@ -23,14 +23,16 @@ public class FloorPicker implements Picker, Tickable {
     public void pickItems(Robot R, CustomerOrder order) {
         Shelf S = R.getShelf();
         for (Item I:order.getOrderItems()) {
-            if (S.containsItem(I)) {
+            if (S.containsItem(I)&&!order.binItems().contains(I)) {
                 workingBin.addItem(I);
                 S.removeItem(I);
+                order.binItems().add(I);
                 Production.getMaster().getInventory().removeItem(I, 1);
             }
         }
-        if (workingBin.containsFullOrder(order)) {
+        if (order.doneBinning()) {
             Production.getMaster().getMasterFloor().getBelt().placeBin(posY, workingBin);
+            //workingBin.empty();
         }
             
     }

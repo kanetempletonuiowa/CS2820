@@ -81,7 +81,7 @@ public class Orders {
 	 * @throws FileNotFoundException 
 	 */
 	public void enqueueOrder(CustomerOrder order) throws FileNotFoundException {
-		int x = rand.nextInt(6);  // this will add 0-5 items to the order
+		int x = rand.nextInt(5);  // this will add 0-5 items to the order
 		for (int i=0; i<x; i++) {
 			Item item;
 			item = Production.getMaster().getInventory().getRandomItem();
@@ -120,9 +120,12 @@ public class Orders {
 	}
         
         public CustomerOrder nextOrder() {
+            if (queuedOrders.size()<1)
+                return null;
             CustomerOrder O = queuedOrders.removeFirst();
             Item I = O.nextItem();
             Production.getMaster().getInventory().addItem(I, 1);
+            Production.controls().output("STARTING ORDER #"+O.number);
             return O;
         }
         public boolean hasNext() {
@@ -131,6 +134,8 @@ public class Orders {
         public boolean ordersToComplete() {
             if (hasNext())
                 return true;
+            if (Production.getMaster().currentOrder==null)
+                return false;
             return !Production.getMaster().currentOrder.status.equals(Constants.COMPLETE);
         }
         
