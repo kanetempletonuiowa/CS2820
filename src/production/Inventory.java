@@ -40,6 +40,9 @@ public class Inventory {
     public Shelf getShelf(Item i) {
         
     	if (this.inStock(i)) {
+    	if (i.location != null) return i.location;
+    	// this is just an extra check to make sure that when i.location == null we really don't have it on the shelves
+    	if (inStock(i)) {
     		for (Shelf s : Production.getMaster().masterFloor.shelves) {
     			if (s.containsItem(i)) { 
                             
@@ -94,6 +97,7 @@ public class Inventory {
     	int whichShelf = r.nextInt(Production.getMaster().getMasterFloor().numberOfShelves());
     	for (int i=0; i<n; i++) {
     		Production.getMaster().masterFloor.shelves[whichShelf].itemsOnShelf.add(item);
+    		item.setPlace(Production.getMaster().masterFloor.shelves[whichShelf]);
     		this.Stock.add(item);
     	}
     }
@@ -107,13 +111,14 @@ public class Inventory {
      * @throws FileNotFoundException 
      */
     public void stockShelves() throws FileNotFoundException {
+    	int whichShelf = r.nextInt(Production.getMaster().getMasterFloor().numberOfShelves());
     	for (CatItem ci : CatItem.catalog) {
         	int quantity = r.nextInt(5) +1; // will stock 1-5 of each item
     		for (int i = 0; i < quantity; i++){
     			Item n = new Item(ci.id, ci.description);
-    			int whichShelf = r.nextInt(Production.getMaster().getMasterFloor().numberOfShelves());
-                        Production.controls().output(Production.getMaster().getMasterFloor().numberOfShelves()+"");
+                Production.controls().output(Production.getMaster().getMasterFloor().numberOfShelves()+"");
     			Production.getMaster().masterFloor.shelves[whichShelf].itemsOnShelf.add(n);
+    			n.setPlace(Production.getMaster().masterFloor.shelves[whichShelf]);
     			this.Stock.add(n);
     		}
     	}
@@ -145,11 +150,12 @@ public class Inventory {
 	 * Called when inStock == false for an item, it replenishes its stock
 	 */
 	public void stockItem(Item item) {
+		int whichShelf = r.nextInt(Production.getMaster().getMasterFloor().numberOfShelves());
 		// I will have it just automatically stock 5 of an Item if we run out
 		for (int i=0; i< 5; i++) {
 			this.Stock.add(item);
-			int whichShelf = r.nextInt(Production.getMaster().getMasterFloor().numberOfShelves());
 			Production.getMaster().masterFloor.shelves[whichShelf].itemsOnShelf.add(item);
+			item.setPlace(Production.getMaster().masterFloor.shelves[whichShelf]);
 		}
 	}
 }
