@@ -38,14 +38,15 @@ public class Orders {
 	}
 	
 	public void initAddresses() throws FileNotFoundException {
-		Scanner sc = new Scanner(new BufferedReader(new FileReader("addresses.docx")));
-		System.out.println(sc.hasNext());
-		while (sc.hasNext()) {
-			System.out.println("here orders 1");
+		Scanner sc = new Scanner(new BufferedReader(new FileReader("addresses.txt")));
+		//System.out.println(sc.hasNext());
+		while (sc.hasNextLine()) {
+			//System.out.println("Orders - sc.hasNextLine evaluated to true");
 			String s = sc.nextLine();
+			//System.out.println(s);
 			this.addresses.add(s);
 		}
-		System.out.println(this.addresses.size());
+		//System.out.println(this.addresses.get(45).toString());
 		sc.close();
 	}
 	
