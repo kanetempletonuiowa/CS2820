@@ -19,7 +19,7 @@ import production.Item;
 
 public class Orders {
 	ArrayList<String> addresses;
-	LinkedList<CustomerOrder> currentOrders;
+	LinkedList<CustomerOrder> queuedOrders;
 	Random rand = new Random();
 	int orderNum;
 	
@@ -31,12 +31,20 @@ public class Orders {
 	 */
 	// constructor 
 	public Orders() throws FileNotFoundException {
-		this.currentOrders = new LinkedList<CustomerOrder>();
+		this.queuedOrders = new LinkedList<CustomerOrder>();
 		this.orderNum = 0;
 		this.addresses = new ArrayList<String>();
 		initAddresses();
 	}
 	
+	/**
+	 * @author scott hoefer
+	 * @throws FileNotFoundException
+	 * 
+	 * Reads in 100 fake addresses from a file and adds them to an ArrayList
+	 * 
+	 * This method i tested using print statements
+	 */
 	public void initAddresses() throws FileNotFoundException {
 		Scanner sc = new Scanner(new BufferedReader(new FileReader("addresses.txt")));
 		//System.out.println(sc.hasNext());
@@ -48,7 +56,7 @@ public class Orders {
 		}
 		//System.out.println(this.addresses.size());
 		//System.out.println(this.addresses.get(0));
-		//System.out.println(this.addresses.get(100));
+		//System.out.println(this.addresses.get(99));
 		sc.close();
 	}
 	
@@ -79,7 +87,8 @@ public class Orders {
 			item = Production.getMaster().getInventory().getRandomItem();
 			order.addItemsToOrder(item);
 		}
-		currentOrders.addLast(order);
+		//System.out.println("adding order to list");
+		queuedOrders.addLast(order);
 	}
 	
 	/**
@@ -91,7 +100,7 @@ public class Orders {
 	 */
 	public void initialOrders(int x) throws FileNotFoundException {
 		for (int i=0; i<x; i++) {
-			// addresses.get(100) is and empty string so limit it to indexes 0-99
+			// addresses.get(100) is an empty string so limit it to indexes 0-99
 			int y = rand.nextInt(100);
 			generateOrder(Production.getMaster().getInventory().getRandomItem(), this.addresses.get(y));
 		}
@@ -111,13 +120,13 @@ public class Orders {
 	}
         
         public CustomerOrder nextOrder() {
-            CustomerOrder O = currentOrders.removeFirst();
+            CustomerOrder O = queuedOrders.removeFirst();
             Item I = O.nextItem();
             Production.getMaster().getInventory().addItem(I, 1);
             return O;
         }
         public boolean hasNext() {
-            return currentOrders.size()>0;
+            return queuedOrders.size()>0;
         }
         public boolean ordersToComplete() {
             if (hasNext())

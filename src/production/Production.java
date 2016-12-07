@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class Production {
     
-    private static ControlPanel panel;
+    private static ControlPanel panel = new ControlPanel();
     private static Visualizer visualizer;
 
     public static final int SQUARE_SIZE=32;
@@ -22,7 +22,7 @@ public class Production {
     
     
     public static void main(String[] args) throws IOException {
-        panel = new ControlPanel();
+        //panel = new ControlPanel();
         Master M = new Master();
         M.initializeEvents();
         init();

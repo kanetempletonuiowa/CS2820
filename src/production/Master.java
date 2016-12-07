@@ -35,7 +35,7 @@ public class Master {
             
             addInitialEntities();
                         
-            masterOrders.initialOrders(2);
+            masterOrders.initialOrders(1);
             firstOrder();
             clockTime=0;
         }

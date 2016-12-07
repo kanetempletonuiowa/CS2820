@@ -1,4 +1,4 @@
-// Kane Templeton
+
 // Inventory.java
 
 package production;
