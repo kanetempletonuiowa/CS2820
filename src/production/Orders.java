@@ -3,6 +3,7 @@ package production;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Random;
@@ -37,13 +38,14 @@ public class Orders {
 	}
 	
 	public void initAddresses() throws FileNotFoundException {
-		File addresses = new File("addresses.docx");
-		//System.out.println(addresses.getAbsolutePath());
-		Scanner sc = new Scanner(addresses);
-		while (sc.hasNextLine()) {
+		Scanner sc = new Scanner(new BufferedReader(new FileReader("addresses.docx")));
+		System.out.println(sc.hasNext());
+		while (sc.hasNext()) {
+			System.out.println("here orders 1");
 			String s = sc.nextLine();
 			this.addresses.add(s);
 		}
+		System.out.println(this.addresses.size());
 		sc.close();
 	}
 	
