@@ -39,7 +39,7 @@ public class Inventory {
      */
     public Shelf getShelf(Item i) {
         
-    	if (this.inStock(i)) {
+
     	if (i.location != null) return i.location;
     	// this is just an extra check to make sure that when i.location == null we really don't have it on the shelves
     	if (inStock(i)) {
@@ -57,6 +57,8 @@ public class Inventory {
         this.stockItem(i);
     	
 	return getShelf(i);
+        
+      //  return null;
     }
     
     /**
@@ -67,7 +69,8 @@ public class Inventory {
      *  this will remove the desired amount of the given item from both the global inStock and the shelf 
      *  which is carrying its personal itemsOnShelf
      */
-    public void removeItem(Item i, int q) {
+        
+    public void removeItem(Item i, int q){
     	for (int j=0; j<q; j++) {
     		if (this.inStock(i)) {
     			Stock.remove(i);

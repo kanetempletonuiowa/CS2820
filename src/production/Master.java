@@ -1,7 +1,9 @@
 package production;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.PriorityQueue;
 /*
     Master
@@ -32,9 +34,14 @@ public class Master {
             
             addInitialEntities();
                         
-            masterOrders.initialOrders(100);
+            masterOrders.initialOrders(100000);
             firstOrder();
             clockTime=0;
+            Production.fileManager().appendLine("Simulation "+getSimulationNumber()+": "+(masterOrders.queuedOrders.size()+1)+" orders.");
+            for (int k=0; k<40; k++)
+                Production.fileManager().append("~");
+            Production.fileManager().appendLine();
+            
         }
         
         private void firstOrder() {
@@ -78,9 +85,17 @@ public class Master {
             end the simulation
         */
 	public void stop() {
+            Production.fileManager().createBuild("output/simulations/"+getSimulationNumber()+".txt");
             output("END SIMULATION.");
             running=false;
 	}
+        
+        private int getSimulationNumber() {
+            File f = new File("output/simulations/");
+            int i=0;
+            while ((f = new File("output/simulations/"+i+".txt")).isFile()) i++;
+            return i;
+        }
 	
         
         public void completeOrder() {
@@ -98,9 +113,8 @@ public class Master {
                 if (System.currentTimeMillis()-clock >=0) {
                     clockTime++;
                     clock=System.currentTimeMillis();
-                    for (FloorEntity e:masterFloor.getEntities()) //tick active tickable entities
+                    for (FloorEntity e:masterFloor.getEntities())
                         e.getTickable().tick();
-                    
                     if (masterOrders.ordersToComplete()) {
                         if (currentOrder.status.equals(Constants.WAITING)) {
                             currentOrder.status = Constants.PENDING;
@@ -109,44 +123,31 @@ public class Master {
                             scheduler.setRobotPath(P);
                         }
                     }
-                    else {
+                    else 
                         stop();
-                    }
-                    
-                    /*if (currentOrder.statusUpdate().equals(Constants.COMPLETE)) {
-                        output("Order #"+currentOrder.number+" has been shipped to "+currentOrder.address);
-                        if (!masterOrders.hasNext()) {
-                            if (stopDelay==0)
-                                stop();
-                            else stopDelay--;
-                        }
-                        else 
-                            currentOrder = masterOrders.nextOrder();
-                        
-                    } 
-                    else {
-                        //process pending orders
-                        if (masterFloor.getRobot().walkPath==null) {
-                            Shelf S = inventory.getShelf(currentOrder.nextItem());
-                            scheduler.setRobotPath(S.pickupSpace());
-                        }
-        
-                    }*/
-                                        
                 }
-                
-                //render everything
-                Production.getVisualizer().render(); 
-                
+                if (Production.visualizer()!=null)
+                    Production.visualizer().render();
             }
 	}
         
         
         public void ship(Parcel P) {
             output("SHIPPING ORDER #"+currentOrder.number+" TO "+P.getAddress());
-            System.out.println("\tItems:");
-            for (Item I: P.getItems())
-                System.out.println("\t\t"+I.description);
+            Production.fileManager().appendLine("[time="+clockTime+"] Order "+currentOrder.number+" shipped "+currentOrder.itemsInOrder.size()+" items to "+P.getAddress());
+            output("\tItems:");
+            Production.fileManager().append("\tItems Shipped: ");
+            Iterator<Item> it = P.getItems().iterator();
+            while (it.hasNext()) {
+                Item I = it.next();
+                it.remove();
+                output("\t\t"+I.description);
+                if (it.hasNext())
+                    Production.fileManager().append(I.description+", ");
+                else
+                    Production.fileManager().append(I.description);
+            }
+            Production.fileManager().appendLine();
             completeOrder();
         }
         
