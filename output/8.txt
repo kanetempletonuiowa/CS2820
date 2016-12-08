@@ -1,0 +1,21 @@
+STARTING ORDER #0
+Simulation 8: 3 orders.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting simulation...
+SHIPPING ORDER #0 TO 529 Rockcrest Lane�Elkton, MD 21921
+	Items:
+		Cast Iron Pot
+STARTING ORDER #1
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #1 TO 7331 Cardinal Street�Methuen, MA 01844
+	Items:
+		Queen Bed Frame and Box Spring
+		Home Theater Projector
+		Kettle
+STARTING ORDER #2
+Item not in stock. Requesting restock
+SHIPPING ORDER #2 TO 75 Annadale Ave.�Desoto, TX 75115
+	Items:
+		Shoe Dryer
+		Power Strip

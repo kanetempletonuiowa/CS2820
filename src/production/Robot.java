@@ -1,5 +1,6 @@
 package production;
 
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -21,7 +22,6 @@ public class Robot implements Tickable  {
         Path walkPath,nextPath;
         boolean visible;
         
-        
         //@author: Alex Wang
 	//Assigns the robot a unique reference number, as well as it's starting point
         public Robot(int n, int x, int y) {
@@ -37,7 +37,7 @@ public class Robot implements Tickable  {
         }
         public boolean isVisible() {return visible;}
         public void setVisible(boolean vis) {visible=vis;}
-	
+
 	
 	//@author: Alex Wang
 	//When sent a route from the floor, set this robot to "active".
@@ -92,7 +92,17 @@ public class Robot implements Tickable  {
             }
         }
         
+        
+        
 	public void tick() {
+
+            if (charge<=0) {
+                Production.controls().output("Robot battery dead");
+                return;
+            }
+            
+            charge-=.15;
+                
             if (walkPath!=null) {
                 Cell c = walkPath.next();
                 Production.controls().moveEntity(this, c.getX(), c.getY());
@@ -102,6 +112,7 @@ public class Robot implements Tickable  {
                 }
                 
             }
+            
 		// re-charge if low after the current task
 		if (this.charge <= 5.0 && this.task == "idle") this.task = "toCharge";
 		if (task != "idle") {
@@ -188,11 +199,19 @@ public class Robot implements Tickable  {
         public int getID() {
             return Constants.ROBOT_ID;
         }
+        
+
         public void setShelf(Shelf S) {
             
             carrying=S;
         }
         public Shelf getShelf(){return carrying;}
+        public void setCharge(double ch) {
+            charge=ch;
+        }
+        public double getCharge() {
+            return charge;
+        }
         
 }
 

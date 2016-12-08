@@ -1,0 +1,23 @@
+STARTING ORDER #0
+Simulation 5: 3 orders.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting simulation...
+SHIPPING ORDER #0 TO 9944 East Bow Ridge Street�Holbrook, NY 11741
+	Items:
+		32 GB SD Card
+STARTING ORDER #1
+SHIPPING ORDER #1 TO 6 Longfellow Lane�Alliance, OH 44601
+	Items:
+		Juicing Machine
+STARTING ORDER #2
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #2 TO 78 New Saddle Court�Apt 62�Independence, KY 41051
+	Items:
+		Bike Seat
+		Reusable Produce Bags
+		Magnetic Door Blinds
+		Vacuum
+		Circuit Tester

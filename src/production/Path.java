@@ -68,7 +68,13 @@ public class Path {
                 S = R.getShelf();
                 S.setVisible(true);
                 R.setShelf(null);
-                P = new Path(R,Production.getMaster().getMasterFloor().getCharger().chargeCell(),Constants.CHARGE);
+                if (R.charge<25)
+                    P = new Path(R,Production.getMaster().getMasterFloor().getCharger().chargeCell(),Constants.CHARGE);
+                else {
+                    S = Production.getMaster().getInventory().getShelf(Production.getMaster().currentOrder.nextItem());                    
+                    P = new Path(R,S.pickupSpace(),Constants.GRAB_SHELF);
+                }
+                    
                 Production.getMaster().getRobotScheduler().setRobotPath(P);
                 break;
             case Constants.CHARGE:
@@ -77,10 +83,8 @@ public class Path {
                         System.out.println(Production.getMaster().currentOrder.itemsRemaining());
                         return;
                     }
-                    S = Production.getMaster().getInventory().getShelf(Production.getMaster().currentOrder.nextItem());                    
-                    P = new Path(R,S.pickupSpace(),Constants.GRAB_SHELF);
-                    Production.getMaster().getRobotScheduler().setRobotPath(P);
                 }
+                Production.getMaster().getMasterFloor().getCharger().connect(R);
                 break;
         }
     }

@@ -21,7 +21,7 @@ public class FileManager {
             writer.print(text);
             writer.close();
         } catch (IOException e) {
-            Production.controls().output(path+": file not found.");
+            Production.controls().output(path+": path not found.");
         }
     }
     
@@ -45,14 +45,4 @@ public class FileManager {
     
     
 
-}
-
-
-class File {
-    String path;
-    String text;
-    File(String path, String txt){
-        this.path=path;
-        text=txt;
-    }
 }

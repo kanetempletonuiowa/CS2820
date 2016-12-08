@@ -1,0 +1,24 @@
+STARTING ORDER #0
+Simulation 7: 3 orders.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting simulation...
+SHIPPING ORDER #0 TO 8275 E. Summer Lane�Langhorne, PA 19047
+	Items:
+		Juicer Thing
+		HD Camcorder
+STARTING ORDER #1
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #1 TO 53 Clinton St.�Bismarck, ND 58501
+	Items:
+		Donut Pan
+		Sushi Rice Press
+		Food Thermometer
+STARTING ORDER #2
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #2 TO 75 Annadale Ave.�Desoto, TX 75115
+	Items:
+		Longboard Skateboard
+		Lithium Batteries
+		Jar Sealer

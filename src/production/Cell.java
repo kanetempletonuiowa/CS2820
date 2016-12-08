@@ -66,6 +66,9 @@ public class Cell {
     
     public int getX() {return x;}
     public int getY() {return y;}
+    public boolean equals(Cell C) {
+        return x==C.getX()&&y==C.getY();
+    }
     
     
 }

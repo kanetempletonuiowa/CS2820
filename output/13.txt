@@ -1,0 +1,21 @@
+STARTING ORDER #0
+Simulation 13: 3 orders.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting simulation...
+SHIPPING ORDER #0 TO 71 Glenholme Court�Basking Ridge, NJ 07920
+	Items:
+		Pizza and Baking Stone
+STARTING ORDER #1
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #1 TO 497 Sheffield Lane�Riverside, NJ 08075
+	Items:
+		4-Tier Cooling Rack
+		Golf Bag
+		Folding Laundry Basket
+		VoIP Phone Adapter
+STARTING ORDER #2
+SHIPPING ORDER #2 TO 49 Lawrence Avenue�Greensboro, NC 27405
+	Items:
+		Magnetic Knife Holder

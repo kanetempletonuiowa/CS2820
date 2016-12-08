@@ -85,7 +85,6 @@ public class CustomerOrder  {
             return null;
         }
         public int itemsRemaining() {
-            System.out.println(itemsInOrder.size()+","+binItems.size());
             return itemsInOrder.size()-binItems.size();
         }
 	

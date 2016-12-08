@@ -1,0 +1,25 @@
+STARTING ORDER #0
+Simulation 15: 3 orders.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting simulation...
+SHIPPING ORDER #0 TO 9564 Main Court�Bedford, OH 44146
+	Items:
+		5-Bike Rack
+STARTING ORDER #1
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #1 TO 207 Tanglewood St.�Racine, WI 53402
+	Items:
+		Cleaning Pads
+		Cappuccino and Latte Set
+		Grain Mill
+		Espresso Spoons
+		First Aid Kit
+STARTING ORDER #2
+Item not in stock. Requesting restock
+SHIPPING ORDER #2 TO 75 Annadale Ave.�Desoto, TX 75115
+	Items:
+		Power Strip
+		4-Quart Tupperware

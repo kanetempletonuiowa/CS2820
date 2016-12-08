@@ -1,0 +1,19 @@
+STARTING ORDER #0
+Simulation 6: 3 orders.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting simulation...
+SHIPPING ORDER #0 TO 8781 S. Thompson Lane�Greenville, NC 27834
+	Items:
+		Pain Reliever
+STARTING ORDER #1
+Item not in stock. Requesting restock
+SHIPPING ORDER #1 TO 7461 Ridge St.�Fort Myers, FL 33905
+	Items:
+		Fat Separator
+		Cappuccino and Latte Set
+STARTING ORDER #2
+Item not in stock. Requesting restock
+SHIPPING ORDER #2 TO 80 Henry Smith Court�Rockaway, NJ 07866
+	Items:
+		Scotch Tape
+		Popsicle Maker

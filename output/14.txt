@@ -1,0 +1,33 @@
+STARTING ORDER #0
+Simulation 14: 3 orders.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting simulation...
+SHIPPING ORDER #0 TO 29 East Oxford Drive�Odenton, MD 21113
+	Items:
+		Food Chopper / Pastry Scraper
+		F-Pin Audio/Video Cable
+		Wok
+STARTING ORDER #1
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #1 TO 240 N. Talbot Ave.�Great Falls, MT 59404
+	Items:
+		Paintball Feeder
+		Longboard Skateboard
+		Shoe Rack
+		In-Drawer Knife Tray
+		Fast, Portable Water Boiler
+STARTING ORDER #2
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #2 TO 64 Alton Rd.�Winter Springs, FL 32708
+	Items:
+		Bottle Opener
+		iPad Blender
+		Power Strip
+		Danish Dough Whisk
+		Nonstick Frying Pan

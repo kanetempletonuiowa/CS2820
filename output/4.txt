@@ -1,0 +1,33 @@
+STARTING ORDER #0
+Simulation 4: 3 orders.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting simulation...
+SHIPPING ORDER #0 TO 428 Windfall Avenue�Blacksburg, VA 24060
+	Items:
+		Vacuum
+		Pizzelle Baker
+		Speedminton Set
+		Food Storage Set
+		Vegetable Brush
+STARTING ORDER #1
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #1 TO 240 N. Talbot Ave.�Great Falls, MT 59404
+	Items:
+		Mandoline Slicer
+		Spring Powered BB Gun
+		Waffle Maker
+		Cleaning Pads
+STARTING ORDER #2
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #2 TO 2 Euclid Lane�San Lorenzo, CA 94580
+	Items:
+		Swim Goggles
+		Food Proofer
+		Reusable Grocery Bags
+		Steak Knives
+		Tortilla Shell Pans

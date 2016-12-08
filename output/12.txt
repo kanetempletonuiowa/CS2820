@@ -1,0 +1,2294 @@
+STARTING ORDER #0
+Simulation 12: 300 orders.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting simulation...
+SHIPPING ORDER #0 TO 462 Smoky Hollow Drive�Rockville, MD 20850
+	Items:
+		AA Battery Charger
+		Wine Saver
+		Cookie Dough Scooper
+		Tortilla Shell Pans
+STARTING ORDER #1
+SHIPPING ORDER #1 TO 58 West Longfellow Street�Garland, TX 75043
+	Items:
+		Mini MacGyver
+STARTING ORDER #2
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #2 TO 8796 Sulphur Springs Street�Monsey, NY 10952
+	Items:
+		Bike Stand
+		Foam Roller
+		Corn Holders
+STARTING ORDER #3
+Item not in stock. Requesting restock
+SHIPPING ORDER #3 TO 75 Annadale Ave.�Desoto, TX 75115
+	Items:
+		Floorstanding Speaker
+		Digital Radio
+STARTING ORDER #4
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #4 TO 9391 Trout St. Riverview, FL 33569
+	Items:
+		Reusable Grocery Bags
+		Swiffer Sweeping Cloths
+		Butter Crock
+		Inflatable Boat
+		Vibram Running Shoe
+STARTING ORDER #5
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #5 TO 9073 Forest St.�Knoxville, TN 37918
+	Items:
+		Fire Starter
+		Juicing Machine
+		40 Quart Stock Pot
+STARTING ORDER #6
+SHIPPING ORDER #6 TO 769 Oakland Street�Hinesville, GA 31313
+	Items:
+		Ceramic Cooktop Cleaning Kit
+STARTING ORDER #7
+Item not in stock. Requesting restock
+SHIPPING ORDER #7 TO 207 Tanglewood St.�Racine, WI 53402
+	Items:
+		Frisbee Alternative
+		Bidet
+STARTING ORDER #8
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #8 TO 8518 Sunnyslope St.�Elkton, MD 21921
+	Items:
+		Louisville Slugger Baseball Bat
+		Laundry Detergent
+		Fishing Reel
+STARTING ORDER #9
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #9 TO 9073 Forest St.�Knoxville, TN 37918
+	Items:
+		Brew-In-Mug Device
+		Propulsion Scooter
+		Wok
+STARTING ORDER #10
+Item not in stock. Requesting restock
+SHIPPING ORDER #10 TO 9644 Amerige Street�Arvada, CO 80003
+	Items:
+		Over-the-door Jewelry Rack
+		Storage Bin
+STARTING ORDER #11
+SHIPPING ORDER #11 TO 804 Green Ave.�Copperas Cove, TX 76522
+	Items:
+		HDMI to DVI Cable
+STARTING ORDER #12
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #12 TO 8781 S. Thompson Lane�Greenville, NC 27834
+	Items:
+		Huge Portable Hammock
+		Wall-Mounted Spice Rack
+		Louisville Slugger Baseball Bat
+STARTING ORDER #13
+SHIPPING ORDER #13 TO 836 Court St.�Elgin, IL 60120
+	Items:
+		Sling-Style Bag
+STARTING ORDER #14
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #14 TO 468 Paris Hill Dr.�Montgomery Village, MD 20886
+	Items:
+		Digital Kitchen Scale
+		Bottle Opener
+		Toy Hammock
+STARTING ORDER #15
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #15 TO 207 Tanglewood St.�Racine, WI 53402
+	Items:
+		Digital Bathroom Scale
+		Electric Smoker
+		TV Stand
+STARTING ORDER #16
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #16 TO 26 Indian Spring Dr.�Spring Valley, NY 10977
+	Items:
+		Home Theater Projector
+		Juicer Thing
+		Portable Charcoal Grill
+STARTING ORDER #17
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #17 TO 58 West Longfellow Street�Garland, TX 75043
+	Items:
+		Ice Cube Tray
+		Mini Exercise Bike
+		Swiffer Sweeping Cloths
+		Balance Board
+STARTING ORDER #18
+SHIPPING ORDER #18 TO 941 Alton St.�Flint, MI 48504
+	Items:
+		AA Rechargeable Batteries
+STARTING ORDER #19
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #19 TO 8127 Boston St.�Lake Villa, IL 60046
+	Items:
+		LED Keychain Light
+		Griddle Pan
+		Disc
+STARTING ORDER #20
+Item not in stock. Requesting restock
+SHIPPING ORDER #20 TO 8518 Sunnyslope St.�Elkton, MD 21921
+	Items:
+		Phone  GPS Mount
+		LED Flashlight
+STARTING ORDER #21
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #21 TO 8004 Maple Lane�Saint Joseph, MI 4908577 
+	Items:
+		Handheld Blender
+		Bike Trailer
+		Scooter
+		Whiskey Glass
+		Pizza Cutter
+STARTING ORDER #22
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #22 TO 912 Mechanic St.�Muncie, IN 47302
+	Items:
+		Cork Yoga Block
+		Peeler
+		Corn Holders
+		Scooter
+STARTING ORDER #23
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #23 TO 64 Alton Rd.�Winter Springs, FL 32708
+	Items:
+		Sling-Style Bag
+		Huge Portable Hammock
+		Bundt Pan
+STARTING ORDER #24
+SHIPPING ORDER #24 TO 35 Mayfair St.�Pawtucket, RI 02860
+	Items:
+		Pedal-less Bike
+STARTING ORDER #25
+SHIPPING ORDER #25 TO 9564 Main Court�Bedford, OH 44146
+	Items:
+		Jar Opener
+STARTING ORDER #26
+SHIPPING ORDER #26 TO 403 Walnut Street�Doylestown, PA 18901
+	Items:
+		1-Cup Coffee and Espresso Maker
+STARTING ORDER #27
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #27 TO 1 Grant Street�Lawrence, MA 01841
+	Items:
+		Printer / Scanner / Copier / Fax
+		Food Proofer
+		Massage Stick
+STARTING ORDER #28
+Item not in stock. Requesting restock
+SHIPPING ORDER #28 TO 9944 East Bow Ridge Street�Holbrook, NY 11741
+	Items:
+		Food Proofer
+		First Aid Kit
+STARTING ORDER #29
+Item not in stock. Requesting restock
+SHIPPING ORDER #29 TO 173 Linda Court�Holly Springs, NC 27540
+	Items:
+		Granton Edge Slicing Knife
+		Tactile Keyboard
+STARTING ORDER #30
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #30 TO 7846 Longbranch Ave.�Glenview, IL 60025
+	Items:
+		iPad Blender
+		Magnifying Glass
+		Spice Rack
+		Milk Frothing Pitcher
+		Pedometer
+STARTING ORDER #31
+SHIPPING ORDER #31 TO 32 Fremont Dr.�Northbrook, IL 60062
+	Items:
+		Digital Bathroom Scale
+STARTING ORDER #32
+Item not in stock. Requesting restock
+SHIPPING ORDER #32 TO 855 Wall St.�Clarksburg, WV 26301
+	Items:
+		Oven Glove
+		Queen Bed Frame and Box Spring
+STARTING ORDER #33
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #33 TO 8781 S. Thompson Lane�Greenville, NC 27834
+	Items:
+		Juicer Thing
+		Whiskey Glass
+		Pepper Grinder
+		Personal Fan
+STARTING ORDER #34
+SHIPPING ORDER #34 TO 30 Mulberry Drive�Port Orange, FL 32127
+	Items:
+		Fat Separator
+STARTING ORDER #35
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #35 TO 78 New Saddle Court�Apt 62�Independence, KY 41051
+	Items:
+		Pasta Machine
+		Fish Turner
+		11lb Kitchen Scale
+		Magnetic Door Blinds
+STARTING ORDER #36
+SHIPPING ORDER #36 TO 853 Rock Maple Street�Feasterville Trevose, PA 19053
+	Items:
+		Laundry Sorter Cart
+STARTING ORDER #37
+Item not in stock. Requesting restock
+SHIPPING ORDER #37 TO 836 Court St.�Elgin, IL 60120
+	Items:
+		Swim Goggles
+		Scooter
+STARTING ORDER #38
+SHIPPING ORDER #38 TO 35 Mayfair St.�Pawtucket, RI 02860
+	Items:
+		Cutting Board
+STARTING ORDER #39
+SHIPPING ORDER #39 TO 1 Grant Street�Lawrence, MA 01841
+	Items:
+		Nonstick Baking Liner
+STARTING ORDER #40
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #40 TO 30 Ivy Street�Lansing, MI 48910
+	Items:
+		Waterproof iPod Shuffle
+		Wine Saver
+		Battery-Powered Lantern
+		Can Opener
+		Donut Pan
+STARTING ORDER #41
+Item not in stock. Requesting restock
+SHIPPING ORDER #41 TO 80 Henry Smith Court�Rockaway, NJ 07866
+	Items:
+		Disc
+		Scotch Tape
+STARTING ORDER #42
+SHIPPING ORDER #42 TO 833 Border Drive�North Attleboro, MA 02760
+	Items:
+		AA Rechargeable Batteries
+STARTING ORDER #43
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #43 TO 71 Glenholme Court�Basking Ridge, NJ 07920
+	Items:
+		Jar Sealer
+		Splitting Axe
+		Cycling Shorts
+STARTING ORDER #44
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #44 TO 7211 Bridge St.�Detroit, MI 48205
+	Items:
+		Juicing Machine
+		Carpet Stain Remover
+		Measuring Cups
+STARTING ORDER #45
+Item not in stock. Requesting restock
+SHIPPING ORDER #45 TO 62 North Street�Newtown, PA 18940
+	Items:
+		Digital Kitchen Scale
+		Letter Opener
+STARTING ORDER #46
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #46 TO 90 Vale Drive�Amsterdam, NY 12010
+	Items:
+		Programmable Lego Robot
+		Foam Roller
+		French Press
+STARTING ORDER #47
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #47 TO 11 Sutor Ave.�Silver Spring, MD 20901
+	Items:
+		Hand Exerciser
+		Wok
+		Hand Exerciser
+		Golf Balls
+STARTING ORDER #48
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #48 TO 64 Birch Hill St.�Boston, MA 02127
+	Items:
+		Golf Balls
+		Audio Cable
+		Cupcake Maker
+		Digital Bathroom Scale
+STARTING ORDER #49
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #49 TO 771 East Broad Drive�Madison, AL 35758
+	Items:
+		Whiskey Glass
+		Frozen Concoction Maker
+		Digital Body Fat Scale
+		Food Chopper / Pastry Scraper
+STARTING ORDER #50
+Item not in stock. Requesting restock
+SHIPPING ORDER #50 TO 6 Longfellow Lane�Alliance, OH 44601
+	Items:
+		Electric Wok
+		Hanger Holder
+STARTING ORDER #51
+Item not in stock. Requesting restock
+SHIPPING ORDER #51 TO 32 Fremont Dr.�Northbrook, IL 60062
+	Items:
+		Vegetable Brush
+		Cake Pan
+STARTING ORDER #52
+Item not in stock. Requesting restock
+SHIPPING ORDER #52 TO 7419 Vine St.�Painesville, OH 44077
+	Items:
+		Massage Stick
+		Book Stand
+STARTING ORDER #53
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #53 TO 765 Gates Street�Fort Washington, MD 20744
+	Items:
+		Juicing Machine
+		Electric Griddle
+		Magnifying Glass
+STARTING ORDER #54
+Item not in stock. Requesting restock
+SHIPPING ORDER #54 TO 944 South Glenridge Lane�Tuscaloosa, AL 35405
+	Items:
+		LED Keychain Light
+		Garage Door Remote
+STARTING ORDER #55
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #55 TO 6 Longfellow Lane�Alliance, OH 44601
+	Items:
+		Cycling Pedals
+		Bundt Pan
+		Food Thermometer
+		Sausage Stuffer
+STARTING ORDER #56
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #56 TO 97 4th Ave.�Hyattsville, MD 20782
+	Items:
+		Pedometer
+		Audio Cable
+		Digital Shower Radio
+		Pizza Cutter
+STARTING ORDER #57
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #57 TO 836 Court St.�Elgin, IL 60120
+	Items:
+		Spice Rack
+		Digital Radio
+		Wok
+		Portable Stove
+STARTING ORDER #58
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #58 TO 323 Franklin Dr.�Palatine, IL 60067
+	Items:
+		Sheet Gripper
+		Huge Portable Hammock
+		Pulse Oximeter
+		Salad Spinner
+		Ice Cube Tray
+STARTING ORDER #59
+SHIPPING ORDER #59 TO 229 East Pilgrim St.�Ft Mitchell, KY 41017
+	Items:
+		HD Camcorder
+STARTING ORDER #60
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #60 TO 6 St Paul St.�Philadelphia, PA 19111
+	Items:
+		Circuit Tester
+		Heated Mattress Pad
+		Toothbrush Holder
+		Corkscrew
+		Cast Iron Pot
+STARTING ORDER #61
+SHIPPING ORDER #61 TO 75 Annadale Ave.�Desoto, TX 75115
+	Items:
+		Digital Shower Radio
+STARTING ORDER #62
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #62 TO 321 Vermont Lane�Freeport, NY 11520
+	Items:
+		Ice Cream Scooper
+		Razor Scooter
+		Electric Wok
+STARTING ORDER #63
+Item not in stock. Requesting restock
+SHIPPING ORDER #63 TO 208 Jefferson Drive�Chicago, IL 60621
+	Items:
+		Wireless Mouse
+		Bidet
+STARTING ORDER #64
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #64 TO 9391 Trout St. Riverview, FL 33569
+	Items:
+		Salad Spinner
+		Anti-Chafe Balm
+		Louisville Slugger Baseball Bat
+STARTING ORDER #65
+SHIPPING ORDER #65 TO 497 Sheffield Lane�Riverside, NJ 08075
+	Items:
+		Golf Bag
+STARTING ORDER #66
+SHIPPING ORDER #66 TO 7419 Vine St.�Painesville, OH 44077
+	Items:
+		Soup and Drink Thermos
+STARTING ORDER #67
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #67 TO 7543 Plymouth St.�Rego Park, NY 11374
+	Items:
+		Volleyball
+		Electric Rotisserie
+		Nonstick Frying Pan
+STARTING ORDER #68
+Item not in stock. Requesting restock
+SHIPPING ORDER #68 TO 7331 Cardinal Street�Methuen, MA 01844
+	Items:
+		Portable Stove
+		Frozen Concoction Maker
+STARTING ORDER #69
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #69 TO 719 Sherwood Lane�Hudson, NH 03051
+	Items:
+		Bike Air Horn
+		Cupcake Storage Container
+		Cleaning Pads
+		A-Male to Mini-B USB Cable
+STARTING ORDER #70
+Item not in stock. Requesting restock
+SHIPPING ORDER #70 TO 804 Green Ave.�Copperas Cove, TX 76522
+	Items:
+		Pedometer
+		4-Quart Tupperware
+STARTING ORDER #71
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #71 TO 103 Wayne Street�Miami Beach, FL 33139
+	Items:
+		Magnifying Glass
+		Salad Spinner
+		Laptop Stand
+STARTING ORDER #72
+Item not in stock. Requesting restock
+SHIPPING ORDER #72 TO 303 Grove St.�Westport, CT 06880
+	Items:
+		Griddle Pan
+		Pocket Water Microfilter
+STARTING ORDER #73
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #73 TO 53 Clinton St.�Bismarck, ND 58501
+	Items:
+		Slip-free Yoga Towel
+		Laundry Soda
+		Fruit Corer
+STARTING ORDER #74
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #74 TO 103 Wayne Street�Miami Beach, FL 33139
+	Items:
+		Toothbrush Holder
+		Floor Mat
+		Electric Scooter
+		Super-Soft, Absorbant Towel
+		Potato Ricer
+STARTING ORDER #75
+Item not in stock. Requesting restock
+SHIPPING ORDER #75 TO 8275 E. Summer Lane�Langhorne, PA 19047
+	Items:
+		Bike Trailer
+		Portable Folding Chair
+STARTING ORDER #76
+Item not in stock. Requesting restock
+SHIPPING ORDER #76 TO 497 Sheffield Lane�Riverside, NJ 08075
+	Items:
+		26-Function Bike Tool
+		Pain Reliever
+STARTING ORDER #77
+SHIPPING ORDER #77 TO 8127 Boston St.�Lake Villa, IL 60046
+	Items:
+		Knife Block
+STARTING ORDER #78
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #78 TO 8781 S. Thompson Lane�Greenville, NC 27834
+	Items:
+		Fat Separator
+		Programmable Lego Robot
+		Boning Knife
+		Fishing Reel
+		Pressure Cooker
+STARTING ORDER #79
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #79 TO 323 Franklin Dr.�Palatine, IL 60067
+	Items:
+		Telescope Sight
+		Madeleine Pan
+		Garlic Press
+		Ceramic Cooktop Cleaning Kit
+		Cast-Iron Dutch Oven
+STARTING ORDER #80
+SHIPPING ORDER #80 TO 62 North Street�Newtown, PA 18940
+	Items:
+		5-Bike Rack
+STARTING ORDER #81
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #81 TO 1 Grant Street�Lawrence, MA 01841
+	Items:
+		26-Function Bike Tool
+		Salad Spinner
+		Wine Aerator
+		Wireless Mouse
+		Grain Mill
+STARTING ORDER #82
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #82 TO 9944 East Bow Ridge Street�Holbrook, NY 11741
+	Items:
+		Grain Mill
+		Paintball Feeder
+		Neck/Face Mask
+STARTING ORDER #83
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #83 TO 7859 San Juan Dr.�Teaneck, NJ 07666
+	Items:
+		Can Crusher
+		Magnetic Clips
+		Car Battery Monitor
+		Wall-Mounted Spice Rack
+STARTING ORDER #84
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #84 TO 719 Sherwood Lane�Hudson, NH 03051
+	Items:
+		Laminating Machine Combo Pack
+		Slip-On Spikes
+		Tiny Portable Speakers
+STARTING ORDER #85
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #85 TO 90 Vale Drive�Amsterdam, NY 12010
+	Items:
+		Blender Bottle
+		Shoe Rack
+		VoIP Phone Adapter
+		Knife Block
+STARTING ORDER #86
+SHIPPING ORDER #86 TO 240 N. Talbot Ave.�Great Falls, MT 59404
+	Items:
+		Backpack
+STARTING ORDER #87
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #87 TO 765 Gates Street�Fort Washington, MD 20744
+	Items:
+		Grocery Bag Holder
+		Power Strip
+		Popsicle Maker
+STARTING ORDER #88
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #88 TO 9 Ohio Street�Lemont, IL 60439
+	Items:
+		Insulated Water Bottle
+		Pizza and Baking Stone
+		Electric Food Slicer
+STARTING ORDER #89
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #89 TO 7549 Woodsman Drive�Hinesville, GA 31313
+	Items:
+		Pie Crust Maker
+		Dry Bag
+		Granton Edge Slicing Knife
+		Mini Exercise Bike
+STARTING ORDER #90
+SHIPPING ORDER #90 TO 35 Mayfair St.�Pawtucket, RI 02860
+	Items:
+		Printer / Scanner / Copier / Fax
+STARTING ORDER #91
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #91 TO 481 Glenwood Lane�Egg Harbor Township, NJ 08234
+	Items:
+		Digital Radio
+		Sheet Gripper
+		Electric Rotisserie
+		Book Stand
+STARTING ORDER #92
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #92 TO 392 Locust St.�Stafford, VA 22554
+	Items:
+		Outdoor Party Game
+		Slip-On Spikes
+		Personal Fan
+STARTING ORDER #93
+SHIPPING ORDER #93 TO 240 N. Talbot Ave.�Great Falls, MT 59404
+	Items:
+		Spring Powered BB Gun
+STARTING ORDER #94
+Item not in stock. Requesting restock
+SHIPPING ORDER #94 TO 7797 Beech Dr.�Vienna, VA 22180
+	Items:
+		Ironing Board Cover
+		Whiskey Glass
+STARTING ORDER #95
+Item not in stock. Requesting restock
+SHIPPING ORDER #95 TO 10 Chestnut Dr.�Groton, CT 06340
+	Items:
+		Food Chopper / Pastry Scraper
+		Portable Folding Chair
+STARTING ORDER #96
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #96 TO 7846 Longbranch Ave.�Glenview, IL 60025
+	Items:
+		Drifting Machine
+		Pressure Cooker
+		Near  Far range Binoculars
+STARTING ORDER #97
+Item not in stock. Requesting restock
+SHIPPING ORDER #97 TO 53 Clinton St.�Bismarck, ND 58501
+	Items:
+		Golf Bag
+		Cast Iron Pot
+STARTING ORDER #98
+Item not in stock. Requesting restock
+SHIPPING ORDER #98 TO 7846 Longbranch Ave.�Glenview, IL 60025
+	Items:
+		4-Tier Cooling Rack
+		Jar Opener
+STARTING ORDER #99
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #99 TO 8518 Sunnyslope St.�Elkton, MD 21921
+	Items:
+		Wall-Mounted Spice Rack
+		First Aid Kit
+		5-Port Networking Switch
+		Basketball
+		Cute Egg Mold
+STARTING ORDER #100
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #100 TO 8466 Lawrence Drive�Tallahassee, FL 32303
+	Items:
+		AA Rechargeable Batteries
+		HDMI Cable
+		Table Tennis Set
+		Brew-In-Mug Device
+STARTING ORDER #101
+Item not in stock. Requesting restock
+SHIPPING ORDER #101 TO 836 Court St.�Elgin, IL 60120
+	Items:
+		HDMI to DVI Cable
+		Bottle Opener
+STARTING ORDER #102
+SHIPPING ORDER #102 TO 611 West 10th St.�Dorchester, MA 02125
+	Items:
+		Cookie Dough Scooper
+STARTING ORDER #103
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #103 TO 9391 Trout St. Riverview, FL 33569
+	Items:
+		Foldable Laundry Bin
+		Toilet bowl ring remover
+		Skateboard
+		Ice Cream Scooper
+		Sling-Style Bag
+STARTING ORDER #104
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #104 TO 7701 West Brook Street�Maryville, TN 37803
+	Items:
+		A-Male to Mini-B USB Cable
+		AA Battery Charger
+		Juicing Machine
+STARTING ORDER #105
+Item not in stock. Requesting restock
+SHIPPING ORDER #105 TO 771 East Broad Drive�Madison, AL 35758
+	Items:
+		Vibram Running Shoe
+		Pizza Oven Thing
+STARTING ORDER #106
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #106 TO 80 Henry Smith Court�Rockaway, NJ 07866
+	Items:
+		Outdoor Party Game
+		Bread Knife
+		Ice Cream Scooper
+STARTING ORDER #107
+Item not in stock. Requesting restock
+SHIPPING ORDER #107 TO 208 Jefferson Drive�Chicago, IL 60621
+	Items:
+		Can Opener
+		Ethernet Cable
+STARTING ORDER #108
+SHIPPING ORDER #108 TO 62 North Street�Newtown, PA 18940
+	Items:
+		Strawberry Stem Remover
+STARTING ORDER #109
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #109 TO 836 Court St.�Elgin, IL 60120
+	Items:
+		Splitting Axe
+		Pizza and Baking Stone
+		Toothbrush Holder
+		Cycling Pedals
+STARTING ORDER #110
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #110 TO 35 Wagon Street�Saint Albans, NY 11412
+	Items:
+		Forehead Flashlight
+		Handheld Blender
+		Food Chopper / Pastry Scraper
+		Forehead Flashlight
+STARTING ORDER #111
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #111 TO 529 Rockcrest Lane�Elkton, MD 21921
+	Items:
+		Pineapple Slicer and De-Corer
+		Salad Spinner
+		Outdoor Party Game
+		Speedminton Set
+		Loaf Ban
+STARTING ORDER #112
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #112 TO 7846 Longbranch Ave.�Glenview, IL 60025
+	Items:
+		Laptop Stand
+		Foam Roller
+		DVD+R Discs (8.5 GB)
+		Personal Fan
+		Lasagna Trio Pan
+STARTING ORDER #113
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #113 TO 392 Locust St.�Stafford, VA 22554
+	Items:
+		Bike Tail Light
+		Blender Bottle
+		Backpack
+		Electric Salad Slicer
+STARTING ORDER #114
+SHIPPING ORDER #114 TO 207 Tanglewood St.�Racine, WI 53402
+	Items:
+		Drinking Glasses
+STARTING ORDER #115
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #115 TO 10 Chestnut Dr.�Groton, CT 06340
+	Items:
+		iPad Blender
+		5-Port Networking Switch
+		Over-the-door Jewelry Rack
+		Vegetable Brush
+STARTING ORDER #116
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #116 TO 3 West Monroe Lane�Goose Creek, SC 29445
+	Items:
+		Indoor Bike Trainer
+		Boning Knife
+		Pizza Oven Thing
+		AA Rechargeable Batteries
+		Food Bag Sealer Clips
+STARTING ORDER #117
+Item not in stock. Requesting restock
+SHIPPING ORDER #117 TO 497 Sheffield Lane�Riverside, NJ 08075
+	Items:
+		Whisk
+		Boning Knife
+STARTING ORDER #118
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #118 TO 80 Henry Smith Court�Rockaway, NJ 07866
+	Items:
+		In-Drawer Knife Tray
+		61oz Thermos
+		Forehead Flashlight
+		Knife Sharpener
+		Car Battery Monitor
+STARTING ORDER #119
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #119 TO 173 Linda Court�Holly Springs, NC 27540
+	Items:
+		Laundry Sorter Cart
+		HDMI Cable
+		Dry Bag
+		Can Opener
+STARTING ORDER #120
+Item not in stock. Requesting restock
+SHIPPING ORDER #120 TO 3 West Monroe Lane�Goose Creek, SC 29445
+	Items:
+		Bike Seat
+		Pressure Cooker  Canner
+STARTING ORDER #121
+SHIPPING ORDER #121 TO 7543 Plymouth St.�Rego Park, NY 11374
+	Items:
+		4-Tier Cooling Rack
+STARTING ORDER #122
+SHIPPING ORDER #122 TO 7543 Plymouth St.�Rego Park, NY 11374
+	Items:
+		Hand Exerciser
+STARTING ORDER #123
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #123 TO 58 West Longfellow Street�Garland, TX 75043
+	Items:
+		Letter Opener
+		Dryer vent cleaning system
+		AA Battery Charger
+STARTING ORDER #124
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #124 TO 9319 Longbranch St.�Panama City, FL 32404
+	Items:
+		Pizza Pan
+		Shoe Rack
+		Magnetic Measuring Spoons
+		Pain Reliever
+STARTING ORDER #125
+Item not in stock. Requesting restock
+SHIPPING ORDER #125 TO 9 Ohio Street�Lemont, IL 60439
+	Items:
+		Electric Food Slicer
+		Vacuum
+STARTING ORDER #126
+SHIPPING ORDER #126 TO 698 E. Blackburn Drive�Nampa, ID 83651
+	Items:
+		Egg Beater
+STARTING ORDER #127
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #127 TO 6 St Paul St.�Philadelphia, PA 19111
+	Items:
+		Machete Knife
+		Bike Mirror
+		Rust  Stain Remover
+STARTING ORDER #128
+Item not in stock. Requesting restock
+SHIPPING ORDER #128 TO 29 East Oxford Drive�Odenton, MD 21113
+	Items:
+		Audio Cable
+		Electric Wok
+STARTING ORDER #129
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #129 TO 7331 Cardinal Street�Methuen, MA 01844
+	Items:
+		Laundry Detergent
+		In-Drawer Knife Tray
+		Longboard Skateboard
+STARTING ORDER #130
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #130 TO 611 West 10th St.�Dorchester, MA 02125
+	Items:
+		Peeler
+		Nonstick Baking Liner
+		Rowing Machine
+		Hanging Pot Rack
+		Solo Raft
+STARTING ORDER #131
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #131 TO 170 Buckingham Ave.�Milledgeville, GA 31061
+	Items:
+		Whisk
+		Adjustable Dumbbells
+		iPhone/iPod Stereo
+		Butter Crock
+		Basketball
+STARTING ORDER #132
+Item not in stock. Requesting restock
+SHIPPING ORDER #132 TO 323 Franklin Dr.�Palatine, IL 60067
+	Items:
+		Snow Cone Maker
+		F-Pin Audio/Video Cable
+STARTING ORDER #133
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #133 TO 855 Wall St.�Clarksburg, WV 26301
+	Items:
+		Spice Rack
+		Corn Holders
+		Hand Exerciser
+STARTING ORDER #134
+SHIPPING ORDER #134 TO 32 Bellevue Street�Waterford, MI 48329
+	Items:
+		Fish Turner
+STARTING ORDER #135
+Item not in stock. Requesting restock
+SHIPPING ORDER #135 TO 240 N. Talbot Ave.�Great Falls, MT 59404
+	Items:
+		Mouse Trap
+		Potato Ricer
+STARTING ORDER #136
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #136 TO 7797 Beech Dr.�Vienna, VA 22180
+	Items:
+		Espresso Spoons
+		Bread Knife
+		Whiskey Glass
+		Battery-Powered Lantern
+STARTING ORDER #137
+Item not in stock. Requesting restock
+SHIPPING ORDER #137 TO 74 West Queen Dr.�South Richmond Hill, NY 11419
+	Items:
+		iPad Back Cover
+		Food Chopper / Pastry Scraper
+STARTING ORDER #138
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #138 TO 71 Glenholme Court�Basking Ridge, NJ 07920
+	Items:
+		Letter Opener
+		Ice Cube Tray
+		Rotating Cake Stand
+		Bottle and Dish Brush
+		Microwavable Steamer
+STARTING ORDER #139
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #139 TO 451 Marconi Ave.�Marcus Hook, PA 19061
+	Items:
+		Portable Folding Chair
+		Rolling Pin
+		Drinking Glasses
+		Home Theater Speakers
+		Ice Cube Tray
+STARTING ORDER #140
+Item not in stock. Requesting restock
+SHIPPING ORDER #140 TO 941 Alton St.�Flint, MI 48504
+	Items:
+		Cupcake Maker
+		Facial Tissues
+STARTING ORDER #141
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #141 TO 103 Wayne Street�Miami Beach, FL 33139
+	Items:
+		Ethernet Cable
+		Speedminton Set
+		Heat-Resistant Utensil Set
+		Bread Knife
+STARTING ORDER #142
+SHIPPING ORDER #142 TO 428 Windfall Avenue�Blacksburg, VA 24060
+	Items:
+		Ping Pong Paddle
+STARTING ORDER #143
+Item not in stock. Requesting restock
+SHIPPING ORDER #143 TO 90 Vale Drive�Amsterdam, NY 12010
+	Items:
+		Griddle Pan
+		Mixing Bowl Set
+STARTING ORDER #144
+Item not in stock. Requesting restock
+SHIPPING ORDER #144 TO 97 4th Ave.�Hyattsville, MD 20782
+	Items:
+		Milk Frother
+		Iron
+STARTING ORDER #145
+Item not in stock. Requesting restock
+SHIPPING ORDER #145 TO 9 Ohio Street�Lemont, IL 60439
+	Items:
+		5-Bike Rack
+		Drying Rack
+STARTING ORDER #146
+SHIPPING ORDER #146 TO 3 West Monroe Lane�Goose Creek, SC 29445
+	Items:
+		Grain Mill
+STARTING ORDER #147
+SHIPPING ORDER #147 TO 10 Chestnut Dr.�Groton, CT 06340
+	Items:
+		Milk Frother
+STARTING ORDER #148
+SHIPPING ORDER #148 TO 497 Sheffield Lane�Riverside, NJ 08075
+	Items:
+		Corn Holders
+STARTING ORDER #149
+Item not in stock. Requesting restock
+SHIPPING ORDER #149 TO 7797 Beech Dr.�Vienna, VA 22180
+	Items:
+		Drifting Machine
+		USB Wi-Fi Adapter
+STARTING ORDER #150
+SHIPPING ORDER #150 TO 2 Euclid Lane�San Lorenzo, CA 94580
+	Items:
+		Cast-Iron Dutch Oven
+STARTING ORDER #151
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #151 TO 35 Wagon Street�Saint Albans, NY 11412
+	Items:
+		Folding Laundry Basket
+		Fishing Reel
+		Cycling Shorts
+STARTING ORDER #152
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #152 TO 7211 Bridge St.�Detroit, MI 48205
+	Items:
+		Rolling Step Stool
+		Electric Salad Slicer
+		Paintball Set
+		Carpet Cleaning Machine
+		Vacuum
+STARTING ORDER #153
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #153 TO 7419 Vine St.�Painesville, OH 44077
+	Items:
+		Sleeping Bag
+		Roller Cart
+		Hanging Laundry Bag
+		Spinning Organizer
+STARTING ORDER #154
+SHIPPING ORDER #154 TO 71 Glenholme Court�Basking Ridge, NJ 07920
+	Items:
+		Vacuum
+STARTING ORDER #155
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #155 TO 207 Tanglewood St.�Racine, WI 53402
+	Items:
+		Cookie Dough Scooper
+		Longboard Skateboard
+		TV Stand
+		HDMI Cable
+		Teapot
+STARTING ORDER #156
+Item not in stock. Requesting restock
+SHIPPING ORDER #156 TO 32 Bellevue Street�Waterford, MI 48329
+	Items:
+		Oil Pourer
+		Boning Knife
+STARTING ORDER #157
+Item not in stock. Requesting restock
+SHIPPING ORDER #157 TO 7874 Victoria Drive�Woburn, MA 01801
+	Items:
+		Nonstick Frying Pan
+		Espresso Spoons
+STARTING ORDER #158
+SHIPPING ORDER #158 TO 53 Clinton St.�Bismarck, ND 58501
+	Items:
+		Laminating Machine Combo Pack
+STARTING ORDER #159
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #159 TO 80 Henry Smith Court�Rockaway, NJ 07866
+	Items:
+		Digital Radio
+		Laundry Sorter Cart
+		Electric Meat Grinder
+		Ladybug Night Light
+STARTING ORDER #160
+SHIPPING ORDER #160 TO 944 South Glenridge Lane�Tuscaloosa, AL 35405
+	Items:
+		Magnetic Measuring Spoons
+STARTING ORDER #161
+SHIPPING ORDER #161 TO West Arrowhead Ave.�Mankato, MN 56001
+	Items:
+		Mini Exercise Bike
+STARTING ORDER #162
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #162 TO 765 Gates Street�Fort Washington, MD 20744
+	Items:
+		Mega Plunger
+		Laminating Machine Combo Pack
+		Programmable Switch
+STARTING ORDER #163
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #163 TO 32 Bellevue Street�Waterford, MI 48329
+	Items:
+		Pasta Machine
+		Tortilla Shell Pans
+		Queen Bed Frame and Box Spring
+		Reusable Grocery Bags
+		Electric Fondue Maker
+STARTING ORDER #164
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #164 TO 53 Clinton St.�Bismarck, ND 58501
+	Items:
+		Spring Powered BB Gun
+		Reusable Produce Bags
+		Tomato Slicer Knife
+		Lasagna Trio Pan
+STARTING ORDER #165
+SHIPPING ORDER #165 TO 32 Bellevue Street�Waterford, MI 48329
+	Items:
+		Oil Pourer
+STARTING ORDER #166
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #166 TO 451 Marconi Ave.�Marcus Hook, PA 19061
+	Items:
+		Toy Hammock
+		Pocket Water Microfilter
+		Rowing Machine
+STARTING ORDER #167
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #167 TO 32 Bellevue Street�Waterford, MI 48329
+	Items:
+		Wine Saver
+		Handheld Blender
+		Espresso Tamper
+		Strawberry Stem Remover
+STARTING ORDER #168
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #168 TO 6 St Paul St.�Philadelphia, PA 19111
+	Items:
+		Laundry Sorter Cart
+		Waffle Maker
+		Louisville Slugger Baseball Bat
+		Fruit Corer
+		Tiny Portable Speakers
+STARTING ORDER #169
+Item not in stock. Requesting restock
+SHIPPING ORDER #169 TO 9319 Longbranch St.�Panama City, FL 32404
+	Items:
+		Stand Mixer Bowl
+		Frozen Concoction Maker
+STARTING ORDER #170
+SHIPPING ORDER #170 TO 9 Ohio Street�Lemont, IL 60439
+	Items:
+		Laundry Detergent
+STARTING ORDER #171
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #171 TO 18 Essex St.�Harlingen, TX 78552
+	Items:
+		Swim Goggles
+		Stain  Odor Remover
+		Rotating Cake Stand
+STARTING ORDER #172
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #172 TO 26 Indian Spring Dr.�Spring Valley, NY 10977
+	Items:
+		Madeleine Pan
+		Scooter
+		Rotating Turntable
+		Mega Plunger
+		Nonstick Baking Liner
+STARTING ORDER #173
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #173 TO 9944 East Bow Ridge Street�Holbrook, NY 11741
+	Items:
+		In-Drawer Knife Tray
+		Grater/Zester
+		Digital Kitchen Scale
+		Bolt Action C02 Pistol
+STARTING ORDER #174
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #174 TO 35 Mayfair St.�Pawtucket, RI 02860
+	Items:
+		Scissors
+		Hand Exerciser
+		Food Coloring Set
+		Donut Pan
+		Juicer Thing
+STARTING ORDER #175
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #175 TO 64 Birch Hill St.�Boston, MA 02127
+	Items:
+		Personal Fan
+		Programmable Switch
+		Telescope Sight
+		Lasagna Trio Pan
+STARTING ORDER #176
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #176 TO 240 N. Talbot Ave.�Great Falls, MT 59404
+	Items:
+		Jar Sealer
+		Hand Exerciser
+		Knife Sharpener
+		Kettle
+STARTING ORDER #177
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #177 TO 9564 Main Court�Bedford, OH 44146
+	Items:
+		Rolling Pin
+		Magnetic Door Blinds
+		Cast Iron Pot
+STARTING ORDER #178
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #178 TO 698 E. Blackburn Drive�Nampa, ID 83651
+	Items:
+		Ceramic Cooktop Cleaning Kit
+		Madeleine Pan
+		Expandable Closet Organizer
+		Soup and Drink Thermos
+STARTING ORDER #179
+Item not in stock. Requesting restock
+SHIPPING ORDER #179 TO 2 Euclid Lane�San Lorenzo, CA 94580
+	Items:
+		Weighted Hula Hoop
+		Magnifying Glass
+STARTING ORDER #180
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #180 TO 170 Buckingham Ave.�Milledgeville, GA 31061
+	Items:
+		Grain Mill
+		Thermos Travel Mug
+		Mouse Trap
+		Paintball Feeder
+		Jar Opener
+STARTING ORDER #181
+SHIPPING ORDER #181 TO 276 Boston Court�Encino, CA 91316
+	Items:
+		Reusable Produce Bags
+STARTING ORDER #182
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #182 TO 58 West Longfellow Street�Garland, TX 75043
+	Items:
+		61oz Thermos
+		HD 3D Plasma TV
+		Circuit Tester
+		Airtight Container
+STARTING ORDER #183
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #183 TO 9 Ohio Street�Lemont, IL 60439
+	Items:
+		Pulse Oximeter
+		Spaetzle Maker
+		Potato Ricer
+		Screen Cleaning Kit
+		Car Battery Monitor
+STARTING ORDER #184
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #184 TO 58 West Longfellow Street�Garland, TX 75043
+	Items:
+		Dry Bag
+		Grabber Thing
+		Machete Knife
+		Inflatable Kayak
+STARTING ORDER #185
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #185 TO 8127 Boston St.�Lake Villa, IL 60046
+	Items:
+		Circuit Tester
+		3-Step Stool
+		AA Battery Charger
+		Neck/Face Mask
+STARTING ORDER #186
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #186 TO 769 Oakland Street�Hinesville, GA 31313
+	Items:
+		Apple Peeler Contraption
+		Forehead Flashlight
+		Bundt Pan
+STARTING ORDER #187
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #187 TO 8466 Lawrence Drive�Tallahassee, FL 32303
+	Items:
+		Electric Fondue Maker
+		Air Freshener
+		Burger Press
+		Mouse Trap
+STARTING ORDER #188
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #188 TO 78 New Saddle Court�Apt 62�Independence, KY 41051
+	Items:
+		Mixing Bowl Set
+		Pizza and Dough Peel
+		Apron with Pockets
+STARTING ORDER #189
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #189 TO 64 Birch Hill St.�Boston, MA 02127
+	Items:
+		Tortilla Shell Pans
+		Scissors
+		Bottle Cage
+STARTING ORDER #190
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #190 TO 7419 Vine St.�Painesville, OH 44077
+	Items:
+		Pizza and Dough Peel
+		Fake TV Burglar Deterrent
+		Tortilla Shell Pans
+		Kid's Trike
+STARTING ORDER #191
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #191 TO 468 Paris Hill Dr.�Montgomery Village, MD 20886
+	Items:
+		Air Freshener
+		Madeleine Pan
+		Whiskey Glass
+		A-to-B USB Cable
+		Egg Beater
+STARTING ORDER #192
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #192 TO 1 Grant Street�Lawrence, MA 01841
+	Items:
+		Strainer
+		Splitting Axe
+		Drifting Machine
+STARTING ORDER #193
+SHIPPING ORDER #193 TO 8134 W. Brickyard Street�Windsor Mill, MD 21244
+	Items:
+		A-to-B USB Cable
+STARTING ORDER #194
+SHIPPING ORDER #194 TO 481 Glenwood Lane�Egg Harbor Township, NJ 08234
+	Items:
+		Griddle Pan
+STARTING ORDER #195
+SHIPPING ORDER #195 TO 74 West Queen Dr.�South Richmond Hill, NY 11419
+	Items:
+		Programmable Switch
+STARTING ORDER #196
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #196 TO 7211 Bridge St.�Detroit, MI 48205
+	Items:
+		Vacuum
+		Fire Starter
+		Massage Stick
+		Machete Knife
+		Fat Separator
+STARTING ORDER #197
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #197 TO 853 Rock Maple Street�Feasterville Trevose, PA 19053
+	Items:
+		Nonstick Frying Pan
+		Facial Tissues
+		Pet Food Container
+		iPhone/iPod Stereo
+		Shoe Dryer
+STARTING ORDER #198
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #198 TO 9564 Main Court�Bedford, OH 44146
+	Items:
+		Simple Projector
+		Letter Opener
+		Adjustable Dumbbells
+		Electric Salad Slicer
+STARTING ORDER #199
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #199 TO 451 Marconi Ave.�Marcus Hook, PA 19061
+	Items:
+		Nonstick Skilet
+		Fruit Corer
+		Soup and Drink Thermos
+		Mixer
+STARTING ORDER #200
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #200 TO 529 Rockcrest Lane�Elkton, MD 21921
+	Items:
+		Collapsible Strainer
+		Sling-Style Bag
+		Mortar and Pestle
+		Ironing Board Cover
+		Circuit Tester
+STARTING ORDER #201
+Item not in stock. Requesting restock
+SHIPPING ORDER #201 TO 1 Grant Street�Lawrence, MA 01841
+	Items:
+		Airtight Container
+		Pocket Rescusitator
+STARTING ORDER #202
+Item not in stock. Requesting restock
+SHIPPING ORDER #202 TO 7461 Ridge St.�Fort Myers, FL 33905
+	Items:
+		Letter Opener
+		Boning Knife
+STARTING ORDER #203
+Item not in stock. Requesting restock
+SHIPPING ORDER #203 TO 207 Tanglewood St.�Racine, WI 53402
+	Items:
+		Punching Bag
+		Volleyball
+STARTING ORDER #204
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #204 TO 2 Euclid Lane�San Lorenzo, CA 94580
+	Items:
+		Disc
+		Grater/Zester
+		Pedometer
+		Foam Roller
+		Digital Kitchen Scale
+STARTING ORDER #205
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #205 TO 207 Tanglewood St.�Racine, WI 53402
+	Items:
+		Food Thermometer
+		Inflatable Boat
+		Scooter
+		Grater/Zester
+		Grain Mill
+STARTING ORDER #206
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #206 TO 3 West Monroe Lane�Goose Creek, SC 29445
+	Items:
+		Huge Portable Hammock
+		Volleyball
+		iPad Blender
+		Solo Raft
+STARTING ORDER #207
+SHIPPING ORDER #207 TO 944 South Glenridge Lane�Tuscaloosa, AL 35405
+	Items:
+		Expandable Closet Organizer
+STARTING ORDER #208
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #208 TO 64 Alton Rd.�Winter Springs, FL 32708
+	Items:
+		Cookie Dough Scooper
+		Frisbee Alternative
+		Mixer
+		Food Dehydrator and Jerky Maker
+		Mirror
+STARTING ORDER #209
+Item not in stock. Requesting restock
+SHIPPING ORDER #209 TO 97 4th Ave.�Hyattsville, MD 20782
+	Items:
+		Danish Dough Whisk
+		Golf Push Cart
+STARTING ORDER #210
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #210 TO 78 New Saddle Court�Apt 62�Independence, KY 41051
+	Items:
+		Velcro Cable Ties
+		4-Quart Tupperware
+		Carpet Cleaning Machine
+STARTING ORDER #211
+SHIPPING ORDER #211 TO 9622 S. Leeton Ridge St.�Melbourne, FL 32904
+	Items:
+		Egg Beater
+STARTING ORDER #212
+Item not in stock. Requesting restock
+SHIPPING ORDER #212 TO 62 North Street�Newtown, PA 18940
+	Items:
+		Pressure Cooker
+		Toothbrush Holder
+STARTING ORDER #213
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #213 TO 7211 Bridge St.�Detroit, MI 48205
+	Items:
+		Exercise Bike
+		4-Tier Cooling Rack
+		Rice Cooker
+STARTING ORDER #214
+Item not in stock. Requesting restock
+SHIPPING ORDER #214 TO 30 Ivy Street�Lansing, MI 48910
+	Items:
+		Magnetic Clips
+		61oz Thermos
+STARTING ORDER #215
+Item not in stock. Requesting restock
+SHIPPING ORDER #215 TO 182 Hawthorne Ave.�Melrose, MA 02176
+	Items:
+		Loaf Ban
+		French Press
+STARTING ORDER #216
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #216 TO 35 Mayfair St.�Pawtucket, RI 02860
+	Items:
+		Shower Curtain Rings
+		Inflatable Boat
+		Wall-Mounted Spice Rack
+STARTING ORDER #217
+Item not in stock. Requesting restock
+SHIPPING ORDER #217 TO 9 Ohio Street�Lemont, IL 60439
+	Items:
+		4-Tier Cooling Rack
+		Can Opener
+STARTING ORDER #218
+SHIPPING ORDER #218 TO 78 New Saddle Court�Apt 62�Independence, KY 41051
+	Items:
+		Boning Knife
+STARTING ORDER #219
+Item not in stock. Requesting restock
+SHIPPING ORDER #219 TO 912 Mechanic St.�Muncie, IN 47302
+	Items:
+		Pineapple Slicer and De-Corer
+		Pet Food Container
+STARTING ORDER #220
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #220 TO 45 North Center Road�Derry, NH 03038
+	Items:
+		Pulse Oximeter
+		Slip-On Spikes
+		Storage Bin
+STARTING ORDER #221
+SHIPPING ORDER #221 TO 9 Ohio Street�Lemont, IL 60439
+	Items:
+		Rolling Step Stool
+STARTING ORDER #222
+Item not in stock. Requesting restock
+SHIPPING ORDER #222 TO 7846 Longbranch Ave.�Glenview, IL 60025
+	Items:
+		Peeler
+		3-Step Stool
+STARTING ORDER #223
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #223 TO 611 West 10th St.�Dorchester, MA 02125
+	Items:
+		Printer / Scanner / Copier / Fax
+		Faucet Extender for Kids
+		Magnetic Knife Holder
+STARTING ORDER #224
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #224 TO 182 Hawthorne Ave.�Melrose, MA 02176
+	Items:
+		Bottle and Dish Brush
+		Pizza and Baking Stone
+		Adjustable Basketball Hoop
+		Egg / Bacon Microwave Cooker
+		Tortilla Shell Pans
+STARTING ORDER #225
+Item not in stock. Requesting restock
+SHIPPING ORDER #225 TO 207 Tanglewood St.�Racine, WI 53402
+	Items:
+		USB Wi-Fi Adapter
+		Bolt Action C02 Pistol
+STARTING ORDER #226
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #226 TO 208 Jefferson Drive�Chicago, IL 60621
+	Items:
+		Mandoline Slicer
+		Bundt Pan
+		Bike Tail Light
+		Bottle Opener
+		Laundry Soda
+STARTING ORDER #227
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #227 TO 8404 Hilltop Ave.�Williamsburg, VA 23185
+	Items:
+		Mirror
+		Soy and Almond Milk Maker
+		Mini Exercise Bike
+		Home Theater Speakers
+		Electric Scooter
+STARTING ORDER #228
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #228 TO 944 South Glenridge Lane�Tuscaloosa, AL 35405
+	Items:
+		Bike Tail Light
+		Outdoor Party Game
+		Laundry Soda
+STARTING ORDER #229
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #229 TO 611 West 10th St.�Dorchester, MA 02125
+	Items:
+		Wine Saver
+		Swively Two-Wheeled Skateboard
+		Electric Duster Vacuum
+STARTING ORDER #230
+SHIPPING ORDER #230 TO 481 Glenwood Lane�Egg Harbor Township, NJ 08234
+	Items:
+		Adjustable Basketball Hoop
+STARTING ORDER #231
+Item not in stock. Requesting restock
+SHIPPING ORDER #231 TO 75 Annadale Ave.�Desoto, TX 75115
+	Items:
+		Neck/Face Mask
+		Bike Mirror
+STARTING ORDER #232
+Item not in stock. Requesting restock
+SHIPPING ORDER #232 TO 207 Tanglewood St.�Racine, WI 53402
+	Items:
+		Garage Door Remote
+		11lb Kitchen Scale
+STARTING ORDER #233
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #233 TO 481 Glenwood Lane�Egg Harbor Township, NJ 08234
+	Items:
+		Brew-In-Mug Device
+		Hanging Pot Rack
+		Reusable Produce Bags
+		Nonstick Frying Pan
+STARTING ORDER #234
+SHIPPING ORDER #234 TO 529 Rockcrest Lane�Elkton, MD 21921
+	Items:
+		Snorkel Equipment
+STARTING ORDER #235
+Item not in stock. Requesting restock
+SHIPPING ORDER #235 TO 8518 Sunnyslope St.�Elkton, MD 21921
+	Items:
+		Bookshelf Speakers
+		Near  Far range Binoculars
+STARTING ORDER #236
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #236 TO 8127 Boston St.�Lake Villa, IL 60046
+	Items:
+		Rechargable Bike Headlight
+		Frying Pan Set
+		Portable Folding Chair
+		Tongs
+		iPad Back Cover
+STARTING ORDER #237
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #237 TO 9 Ohio Street�Lemont, IL 60439
+	Items:
+		Pizza Cutter
+		Swiffer Sweeping Cloths
+		Sushi Maker
+STARTING ORDER #238
+SHIPPING ORDER #238 TO 8518 Sunnyslope St.�Elkton, MD 21921
+	Items:
+		Velcro Cable Ties
+STARTING ORDER #239
+Item not in stock. Requesting restock
+SHIPPING ORDER #239 TO 30 Mulberry Drive�Port Orange, FL 32127
+	Items:
+		Tiny Portable Speakers
+		Apple Peeler Contraption
+STARTING ORDER #240
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #240 TO 30 Ivy Street�Lansing, MI 48910
+	Items:
+		Pressure Cooker  Canner
+		Burger Press
+		Espresso Spoons
+STARTING ORDER #241
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #241 TO 276 Boston Court�Encino, CA 91316
+	Items:
+		Nonstick Skilet
+		Balance Board
+		Chef Cleaver Knife
+STARTING ORDER #242
+SHIPPING ORDER #242 TO 769 Oakland Street�Hinesville, GA 31313
+	Items:
+		Electric Scooter
+STARTING ORDER #243
+SHIPPING ORDER #243 TO 49 Lawrence Avenue�Greensboro, NC 27405
+	Items:
+		Bike Bungie Net
+STARTING ORDER #244
+Item not in stock. Requesting restock
+SHIPPING ORDER #244 TO 11 Sutor Ave.�Silver Spring, MD 20901
+	Items:
+		Indoor Bike Trainer
+		A-Male to Mini-B USB Cable
+STARTING ORDER #245
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #245 TO 7461 Ridge St.�Fort Myers, FL 33905
+	Items:
+		Loaf Ban
+		Foldable Laundry Bin
+		Mandoline Slicer
+		Wine Saver
+		Cappuccino and Latte Set
+STARTING ORDER #246
+Item not in stock. Requesting restock
+SHIPPING ORDER #246 TO 7331 Cardinal Street�Methuen, MA 01844
+	Items:
+		Wine Aerator
+		Laundry Sorter Cart
+STARTING ORDER #247
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #247 TO 833 Border Drive�North Attleboro, MA 02760
+	Items:
+		Pizzelle Baker
+		Hanging Laundry Bag
+		Roller Cart
+STARTING ORDER #248
+Item not in stock. Requesting restock
+SHIPPING ORDER #248 TO 78 New Saddle Court�Apt 62�Independence, KY 41051
+	Items:
+		Digital Radio
+		Hidden Book Shelf
+STARTING ORDER #249
+SHIPPING ORDER #249 TO 836 Court St.�Elgin, IL 60120
+	Items:
+		Mixing Bowl Set
+STARTING ORDER #250
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #250 TO West Arrowhead Ave.�Mankato, MN 56001
+	Items:
+		Fast, Portable Water Boiler
+		Hanger Holder
+		61oz Thermos
+		Drifting Machine
+		Iron
+STARTING ORDER #251
+SHIPPING ORDER #251 TO 7874 Victoria Drive�Woburn, MA 01801
+	Items:
+		Baguette Pan
+STARTING ORDER #252
+SHIPPING ORDER #252 TO 8004 Maple Lane�Saint Joseph, MI 4908577 
+	Items:
+		Foldable Laundry Bin
+STARTING ORDER #253
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #253 TO 78 New Saddle Court�Apt 62�Independence, KY 41051
+	Items:
+		Magnetic Measuring Spoons
+		Bike Tail Light
+		Toilet bowl ring remover
+		Pet Food Container
+		Cake Pan
+STARTING ORDER #254
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #254 TO 529 Rockcrest Lane�Elkton, MD 21921
+	Items:
+		Pizza and Dough Peel
+		iPad Blender
+		Mixer
+		Airtight Container
+		Dumbbell Rack
+STARTING ORDER #255
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #255 TO 804 Green Ave.�Copperas Cove, TX 76522
+	Items:
+		In-Drawer Knife Tray
+		Pocket Rescusitator
+		Shower Curtain Rings
+STARTING ORDER #256
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #256 TO 8275 E. Summer Lane�Langhorne, PA 19047
+	Items:
+		Chef's Knife
+		Brownie Pan
+		Blender Bottle
+STARTING ORDER #257
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #257 TO 30 Mulberry Drive�Port Orange, FL 32127
+	Items:
+		Oven Glove
+		Teapot
+		Pizzelle Baker
+		Pie Crust Maker
+		Fishing Reel
+STARTING ORDER #258
+SHIPPING ORDER #258 TO 78 New Saddle Court�Apt 62�Independence, KY 41051
+	Items:
+		12V Power Adapter for Cars
+STARTING ORDER #259
+Item not in stock. Requesting restock
+SHIPPING ORDER #259 TO 7859 San Juan Dr.�Teaneck, NJ 07666
+	Items:
+		Near  Far range Binoculars
+		Frozen Concoction Maker
+STARTING ORDER #260
+SHIPPING ORDER #260 TO 7461 Ridge St.�Fort Myers, FL 33905
+	Items:
+		Can Crusher
+STARTING ORDER #261
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #261 TO 8127 Boston St.�Lake Villa, IL 60046
+	Items:
+		Near  Far range Binoculars
+		Milk Frothing Pitcher
+		Power Strip
+STARTING ORDER #262
+Item not in stock. Requesting restock
+SHIPPING ORDER #262 TO 29 Schoolhouse St.�Oakland Gardens, NY 11364
+	Items:
+		Energy Chews
+		Audio-Technica Headphones
+STARTING ORDER #263
+SHIPPING ORDER #263 TO 303 Grove St.�Westport, CT 06880
+	Items:
+		Portable Stove
+STARTING ORDER #264
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #264 TO 9564 Main Court�Bedford, OH 44146
+	Items:
+		AA Battery Charger
+		Pizza Oven Thing
+		AA Rechargeable Batteries
+STARTING ORDER #265
+SHIPPING ORDER #265 TO 8275 E. Summer Lane�Langhorne, PA 19047
+	Items:
+		Electric Smoker
+STARTING ORDER #266
+SHIPPING ORDER #266 TO 26 Indian Spring Dr.�Spring Valley, NY 10977
+	Items:
+		Skateboard
+STARTING ORDER #267
+SHIPPING ORDER #267 TO 1 Grant Street�Lawrence, MA 01841
+	Items:
+		Handheld Blender
+STARTING ORDER #268
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #268 TO 8804 St Paul Court�Catonsville, MD 21228
+	Items:
+		Portable Folding Chair
+		5-Bike Rack
+		Grabber Thing
+		Sausage Stuffer
+STARTING ORDER #269
+SHIPPING ORDER #269 TO 45 Tanglewood Street�Beloit, WI 53511
+	Items:
+		Boning Knife
+STARTING ORDER #270
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #270 TO 9644 Amerige Street�Arvada, CO 80003
+	Items:
+		Saucepot and Steamer
+		Glass Bowls w/ Lids
+		Pressure Cooker
+		Pizza Pan
+		Bottle and Dish Brush
+STARTING ORDER #271
+SHIPPING ORDER #271 TO 451 Marconi Ave.�Marcus Hook, PA 19061
+	Items:
+		Electric Griddle
+STARTING ORDER #272
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #272 TO 468 Paris Hill Dr.�Montgomery Village, MD 20886
+	Items:
+		Sheet Gripper
+		Knife Sharpener
+		Wireless Camera
+		Weighted Hula Hoop
+STARTING ORDER #273
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #273 TO 468 Paris Hill Dr.�Montgomery Village, MD 20886
+	Items:
+		Disc
+		Sling-Style Bag
+		Swim Goggles
+		Danish Dough Whisk
+STARTING ORDER #274
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #274 TO 8518 Sunnyslope St.�Elkton, MD 21921
+	Items:
+		Weighted Hula Hoop
+		Cycling Pedals
+		Frozen Concoction Maker
+		Shoe Rack
+STARTING ORDER #275
+Item not in stock. Requesting restock
+SHIPPING ORDER #275 TO 11 Sutor Ave.�Silver Spring, MD 20901
+	Items:
+		Storage Bin
+		Milk Frothing Pitcher
+STARTING ORDER #276
+SHIPPING ORDER #276 TO 35 Mayfair St.�Pawtucket, RI 02860
+	Items:
+		Pizza Oven Thing
+STARTING ORDER #277
+Item not in stock. Requesting restock
+SHIPPING ORDER #277 TO 170 Buckingham Ave.�Milledgeville, GA 31061
+	Items:
+		Rolling Pin
+		DVD+R Discs (8.5 GB)
+STARTING ORDER #278
+SHIPPING ORDER #278 TO 173 Linda Court�Holly Springs, NC 27540
+	Items:
+		Rowing Machine
+STARTING ORDER #279
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #279 TO 8796 Sulphur Springs Street�Monsey, NY 10952
+	Items:
+		Scotch Tape
+		Sushi Rice Press
+		Insulated Water Bottle
+		Fruit and Vegetable Wash
+STARTING ORDER #280
+SHIPPING ORDER #280 TO 9644 Amerige Street�Arvada, CO 80003
+	Items:
+		AA Battery Charger
+STARTING ORDER #281
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #281 TO 719 Sherwood Lane�Hudson, NH 03051
+	Items:
+		Iron
+		Waffle Maker
+		Fake TV Burglar Deterrent
+STARTING ORDER #282
+Item not in stock. Requesting restock
+SHIPPING ORDER #282 TO 97 4th Ave.�Hyattsville, MD 20782
+	Items:
+		Jar Opener
+		Slip-free Yoga Towel
+STARTING ORDER #283
+SHIPPING ORDER #283 TO 62 North Street�Newtown, PA 18940
+	Items:
+		Fruit Corer
+STARTING ORDER #284
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #284 TO 769 Oakland Street�Hinesville, GA 31313
+	Items:
+		Granton Edge Slicing Knife
+		Fat Separator
+		Reusable Grocery Bags
+		Scissors
+		Cute Egg Mold
+STARTING ORDER #285
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #285 TO 912 Mechanic St.�Muncie, IN 47302
+	Items:
+		Kid's Trike
+		Cast-Iron Dutch Oven
+		Mini Breadmaker
+		Pulse Oximeter
+		Bike Stand
+STARTING ORDER #286
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #286 TO 90 Vale Drive�Amsterdam, NY 12010
+	Items:
+		Audio Cable
+		Beer Mug Set
+		Rotating Cake Stand
+		Ping Pong Paddle
+STARTING ORDER #287
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #287 TO 9073 Forest St.�Knoxville, TN 37918
+	Items:
+		Air Freshener
+		Blender Bottle
+		Bottle Cage
+		Tiny Portable Speakers
+		Speaker Wire
+STARTING ORDER #288
+Item not in stock. Requesting restock
+SHIPPING ORDER #288 TO West Arrowhead Ave.�Mankato, MN 56001
+	Items:
+		Laundry Sorter Cart
+		Can Opener
+STARTING ORDER #289
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #289 TO 8004 Maple Lane�Saint Joseph, MI 4908577 
+	Items:
+		Bottle Cage
+		Electric Griddle
+		Can Crusher
+		Air Freshener
+		HD Camcorder
+STARTING ORDER #290
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #290 TO 45 North Center Road�Derry, NH 03038
+	Items:
+		Glass Bowls w/ Lids
+		Food Dehydrator and Jerky Maker
+		Hand Exerciser
+		Rotating Turntable
+STARTING ORDER #291
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #291 TO 8404 Hilltop Ave.�Williamsburg, VA 23185
+	Items:
+		Hanging Pot Rack
+		Mixing Bowl Set
+		Folding Laundry Basket
+		Air Freshener
+		Thermos Travel Mug
+STARTING ORDER #292
+Item not in stock. Requesting restock
+SHIPPING ORDER #292 TO 29 East Oxford Drive�Odenton, MD 21113
+	Items:
+		Fake TV Burglar Deterrent
+		Slip-free Yoga Towel
+STARTING ORDER #293
+Item not in stock. Requesting restock
+SHIPPING ORDER #293 TO 698 E. Blackburn Drive�Nampa, ID 83651
+	Items:
+		Cookie Dough Scooper
+		Phone  GPS Mount
+STARTING ORDER #294
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #294 TO 6 St Paul St.�Philadelphia, PA 19111
+	Items:
+		Yoga Mat
+		Dryer vent cleaning system
+		Strainer
+STARTING ORDER #295
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #295 TO 481 Glenwood Lane�Egg Harbor Township, NJ 08234
+	Items:
+		Handheld Blender
+		Food Chopper / Pastry Scraper
+		Super-Soft, Absorbant Towel
+		Jar Sealer
+STARTING ORDER #296
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #296 TO 7797 Beech Dr.�Vienna, VA 22180
+	Items:
+		Electric Smoker
+		Glass Cleaner
+		Corkscrew
+		Corn Holders
+		Iron
+STARTING ORDER #297
+Item not in stock. Requesting restock
+SHIPPING ORDER #297 TO 719 Sherwood Lane�Hudson, NH 03051
+	Items:
+		Scissors
+		Hanger Holder
+STARTING ORDER #298
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #298 TO 7211 Bridge St.�Detroit, MI 48205
+	Items:
+		Propulsion Scooter
+		Facial Tissues
+		Thermos Travel Mug
+		Machete Knife
+STARTING ORDER #299
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+Item not in stock. Requesting restock
+SHIPPING ORDER #299 TO 7701 West Brook Street�Maryville, TN 37803
+	Items:
+		Waist Trimmer
+		Sheet Gripper
+		Cappuccino and Latte Set
+		NFL Official Size Football
+		Portable Stove

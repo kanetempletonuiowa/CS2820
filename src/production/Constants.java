@@ -16,7 +16,7 @@ public class Constants {
     
     
     //IDs of entities
-    public static final int MOCK_ID = 0;
+    public static final int ID_MOCK_ = 0;
     public static final int BELT_ID = 1;
     public static final int BIN_ID = 2;
     public static final int SHELF_ID = 3;
@@ -38,7 +38,11 @@ public class Constants {
             case BIN_ID:
                 return IMG_Bin;
             case ROBOT_ID:
-                return IMG_Robot;
+                Robot R = Production.getMaster().getMasterFloor().getRobot();
+                if (R!=null)
+                    if (R.carrying!=null) 
+                        return IMG_Shelf;
+                return IMG_Robot;    
             case SHELF_ID:
                 return IMG_Shelf;
             case PICKER_ID:
@@ -104,5 +108,6 @@ public class Constants {
     public static final int DELIVER_SHELF=2;
     public static final int RETURN_SHELF=3;
     public static final int CHARGE=4;
+    
 
 }

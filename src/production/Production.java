@@ -24,7 +24,7 @@ public class Production {
         Master M = new Master();
         M.initializeEvents();
         Constants.initImages();
-        showVisualizer(false);
+        showVisualizer(true);
         panel.getMaster().start();
         
     }

@@ -34,7 +34,7 @@ public class Master {
             
             addInitialEntities();
                         
-            masterOrders.initialOrders(100000);
+            masterOrders.initialOrders(300);
             firstOrder();
             clockTime=0;
             Production.fileManager().appendLine("Simulation "+getSimulationNumber()+": "+(masterOrders.queuedOrders.size()+1)+" orders.");
@@ -85,15 +85,15 @@ public class Master {
             end the simulation
         */
 	public void stop() {
-            Production.fileManager().createBuild("output/simulations/"+getSimulationNumber()+".txt");
+            Production.fileManager().createBuild("output/"+getSimulationNumber()+".txt");
             output("END SIMULATION.");
             running=false;
 	}
         
         private int getSimulationNumber() {
-            File f = new File("output/simulations/");
+            File f = new File("output/");
             int i=0;
-            while ((f = new File("output/simulations/"+i+".txt")).isFile()) i++;
+            while ((f = new File("output/"+i+".txt")).isFile()) i++;
             return i;
         }
 	
@@ -110,7 +110,7 @@ public class Master {
 	private void run() {
             double clock=System.currentTimeMillis();
             while (running) {
-                if (System.currentTimeMillis()-clock >=0) {
+                if (System.currentTimeMillis()-clock >=100) {
                     clockTime++;
                     clock=System.currentTimeMillis();
                     for (FloorEntity e:masterFloor.getEntities())
@@ -134,20 +134,20 @@ public class Master {
         
         public void ship(Parcel P) {
             output("SHIPPING ORDER #"+currentOrder.number+" TO "+P.getAddress());
-            Production.fileManager().appendLine("[time="+clockTime+"] Order "+currentOrder.number+" shipped "+currentOrder.itemsInOrder.size()+" items to "+P.getAddress());
+            //Production.fileManager().appendLine("[time="+clockTime+"] Order "+currentOrder.number+" shipped "+currentOrder.itemsInOrder.size()+" items to "+P.getAddress());
             output("\tItems:");
-            Production.fileManager().append("\tItems Shipped: ");
+            //Production.fileManager().append("\tItems Shipped: ");
             Iterator<Item> it = P.getItems().iterator();
             while (it.hasNext()) {
                 Item I = it.next();
                 it.remove();
                 output("\t\t"+I.description);
-                if (it.hasNext())
+                /*if (it.hasNext())
                     Production.fileManager().append(I.description+", ");
                 else
-                    Production.fileManager().append(I.description);
+                    Production.fileManager().append(I.description);*/
             }
-            Production.fileManager().appendLine();
+           // Production.fileManager().appendLine();
             completeOrder();
         }
         
@@ -180,6 +180,7 @@ public class Master {
             and include the current clock time
         */
         public void output(String msg) {
+            Production.fileManager().appendLine(msg);
             System.out.println("[time="+getMasterClockTime()+"]"+msg);
         }
         

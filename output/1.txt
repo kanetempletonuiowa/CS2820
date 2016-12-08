@@ -1,0 +1,202 @@
+Simulation 1: 100 orders.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[time=270] Order 0 shipped 3 items to 75 Annadale Ave.�Desoto, TX 75115
+	Items Shipped: Rust  Stain Remover, Sheet Gripper, Silverware Tray
+[time=380] Order 1 shipped 1 items to 811 Harrison Dr.�Detroit, MI 48205
+	Items Shipped: Fish Turner
+[time=908] Order 2 shipped 5 items to 7701 West Brook Street�Maryville, TN 37803
+	Items Shipped: Glass Bowls w/ Lids, Pizza Cutter, Food Storage Set, Cupcake Storage Container, Electric Food Slicer
+[time=1140] Order 3 shipped 3 items to 75 Annadale Ave.�Desoto, TX 75115
+	Items Shipped: Sausage Stuffer, Hanging Laundry Bag, Drinking Glasses
+[time=1518] Order 4 shipped 4 items to 529 Rockcrest Lane�Elkton, MD 21921
+	Items Shipped: Griddle Pan, Steak Knives, Sheet Gripper, Soup and Drink Thermos
+[time=1728] Order 5 shipped 2 items to 7419 Vine St.�Painesville, OH 44077
+	Items Shipped: Golf Balls, Carpet Cleaning Machine
+[time=1934] Order 6 shipped 2 items to 62 North Street�Newtown, PA 18940
+	Items Shipped: Nonstick Frying Pan, Jar Sealer
+[time=2364] Order 7 shipped 4 items to 29 Schoolhouse St.�Oakland Gardens, NY 11364
+	Items Shipped: Scooter, Stain  Odor Remover, In-Drawer Knife Tray, Punching Bag
+[time=2760] Order 8 shipped 4 items to 7419 Vine St.�Painesville, OH 44077
+	Items Shipped: Foldable Laundry Bin, Home Theater Projector, Pulse Oximeter, Carpet Stain Remover
+[time=2984] Order 9 shipped 2 items to 323 Franklin Dr.�Palatine, IL 60067
+	Items Shipped: Microwavable Steamer, Basketball
+[time=3178] Order 10 shipped 2 items to 323 Franklin Dr.�Palatine, IL 60067
+	Items Shipped: Drifting Machine, Queen Bed Frame and Box Spring
+[time=3548] Order 11 shipped 4 items to 698 E. Blackburn Drive�Nampa, ID 83651
+	Items Shipped: Madeleine Pan, Wine Saver, Dryer vent cleaning system, Showerhead
+[time=4052] Order 12 shipped 5 items to 97 4th Ave.�Hyattsville, MD 20782
+	Items Shipped: Ping Pong Paddle, Pedometer, iPad Blender, Electric Food Slicer, Cycling Helmet Mirror
+[time=4568] Order 13 shipped 5 items to West Arrowhead Ave.�Mankato, MN 56001
+	Items Shipped: Magnetic Knife Holder, Bike Tail Light, Waterproof iPod Shuffle, Teapot, Tortilla Shell Pans
+[time=4678] Order 14 shipped 1 items to 11 Sutor Ave.�Silver Spring, MD 20901
+	Items Shipped: Pitching Machine
+[time=4806] Order 15 shipped 1 items to 769 Oakland Street�Hinesville, GA 31313
+	Items Shipped: Golf Bag
+[time=5140] Order 16 shipped 3 items to 32 Fremont Dr.�Northbrook, IL 60062
+	Items Shipped: Grain Mill, Portable Charcoal Grill, TV mount
+[time=5498] Order 17 shipped 3 items to 103 Wayne Street�Miami Beach, FL 33139
+	Items Shipped: F-Pin Audio/Video Cable, Tongs, Rowing Machine
+[time=5804] Order 18 shipped 3 items to 276 Boston Court�Encino, CA 91316
+	Items Shipped: Collapsible Strainer, Letter Opener, 11lb Kitchen Scale
+[time=5970] Order 19 shipped 2 items to 804 Green Ave.�Copperas Cove, TX 76522
+	Items Shipped: Home Theater Speakers, Fast, Portable Water Boiler
+[time=6390] Order 20 shipped 4 items to 80 Henry Smith Court�Rockaway, NJ 07866
+	Items Shipped: Exercise Bike, Cycling Shorts, Cycling Pedals, 34oz Insulated Themos
+[time=6580] Order 21 shipped 2 items to 468 Paris Hill Dr.�Montgomery Village, MD 20886
+	Items Shipped: Kid's Trike, Potato Ricer
+[time=6656] Order 22 shipped 1 items to 208 Jefferson Drive�Chicago, IL 60621
+	Items Shipped: Spinning Organizer
+[time=6860] Order 23 shipped 2 items to 64 Birch Hill St.�Boston, MA 02127
+	Items Shipped: Weighted Hula Hoop, Lithium Batteries
+[time=7318] Order 24 shipped 5 items to 611 West 10th St.�Dorchester, MA 02125
+	Items Shipped: Toilet bowl ring remover, Bolt Action C02 Pistol, Soup and Drink Thermos, Frying Pan Set, Milk Frother
+[time=7844] Order 25 shipped 5 items to 62 North Street�Newtown, PA 18940
+	Items Shipped: Car Battery Monitor, Vacuum, Grocery Bag Holder, Skateboard, Ethernet Cable
+[time=8170] Order 26 shipped 3 items to 836 Court St.�Elgin, IL 60120
+	Items Shipped: Digital Body Fat Scale, Oven Glove, Electric Smoker
+[time=8602] Order 27 shipped 5 items to 58 West Longfellow Street�Garland, TX 75043
+	Items Shipped: Lasagna Trio Pan, Longboard Skateboard, Tortilla Shell Pans, Food Storage Set, Shoe Dryer
+[time=8788] Order 28 shipped 2 items to 765 Gates Street�Fort Washington, MD 20744
+	Items Shipped: Pocket Rescusitator, Cappuccino and Latte Set
+[time=9304] Order 29 shipped 5 items to 1 Grant Street�Lawrence, MA 01841
+	Items Shipped: Corkscrew, Ice Cream Scooper, AA Rechargeable Batteries, Waist Trimmer, Garlic Press
+[time=9510] Order 30 shipped 2 items to 32 Bellevue Street�Waterford, MI 48329
+	Items Shipped: Swively Two-Wheeled Skateboard, Trash Can
+[time=9730] Order 31 shipped 2 items to 611 West 10th St.�Dorchester, MA 02125
+	Items Shipped: Egg Beater, Kettle
+[time=9808] Order 32 shipped 1 items to 64 Birch Hill St.�Boston, MA 02127
+	Items Shipped: Mirror
+[time=10296] Order 33 shipped 5 items to 451 Marconi Ave.�Marcus Hook, PA 19061
+	Items Shipped: HD 3D Plasma TV, Spring Powered BB Gun, Pressure Cooker  Canner, Cherry  Olive Pitter, Knife Sharpener
+[time=10526] Order 34 shipped 2 items to 45 Tanglewood Street�Beloit, WI 53511
+	Items Shipped: Smoke Detector, Food Proofer
+[time=10948] Order 35 shipped 4 items to 182 Hawthorne Ave.�Melrose, MA 02176
+	Items Shipped: Inflatable Kayak, HDMI Cable, Dry Bag, Food Dehydrator and Jerky Maker
+[time=11380] Order 36 shipped 5 items to 8796 Sulphur Springs Street�Monsey, NY 10952
+	Items Shipped: Cute Egg Mold, Slip-free Yoga Towel, Electric Food Slicer, Hidden Book Shelf, Electric Rotisserie
+[time=11642] Order 37 shipped 2 items to 7543 Plymouth St.�Rego Park, NY 11374
+	Items Shipped: Backpack, A-Male to Mini-B USB Cable
+[time=11756] Order 38 shipped 1 items to 804 Green Ave.�Copperas Cove, TX 76522
+	Items Shipped: Food Proofer
+[time=12410] Order 39 shipped 5 items to 49 Lawrence Avenue�Greensboro, NC 27405
+	Items Shipped: Toothbrush Holder, Food Coloring Set, Reusable Produce Bags, 4-Quart Tupperware, Fire Starter
+[time=12652] Order 40 shipped 2 items to 8275 E. Summer Lane�Langhorne, PA 19047
+	Items Shipped: Laundry Soda, Reusable Grocery Bags
+[time=12874] Order 41 shipped 2 items to 853 Rock Maple Street�Feasterville Trevose, PA 19053
+	Items Shipped: Exercise Bike, Power Strip
+[time=13290] Order 42 shipped 4 items to 32 Fremont Dr.�Northbrook, IL 60062
+	Items Shipped: Loaf Ban, French Press, 4-Tier Cooling Rack, TV Stand
+[time=13496] Order 43 shipped 2 items to 30 Ivy Street�Lansing, MI 48910
+	Items Shipped: Food Bag Sealer Clips, 5-Bike Rack
+[time=14038] Order 44 shipped 5 items to 182 Hawthorne Ave.�Melrose, MA 02176
+	Items Shipped: Neck/Face Mask, Mandoline Slicer, Digital Radio, Pizza Pan, Dumbbell Rack
+[time=14182] Order 45 shipped 1 items to 35 Mayfair St.�Pawtucket, RI 02860
+	Items Shipped: Steak Knives
+[time=14308] Order 46 shipped 1 items to 208 Jefferson Drive�Chicago, IL 60621
+	Items Shipped: 3-Step Stool
+[time=14810] Order 47 shipped 5 items to 8404 Hilltop Ave.�Williamsburg, VA 23185
+	Items Shipped: iPhone/iPod Stereo, Grain Mill, Food Dehydrator and Jerky Maker, Electric Griddle, Fast, Portable Water Boiler
+[time=15046] Order 48 shipped 2 items to 276 Boston Court�Encino, CA 91316
+	Items Shipped: Air Freshener, Snow Cone Maker
+[time=15268] Order 49 shipped 2 items to 321 Vermont Lane�Freeport, NY 11520
+	Items Shipped: Shower Curtain Rings, Mandoline Slicer
+[time=15392] Order 50 shipped 1 items to 855 Wall St.�Clarksburg, WV 26301
+	Items Shipped: Pepper Grinder
+[time=15490] Order 51 shipped 1 items to 804 Green Ave.�Copperas Cove, TX 76522
+	Items Shipped: Fast, Portable Water Boiler
+[time=15732] Order 52 shipped 3 items to 9644 Amerige Street�Arvada, CO 80003
+	Items Shipped: Energy Chews, A-to-B USB Cable, Screen Cleaning Kit
+[time=15800] Order 53 shipped 1 items to 321 Vermont Lane�Freeport, NY 11520
+	Items Shipped: Corkscrew
+[time=15878] Order 54 shipped 1 items to 7543 Plymouth St.�Rego Park, NY 11374
+	Items Shipped: Electric Meat Grinder
+[time=16224] Order 55 shipped 4 items to 8127 Boston St.�Lake Villa, IL 60046
+	Items Shipped: Digital Shower Radio, Car Battery Monitor, Roller Cart, Blender Bottle
+[time=16508] Order 56 shipped 2 items to 468 Paris Hill Dr.�Montgomery Village, MD 20886
+	Items Shipped: Simple Projector, Dryer vent cleaning system
+[time=17146] Order 57 shipped 5 items to 173 Linda Court�Holly Springs, NC 27540
+	Items Shipped: Backpack Full of Water, Mixing Bowl Set, Exercise Bike, Wok, Mega Plunger
+[time=17282] Order 58 shipped 1 items to 30 Ivy Street�Lansing, MI 48910
+	Items Shipped: Soup and Drink Thermos
+[time=17828] Order 59 shipped 5 items to 29 Schoolhouse St.�Oakland Gardens, NY 11364
+	Items Shipped: Thermos Travel Mug, Bread Knife, Inflatable Kayak, Potato Ricer, HDMI Cable
+[time=17972] Order 60 shipped 1 items to 1 Grant Street�Lawrence, MA 01841
+	Items Shipped: Wine Aerator
+[time=18108] Order 61 shipped 1 items to 462 Smoky Hollow Drive�Rockville, MD 20850
+	Items Shipped: 5-Port Networking Switch
+[time=18574] Order 62 shipped 5 items to 9319 Longbranch St.�Panama City, FL 32404
+	Items Shipped: Dry Bag, Letter Opener, Velcro Cable Ties, HD Camcorder, Milk Frothing Pitcher
+[time=18964] Order 63 shipped 4 items to 173 Linda Court�Holly Springs, NC 27540
+	Items Shipped: Cleaning Pads, Electric Smoker, Ladybug Night Light, Balance Board
+[time=19390] Order 64 shipped 4 items to 45 Tanglewood Street�Beloit, WI 53511
+	Items Shipped: Louisville Slugger Baseball Bat, Ice Cream Scooper, Strawberry Stem Remover, Soy and Almond Milk Maker
+[time=19530] Order 65 shipped 1 items to 11 Sutor Ave.�Silver Spring, MD 20901
+	Items Shipped: Carpet Cleaning Machine
+[time=19882] Order 66 shipped 3 items to 7846 Longbranch Ave.�Glenview, IL 60025
+	Items Shipped: Weighted Hula Hoop, Elevation Training Gear, Hanging Laundry Bag
+[time=20368] Order 67 shipped 5 items to 18 Essex St.�Harlingen, TX 78552
+	Items Shipped: Huge Portable Hammock, Spaetzle Maker, Skateboard, Ironing Board Cover, Stand Mixer Bowl
+[time=20516] Order 68 shipped 2 items to 403 Walnut Street�Doylestown, PA 18901
+	Items Shipped: Personal Fan, Digital Radio
+[time=20596] Order 69 shipped 1 items to 9391 Trout St. Riverview, FL 33569
+	Items Shipped: Meat Tenderizer
+[time=20690] Order 70 shipped 1 items to 45 North Center Road�Derry, NH 03038
+	Items Shipped: Audio Cable
+[time=20906] Order 71 shipped 2 items to West Arrowhead Ave.�Mankato, MN 56001
+	Items Shipped: 4-Tier Cooling Rack, Donut Pan
+[time=21118] Order 72 shipped 2 items to 833 Border Drive�North Attleboro, MA 02760
+	Items Shipped: Adjustable Gym Bench, Digital Radio
+[time=21600] Order 73 shipped 5 items to 611 West 10th St.�Dorchester, MA 02125
+	Items Shipped: Hidden Book Shelf, Jar Sealer, Heat-Resistant Utensil Set, Spice Rack, Mug Holder
+[time=21798] Order 74 shipped 2 items to 64 Alton Rd.�Winter Springs, FL 32708
+	Items Shipped: Tomato Slicer Knife, Bike Stand
+[time=22060] Order 75 shipped 3 items to 170 Buckingham Ave.�Milledgeville, GA 31061
+	Items Shipped: Stain  Odor Remover, Skateboard Ramp Kit, Hidden Book Shelf
+[time=22342] Order 76 shipped 3 items to 9073 Forest St.�Knoxville, TN 37918
+	Items Shipped: Frisbee Alternative, Audio Contact Cleaner Spray, Mouse Trap
+[time=22498] Order 77 shipped 2 items to 7701 West Brook Street�Maryville, TN 37803
+	Items Shipped: Electric Scooter, Balance Board
+[time=22836] Order 78 shipped 3 items to 8404 Hilltop Ave.�Williamsburg, VA 23185
+	Items Shipped: Strawberry Stem Remover, Utensil Holder, Glass Bowls w/ Lids
+[time=23220] Order 79 shipped 5 items to 64 Birch Hill St.�Boston, MA 02127
+	Items Shipped: Magnetic Door Blinds, Electric Meat Grinder, 32 GB SD Card, Portable Charcoal Grill, Bike Bungie Net
+[time=23690] Order 80 shipped 5 items to 428 Windfall Avenue�Blacksburg, VA 24060
+	Items Shipped: Food Coloring Set, Food Bag Sealer Clips, 5-Port Networking Switch, 34oz Insulated Themos, USB Wi-Fi Adapter
+[time=23970] Order 81 shipped 3 items to 8404 Hilltop Ave.�Williamsburg, VA 23185
+	Items Shipped: Frisbee Alternative, Rowing Machine, Programmable Switch
+[time=24360] Order 82 shipped 4 items to 30 Mulberry Drive�Port Orange, FL 32127
+	Items Shipped: Huge Portable Hammock, Hidden Book Shelf, Espresso Tamper, Tongs
+[time=24662] Order 83 shipped 3 items to 765 Gates Street�Fort Washington, MD 20744
+	Items Shipped: Rolling Step Stool, Rolling Pin, Egg / Bacon Microwave Cooker
+[time=25066] Order 84 shipped 5 items to 6 St Paul St.�Philadelphia, PA 19111
+	Items Shipped: Knife Block, Frying Pan Set, Weighted Hula Hoop, Sleeping Bag, Toilet bowl ring remover
+[time=25164] Order 85 shipped 1 items to 481 Glenwood Lane�Egg Harbor Township, NJ 08234
+	Items Shipped: Paring Knife
+[time=25644] Order 86 shipped 5 items to 321 Vermont Lane�Freeport, NY 11520
+	Items Shipped: Wine Saver, Floor Mat, Mortar and Pestle, Iron, Scotch Tape
+[time=26036] Order 87 shipped 3 items to 497 Sheffield Lane�Riverside, NJ 08075
+	Items Shipped: Electric Rotisserie, Shoe Dryer, Mini Exercise Bike
+[time=26430] Order 88 shipped 4 items to 8518 Sunnyslope St.�Elkton, MD 21921
+	Items Shipped: Vacuum, Propulsion Scooter, Yoga Mat, Grabber Thing
+[time=26878] Order 89 shipped 5 items to 7797 Beech Dr.�Vienna, VA 22180
+	Items Shipped: Chef's Knife, Folding Laundry Basket, A-to-B USB Cable, Donut Pan, Lasagna Trio Pan
+[time=26964] Order 90 shipped 1 items to 8796 Sulphur Springs Street�Monsey, NY 10952
+	Items Shipped: Garlic Press
+[time=27174] Order 91 shipped 2 items to 74 West Queen Dr.�South Richmond Hill, NY 11419
+	Items Shipped: Magnifying Glass, VoIP Phone Adapter
+[time=27618] Order 92 shipped 4 items to 9644 Amerige Street�Arvada, CO 80003
+	Items Shipped: Energy Chews, Spinning Organizer, NFL Official Size Football, Book Stand
+[time=28006] Order 93 shipped 4 items to 8127 Boston St.�Lake Villa, IL 60046
+	Items Shipped: Backpack, Ladybug Night Light, HDMI Cable, Garage Door Remote
+[time=28184] Order 94 shipped 2 items to 1 Grant Street�Lawrence, MA 01841
+	Items Shipped: Velcro Cable Ties, Mortar and Pestle
+[time=28502] Order 95 shipped 3 items to 451 Marconi Ave.�Marcus Hook, PA 19061
+	Items Shipped: Indoor Bike Trainer, Bookshelf Speakers, Portable Gas Grill
+[time=28814] Order 96 shipped 3 items to 182 Hawthorne Ave.�Melrose, MA 02176
+	Items Shipped: Ping Pong Paddle, Mini Breadmaker, Chef Cleaver Knife
+[time=29154] Order 97 shipped 3 items to 392 Locust St.�Stafford, VA 22554
+	Items Shipped: Solo Raft, Car Battery Monitor, Carpet Cleaning Machine
+[time=29732] Order 98 shipped 5 items to 462 Smoky Hollow Drive�Rockville, MD 20850
+	Items Shipped: Legit Dartboard, Carpet Stain Remover, Saucepot and Steamer, Food Coloring Set, Mini Exercise Bike
+[time=29860] Order 99 shipped 1 items to 7211 Bridge St.�Detroit, MI 48205
+	Items Shipped: 26-Function Bike Tool

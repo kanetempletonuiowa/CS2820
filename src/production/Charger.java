@@ -23,10 +23,29 @@ public class Charger implements Tickable{
     }
 
     public void tick() {
-        if (charging!=null)
-            charging.charge++;
+        if (charging!=null) {
+            charging.charge+=2.5;
+            if (charging.charge>=100) {
+                charging.charge=100;
+                disconnect(charging);
+            }
+        }
     }
 
+    
+    public void connect(Robot R) {
+        if (charging==null) 
+            charging=R;
+        
+    }
+    
+    public void disconnect(Robot R) {
+        charging=null;
+        Shelf S = Production.getMaster().getInventory().getShelf(Production.getMaster().currentOrder.nextItem());                    
+        Path P = new Path(R,S.pickupSpace(),Constants.GRAB_SHELF);
+        Production.getMaster().getRobotScheduler().setRobotPath(P);
+    }
+    
     @Override
     public int getX() {
         return posX;

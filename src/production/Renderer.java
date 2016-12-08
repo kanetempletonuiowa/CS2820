@@ -38,6 +38,7 @@ public class Renderer {
         renderFloor(g);
         renderBelt(g);
         renderActiveEntities(g);
+        renderRobotCharge(g);
         
         
         //processing stuff
@@ -70,6 +71,36 @@ public class Renderer {
     private void renderActiveEntities(Graphics g) {
         ArrayList<FloorEntity> L = Production.getMaster().getMasterFloor().getEntities();
         L.stream().forEach((e) -> {e.render(g);});
+    }
+    
+    private void renderRobotCharge(Graphics g) {
+        Robot R = Production.getMaster().getMasterFloor().getRobot();
+        int x = R.getX();
+        int y = R.getY();
+        int size = Production.SQUARE_SIZE;
+        if (R.charge<=0)
+            g.setColor(Color.BLACK);
+        else if (R.charge<=10)
+            g.setColor(new Color(255,0,0));
+        else if (R.charge<=20)
+            g.setColor(new Color(255,94,0));
+        else if (R.charge<=30)
+            g.setColor(new Color(255,171,0));
+        else if (R.charge<=40)
+            g.setColor(new Color(255,213,0));
+        else if (R.charge<=50)
+            g.setColor(new Color(255,239,0));
+        else if (R.charge<=60)
+            g.setColor(new Color(240,255,0));
+        else if (R.charge<=70)
+            g.setColor(new Color(180,255,0));
+        else if (R.charge<=80)
+            g.setColor(new Color(120,255,0));
+        else if (R.charge<=90)
+            g.setColor(new Color(60,255,0));
+        else
+            g.setColor(new Color(0,255,15));
+        g.fillRect(x*size, y*size+(5*size/6), size, size/6);
     }
     
 
