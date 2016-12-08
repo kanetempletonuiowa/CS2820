@@ -38,16 +38,14 @@ public class Inventory {
      * 
      */
     public Shelf getShelf(Item i) {
-        
-
+    	//System.out.println(i.description + " location = null? : " + (i.location == null));
     	if (i.location != null) return i.location;
     	// this is just an extra check to make sure that when i.location == null we really don't have it on the shelves
     	if (inStock(i)) {
     		for (Shelf s : Production.getMaster().masterFloor.shelves) {
     			if (s.containsItem(i)) { 
-                            
-                            Production.getMaster().output("Retrieving "+i.description+" from shelf " + s.getIndex()+"; Items remaining in order: "+Production.getMaster().currentOrder.itemsRemaining()); 
-                            return s; 
+    				Production.getMaster().output("Retrieving "+i.description+" from shelf " + s.getIndex()+"; Items remaining in order: "+Production.getMaster().currentOrder.itemsRemaining()); 
+                    return s; 
     			}
     		}
     	}
@@ -55,10 +53,7 @@ public class Inventory {
     	Production.getMaster().output("Item not in stock. Requesting restock");
     	// this will restock the item 
         this.stockItem(i);
-    	
-	return getShelf(i);
-        
-      //  return null;
+        return getShelf(i);
     }
     
     /**
@@ -69,8 +64,7 @@ public class Inventory {
      *  this will remove the desired amount of the given item from both the global inStock and the shelf 
      *  which is carrying its personal itemsOnShelf
      */
-        
-    public void removeItem(Item i, int q){
+    public void removeItem(Item i, int q) {
     	for (int j=0; j<q; j++) {
     		if (this.inStock(i)) {
     			Stock.remove(i);
@@ -114,12 +108,12 @@ public class Inventory {
      * @throws FileNotFoundException 
      */
     public void stockShelves() throws FileNotFoundException {
-    	int whichShelf = r.nextInt(Production.getMaster().getMasterFloor().numberOfShelves());
     	for (CatItem ci : CatItem.catalog) {
-        	int quantity = r.nextInt(5) +1; // will stock 1-5 of each item
+    		int whichShelf = r.nextInt(Production.getMaster().getMasterFloor().numberOfShelves());
+        	int quantity = (r.nextInt(5) +5); // will stock 5-10 of each item
     		for (int i = 0; i < quantity; i++){
     			Item n = new Item(ci.id, ci.description);
-                Production.controls().output(Production.getMaster().getMasterFloor().numberOfShelves()+"");
+                //Production.controls().output(Production.getMaster().getMasterFloor().numberOfShelves()+"");
     			Production.getMaster().masterFloor.shelves[whichShelf].itemsOnShelf.add(n);
     			n.setPlace(Production.getMaster().masterFloor.shelves[whichShelf]);
     			this.Stock.add(n);

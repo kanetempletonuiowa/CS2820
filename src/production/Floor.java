@@ -4,8 +4,11 @@ import java.awt.Point;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
-
+/**
+ * 
+ * @author KANE TEMPLETON
+ *
+ */
 public class Floor {
     
     private ArrayList<FloorEntity> entities;
@@ -34,8 +37,6 @@ public class Floor {
     }
     
     public void initFloor() {
-        //will clean this up later
-        
         shelves = new Shelf[SHELVES_PER_ROW*Constants.SHELF_START.length];
         int k=0;
         for (int i=0; i<Constants.SHELF_START.length; i++) {
@@ -221,18 +222,6 @@ public class Floor {
     public FloorPicker getPicker(){return picker;}
     public FloorPacker getPacker(){return packer;}
 
-    public Cell getShippingDock() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public Cell getReceivingDock() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public List<Cell> getBeltArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     public Cell getCell(Cell P) {
         return P;
     }
@@ -242,11 +231,6 @@ public class Floor {
     }
     public int numberOfShelves() {
         return Constants.SHELF_START.length*SHELVES_PER_ROW;
-    }
-
-
-    public Cell randomInShelfArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

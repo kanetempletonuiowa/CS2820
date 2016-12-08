@@ -5,6 +5,11 @@ package production;
 
 import java.util.ArrayList;
 
+/**
+ * @author KANE TEMPLETON (MAIN AUTHOR ON SHELF.JAVA)
+ * @author SCOTT HOEFER
+ *
+ */
 public class Shelf implements Tickable {
     
     private int homeX,homeY;

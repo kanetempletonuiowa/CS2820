@@ -45,8 +45,5 @@ public class InventoryTest {// extends TestCase {
 		//assertTrue(m.getInventory().getShelf(i2) != null);
 		m.getInventory().Stock.clear();
 		
-		Item i3 = m.getInventory().getRandomItem();
-		//assertTrue(m.getInventory().getShelf(i2) == null);
-		
 	}
 }

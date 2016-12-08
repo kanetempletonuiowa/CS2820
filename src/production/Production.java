@@ -2,16 +2,12 @@ package production;
 
 import java.io.IOException;
 
-/*  MASTER TODO:
-    - add path finding to floor
-    - master orders working
-    - inventory
-    - shelves containing items
-    - finish this todo list
-*/
-
-
-
+/**
+ * 
+ * @author SCOTT HOEFER
+ * @author KANE TEMPLETON (MAIN AUTHOR ON PRODUCTION.JAVA)
+ *
+ */
 public class Production {
     
     private static ControlPanel panel = new ControlPanel();
